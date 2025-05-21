@@ -6,14 +6,13 @@ layout: none
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>MizzMediaPro - Social Media Management</title>
+  <title>{{ page.title | default: "MizzMediaPro - Social Media Management" }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Netlify CMS script for easy content editing -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
   <script src="https://cdn.auth0.com/js/auth0-spa-js/1.19/auth0-spa-js.production.js"></script>
   <script src="auth.js"></script>
 
-  <!-- Optional: Add your custom CSS here -->
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -45,29 +44,27 @@ layout: none
 <body>
 
   <header>
-    <h1>Welcome to MizzMediaPro</h1>
-    <p>Your trusted partner for Social Media Management & Marketing</p>
+    <h1>{{ page.header_title | default: "Welcome to MizzMediaPro" }}</h1>
+    <p>{{ page.header_subtitle | default: "Your trusted partner for Social Media Management & Marketing" }}</p>
   </header>
 
   <section>
-    <h2>Our Services</h2>
+    <h2>{{ page.services_title | default: "Our Services" }}</h2>
     <ul>
-      <li>Social Media Strategy & Planning</li>
-      <li>Content Creation & Scheduling</li>
-      <li>Instagram DM Chatbots & Automation</li>
-      <li>Paid Ads Management</li>
-      <li>Performance Dashboards & Reporting</li>
+      {% for service in page.services %}
+        <li>{{ service }}</li>
+      {% endfor %}
     </ul>
   </section>
 
   <section>
-    <h2>Why Choose Us?</h2>
-    <p>We specialize in helping businesses grow their online presence with proven social media strategies and hands-on management. Let us take care of your social media while you focus on your business.</p>
+    <h2>{{ page.why_choose_us_title | default: "Why Choose Us?" }}</h2>
+    <p>{{ page.why_choose_us_text | default: "We specialize in helping businesses grow their online presence with proven social media strategies and hands-on management. Let us take care of your social media while you focus on your business." }}</p>
   </section>
 
   <section>
-    <h2>Contact Us</h2>
-    <p>Ready to boost your social media? <a href="mailto:connect@mizzmediapro.com" class="button">Email Us</a></p>
+    <h2>{{ page.contact_title | default: "Contact Us" }}</h2>
+    <p>{{ page.contact_text | default: "Ready to boost your social media?" }} <a href="mailto:{{ page.contact_email | default: "connect@mizzmediapro.com" }}" class="button">{{ page.contact_button_text | default: "Email Us" }}</a></p>
   </section>
 
 </body>
