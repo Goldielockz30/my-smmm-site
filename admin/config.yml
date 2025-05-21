@@ -1,22 +1,64 @@
 backend:
   name: github
-  repo: Goldielockz30/my-smmm-site   # Replace with your GitHub repo
-  branch: main                        # Or 'master', depending on your setup
+  repo: Goldielockz30/my-smmm-site
+  branch: main
   auth_type: implicit
   app_id: zom0RPYQzv4LRJ3kj414Aom8jH1ME8OV
   base_url: https://dev-lqu56b6r54md4cln.us.auth0.com
   auth_endpoint: authorize
 
-
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
-  - name: "posts"
-    label: "Blog Posts"
-    folder: "_posts"
+  - name: "home"
+    label: "Home Section"
+    files:
+      - file: "_data/home.yml"
+        label: "Home Content"
+        name: "home_content"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Subheading", name: "subheading", widget: "string" }
+          - { label: "Intro Text", name: "intro", widget: "text" }
+
+  - name: "about"
+    label: "About Section"
+    files:
+      - file: "_data/about.yml"
+        label: "About Content"
+        name: "about_content"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "markdown" }
+
+  - name: "services"
+    label: "Services Section"
+    files:
+      - file: "_data/services.yml"
+        label: "Services Content"
+        name: "services_content"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Services List", name: "services_list", widget: "list", allow_add: true, field: {label: "Service", name: "service", widget: "string"} }
+
+  - name: "client_feedback"
+    label: "Client Feedback"
+    folder: "_client_feedback"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Client Name", name: "client_name", widget: "string" }
+      - { label: "Photo", name: "photo", widget: "image" }
+      - { label: "Feedback", name: "feedback", widget: "markdown" }
+
+  - name: "contact"
+    label: "Contact Section"
+    files:
+      - file: "_data/contact.yml"
+        label: "Contact Info"
+        name: "contact_info"
+        fields:
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Address", name: "address", widget: "text" }
