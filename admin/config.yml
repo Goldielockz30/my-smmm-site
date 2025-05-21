@@ -16,8 +16,16 @@ collections:
     files:
       - label: "Home Page"
         name: "home"
-        file: "_pages/index.md"  # This file must exist in your repo
+        file: "pages/index.md"  # This file must exist in your repo
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Subtitle", name: "subtitle", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Header Title", name: "header_title", widget: "string" }
+          - { label: "Header Subtitle", name: "header_subtitle", widget: "string" }
+          - { label: "Services Title", name: "services_title", widget: "string" }
+          - { label: "Services", name: "services", widget: "list", allow_add: true }
+          - { label: "Why Choose Us Title", name: "why_choose_us_title", widget: "string" }
+          - { label: "Why Choose Us Text", name: "why_choose_us_text", widget: "text" }
+          - { label: "Contact Title", name: "contact_title", widget: "string" }
+          - { label: "Contact Text", name: "contact_text", widget: "string" }
+          - { label: "Contact Email", name: "contact_email", widget: "string" }
+          - { label: "Contact Button Text", name: "contact_button_text", widget: "string" }
