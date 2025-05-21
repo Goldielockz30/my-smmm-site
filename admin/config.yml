@@ -13,10 +13,11 @@ public_folder: "/assets/images/uploads"
 collections:
   - name: "pages"
     label: "Pages"
-    folder: "_pages"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Layout", name: "layout", widget: "hidden", default: "single" }
-      - { label: "Body", name: "body", widget: "markdown" }
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "index.md"  # This file must exist in your repo
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
