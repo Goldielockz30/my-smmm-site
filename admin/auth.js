@@ -1,7 +1,7 @@
 // /admin/auth.js
 
 const auth0 = new Auth0Client({
-  domain: "https://dev-lqu56b6r54md4cln.us.auth0.com",       // e.g. dev-lqu56b6r54md4cln.us.auth0.com
+  domain: "dev-lqu56b6r54md4cln.us.auth0.com",       // e.g. dev-lqu56b6r54md4cln.us.auth0.com
   client_id: "zom0RPYQzv4LRJ3kj414Aom8jH1ME8OV", // e.g. zom0RPYQzv4LRJ3kj414Aom8jH1ME8OV
   redirect_uri: window.location.origin + "/admin/"
 });
