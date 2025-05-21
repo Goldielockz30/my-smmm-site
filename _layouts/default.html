@@ -1,13 +1,39 @@
----
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem auto;
+      max-width: 800px;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      color: #0077cc;
+    }
+    section {
+      margin-bottom: 1.5rem;
+    }
+    a.button {
+      display: inline-block;
+      background: #0077cc;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>{{ page.header_title }}</h1>
     <p>{{ page.header_subtitle }}</p>
@@ -30,7 +56,10 @@
   <section>
     <h2>{{ page.contact_title }}</h2>
     <p>{{ page.contact_text }}</p>
-    <a href="mailto:{{ page.contact_email }}">{{ page.contact_button_text }}</a>
+    <a href="mailto:{{ page.contact_email }}" class="button">{{ page.contact_button_text }}</a>
   </section>
+
+  {{ content }}
+
 </body>
 </html>
