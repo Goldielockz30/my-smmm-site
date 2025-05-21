@@ -1,17 +1,22 @@
 backend:
-  name: git-gateway
-  branch: main  # or master, depending on your repo branch
+  name: github
+  repo: Goldielockz30/my-smmm-site   # Replace with your GitHub repo
+  branch: main                        # Or 'master', depending on your setup
+  auth_type: implicit
+  app_id: zom0RPYQzv4LRJ3kj414Aom8jH1ME8OV
+  base_url: dev-lqu56b6r54md4cln.us.auth0.com
+  auth_endpoint: authorize
 
-media_folder: "assets/uploads"  # folder for uploaded images
+
+media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
   - name: "posts"
-    label: "Posts"
+    label: "Blog Posts"
     folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
