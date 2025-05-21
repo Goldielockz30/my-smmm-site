@@ -16,13 +16,20 @@ collections:
     files:
       - label: "Home Page"
         name: "home"
-        file: "index.md"  # This file must exist in your repo
+        file: "index.md"  # or "index.md" if in root
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Title", name: "header_title", widget: "string" }
           - { label: "Header Subtitle", name: "header_subtitle", widget: "string" }
           - { label: "Services Title", name: "services_title", widget: "string" }
-          - { label: "Services", name: "services", widget: "list", allow_add: true }
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            allow_add: true
+            field:
+              label: "Service"
+              name: "service"
+              widget: "string"
           - { label: "Why Choose Us Title", name: "why_choose_us_title", widget: "string" }
           - { label: "Why Choose Us Text", name: "why_choose_us_text", widget: "text" }
           - { label: "Contact Title", name: "contact_title", widget: "string" }
