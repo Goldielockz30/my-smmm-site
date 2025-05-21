@@ -8,6 +8,9 @@ backend:
 
 media_folder: "assets/images/uploads"
 public_folder: "/assets/images/uploads"
+remote_theme: "mmistakes/minimal-mistakes@4.27.1"
+plugins:
+  - jekyll-include-cache
 
 collections:
   - name: "pages"
