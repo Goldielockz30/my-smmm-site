@@ -4,7 +4,7 @@ backend:
   branch: main                        # Or 'master', depending on your setup
   auth_type: implicit
   app_id: zom0RPYQzv4LRJ3kj414Aom8jH1ME8OV
-  base_url: dev-lqu56b6r54md4cln.us.auth0.com
+  base_url: https://dev-lqu56b6r54md4cln.us.auth0.com
   auth_endpoint: authorize
 
 
