@@ -4,7 +4,7 @@ backend:
   branch: main
   auth_type: implicit
   app_id: zom0RPYQzv4LRJ3kj414Aom8jH1ME8OV
-  base_url: https://dev-lqu56b6r54md4cln.us.auth0.com
+  base_url: dev-lqu56b6r54md4cln.us.auth0.com
   login: true
 
 media_folder: "assets/images/uploads"
@@ -16,7 +16,7 @@ collections:
     files:
       - label: "Home Page"
         name: "home"
-        file: "index.md"  # or "index.md" if in root
+        file: "index.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Title", name: "header_title", widget: "string" }
