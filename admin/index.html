@@ -6,66 +6,19 @@ layout: none
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>{{ page.title | default: "MizzMediaPro - Social Media Management" }}</title>
+  <title>Content Manager - MizzMediaPro</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Netlify CMS script for easy content editing -->
+  <!-- Netlify CMS core script -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  <!-- Auth0 SPA SDK -->
   <script src="https://cdn.auth0.com/js/auth0-spa-js/1.19/auth0-spa-js.production.js"></script>
+  <!-- Your custom Auth0 login script -->
   <script src="auth.js"></script>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 2rem;
-      max-width: 800px;
-      line-height: 1.6;
-      color: #333;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    h1 {
-      color: #0077cc;
-    }
-    section {
-      margin-bottom: 1.5rem;
-    }
-    a.button {
-      display: inline-block;
-      background: #0077cc;
-      color: white;
-      padding: 0.5rem 1rem;
-      text-decoration: none;
-      border-radius: 4px;
-    }
-  </style>
 </head>
 <body>
-
-  <header>
-    <h1>{{ page.header_title | default: "Welcome to MizzMediaPro" }}</h1>
-    <p>{{ page.header_subtitle | default: "Your trusted partner for Social Media Management & Marketing" }}</p>
-  </header>
-
-  <section>
-    <h2>{{ page.services_title | default: "Our Services" }}</h2>
-    <ul>
-      {% for service in page.services %}
-        <li>{{ service }}</li>
-      {% endfor %}
-    </ul>
-  </section>
-
-  <section>
-    <h2>{{ page.why_choose_us_title | default: "Why Choose Us?" }}</h2>
-    <p>{{ page.why_choose_us_text | default: "We specialize in helping businesses grow their online presence with proven social media strategies and hands-on management. Let us take care of your social media while you focus on your business." }}</p>
-  </section>
-
-  <section>
-    <h2>{{ page.contact_title | default: "Contact Us" }}</h2>
-    <p>{{ page.contact_text | default: "Ready to boost your social media?" }} <a href="mailto:{{ page.contact_email | default: "connect@mizzmediapro.com" }}" class="button">{{ page.contact_button_text | default: "Email Us" }}</a></p>
-  </section>
-
+  <script>
+    // Optionally, you can trigger the CMS to open after successful login here,
+    // or your auth.js can handle this
+  </script>
 </body>
 </html>
