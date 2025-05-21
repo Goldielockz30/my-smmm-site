@@ -16,7 +16,7 @@ collections:
     files:
       - label: "Home Page"
         name: "home"
-        file: "pages/index.md"  # This file must exist in your repo
+        file: "index.md"  # This file must exist in your repo
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Title", name: "header_title", widget: "string" }
