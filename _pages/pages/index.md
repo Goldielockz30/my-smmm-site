@@ -3,7 +3,7 @@ layout: default
 title: "MizzMediaPro - Social Media Management"
 header_title: "Welcome to MizzMediaPro"
 header_subtitle: "Your trusted partner for Social Media Management & Marketing"
-services_title: "Services"
+services_title: "Our Services"
 services:
   - "Social Media Strategy & Planning"
   - "Content Creation & Scheduling"
