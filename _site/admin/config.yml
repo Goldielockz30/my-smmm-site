@@ -1,15 +1,11 @@
+
 backend:
   name: github
   repo: Goldielockz30/my-smmm-site
   branch: main
-  auth_type: implicit
-  app_id: Ov23liV69YJtcmMBqxfo
-  base_url: https://github.com/login/oauth/authorize
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
-
-site_url: https://mizzmediapro.com
 
 collections:
   - name: "pages"
