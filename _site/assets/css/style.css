@@ -1,0 +1,14 @@
+/* Mizz Media Pro brand colors */
+body {
+  background-color: #7b68ee; /* soft blue-purple */
+  color: #fff;
+}
+h1, h2, h3 {
+  color: #ff6ec4; /* hot pink */
+}
+a {
+  color: #d8b4fe; /* light purple */
+}
+a:hover {
+  color: #ff79c6; /* brighter pink */
+}
