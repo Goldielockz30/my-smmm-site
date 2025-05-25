@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+  <title>{{ page.title }}</title>
+</head>
+<body>
+  <div class="container">
+    {{ content | markdownify }}
+  </div>
+</body>
+</html>
