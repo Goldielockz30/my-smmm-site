@@ -1,4 +1,3 @@
-
 backend:
   name: github
   repo: Goldielockz30/my-smmm-site
@@ -6,6 +5,8 @@ backend:
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
+
+site_url: https://mizzmediapro.com
 
 collections:
   - name: "pages"
