@@ -12,14 +12,3 @@ a {
 a:hover {
   color: #ff79c6; /* brighter pink */
 }
-html {
-  scroll-behavior: smooth;
-}
-
-button {
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #70b8f7;
-}
