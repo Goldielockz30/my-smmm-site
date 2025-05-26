@@ -4,11 +4,11 @@ body {
   color: #fff;
 }
 h1, h2, h3 {
-  color: #5974eb; /* hot pink */
+  color: #d8b4fe; /* lught pink */
 }
 a {
   color: #d8b4fe; /* light purple */
 }
 a:hover {
-  color: #5974eb; /* brighter pink */
+  color: #d8b4fe; /* light pink */
 }

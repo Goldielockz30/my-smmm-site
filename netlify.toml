@@ -1,0 +1,13 @@
+[build]
+  command = "bundle exec jekyll build --verbose --trace"
+  publish = "_site"
+
+[cache]
+  paths = [
+    "vendor/bundle",
+    "node_modules"
+  ]
+
+[context.production.environment]
+  # Optional: specify Ruby version if needed, adjust to your Ruby version
+  RUBY_VERSION = "3.1.7"
