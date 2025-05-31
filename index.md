@@ -5,8 +5,11 @@ title: Mizz Media Pro
 
 # Mizz Media Pro
 
-## I help Airbnb hosts get fully booked with smart content planning + meta ads + AI
+### I help Airbnb hosts get fully booked with smart content planning + meta ads + AI
 
+## About 
+
+Hi, I’m Nana Johnson — your go-to expert for helping Airbnb hosts maximize their bookings using the power of AI and smart social media marketing. With years of experience in social media and automation, I tailor strategies to your unique rental property to get you fully booked.
 
 
 ## What I Offer
@@ -134,7 +137,7 @@ Advanced Meta Ads: retargeting, conversion tracking
 
 Performance dashboard access
 
-Custom fullel strategy
+Custom funnel strategy
 
 Concierge support (email + priority chat)
 
@@ -160,9 +163,6 @@ Dedicated account manager
 ### Let’s tailor a plan to meet your goals.  
 [Book a Strategy Call](https://calendly.com/connect-mizzmediapro/30min)
 
-
-### About 
-Hi, I’m Nana Johnson — your go-to expert for helping Airbnb hosts maximize their bookings using the power of AI and smart social media marketing. With years of experience in social media and automation, I tailor strategies to your unique rental property to get you fully booked.
 
 ### Contact
 <footer style="text-align:center; padding:20px 0; ">
