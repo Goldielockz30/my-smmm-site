@@ -107,7 +107,6 @@ Branded visuals + captions
 
 Content calendar + scheduling
 
-1x strategy call/month
 
 💡 Add Meta Ads Management: +£500/month
 💡 Add AI Chatbot: +£300 setup, £100/month
