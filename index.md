@@ -25,7 +25,7 @@ Get laser-targeted Facebook and Instagram ads to maximise ROI.
 ### AI Chatbot Integration
 Automate guest communication 24/7 with smart chatbots that answer FAQs and boost sales.
 
-### Booking Funnel Optimization
+### Sales Funnel Optimization
 Level up your sales flow to turn browsers into buyers and boost your revenue.
 
 ### Performance Analytics Dashboards
@@ -34,7 +34,7 @@ Live dashboards with real-time insights on growth, engagement, and conversions.
 
 ## Demo Chatbot
 
-### To try out demo chat bot try typing 'hi', 'hello', 'ai', 'ads', 'price', or 'sales'
+### Type 'hi', 'hello', 'ai', 'ads', 'price', or 'sales'
 
 <div id="chatbot" style="max-width:400px; border:1px solid #ccc; border-radius:8px; padding:10px; background:#f9f9f9;">
   <div id="chatlog" style="height:200px; overflow-y:auto; border:1px solid #ddd; padding:10px; background:#fff;"></div>
