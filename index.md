@@ -5,11 +5,13 @@ title: Mizz Media Pro
 
 # Mizz Media Pro
 
-### I help Airbnb hosts get fully booked with smart content planning + meta ads + AI
+I help clothing brands blow up — selling out collections with smart content, savage Meta ads, and AI that works harder than you do.
+
+
 
 ## About 
 
-Hi, I’m Nana Johnson — your go-to expert for helping Airbnb hosts maximize their bookings using the power of AI and smart social media marketing. With years of experience in social media and automation, I tailor strategies to your unique rental property to get you fully booked.
+Hi, I’m Nana Johnson — your go-to expert for helping clothing brands sell out collections and build their online presense by combining smart content, Meta ads, and AI magic. With years of experience in social media and automation, I create custom plans that get your collections selling out fast.
 
 
 ## What I Offer
@@ -21,10 +23,10 @@ Specialised content and marketing strategies, schedualing, copywriting, and comm
 Get laser-targeted Facebook and Instagram ads to maximise ROI.
 
 ### AI Chatbot Integration
-Automate guest communication 24/7 with smart chatbots that answer FAQs and boost bookings.
+Automate guest communication 24/7 with smart chatbots that answer FAQs and boost sales.
 
 ### Booking Funnel Optimization
-Improve your booking flow to maximize conversions and revenue.
+Level up your sales flow to turn browsers into buyers and boost your revenue.
 
 ### Performance Analytics Dashboards
 Live dashboards with real-time insights on growth, engagement, and conversations.
@@ -32,7 +34,7 @@ Live dashboards with real-time insights on growth, engagement, and conversations
 
 ## Demo Chatbot
 
-### To try out demo chat bot try typing 'hi', 'hello', 'ai', 'ads', 'price', or 'booking'
+### To try out demo chat bot try typing 'hi', 'hello', 'ai', 'ads', 'price', or 'sales'
 
 <div id="chatbot" style="max-width:400px; border:1px solid #ccc; border-radius:8px; padding:10px; background:#f9f9f9;">
   <div id="chatlog" style="height:200px; overflow-y:auto; border:1px solid #ddd; padding:10px; background:#fff;"></div>
@@ -48,11 +50,11 @@ Live dashboards with real-time insights on growth, engagement, and conversations
 
   const responses = {
     'hi': 'Hello! How can I help you with AI and ads today?',
-    'hello': 'Hi there! Ask me anything about boosting Airbnb bookings using AI.',
-    'ai': 'AI chatbots automate guest messages 24/7.',
-    'ads': 'Meta Ads reach the perfect Airbnb guests for you.',
+    'hello': 'Hi there! Ask me anything about using AI to elevate your brand.',
+    'ai': 'AI chatbots automate user messages 24/7.',
+    'ads': 'Meta Ads reach the perfect buyers for you.',
     'price': 'Packages start at £1,000/month.',
-    'booking': 'I help optimize your booking funnel to maximize revenue.'
+    'sales': 'I help optimize your sales funnel to turn more visitors into loyal customers and maximize revenue.'
   };
 
   function botReply(msg) {
@@ -98,8 +100,8 @@ Live dashboards with real-time insights on growth, engagement, and conversations
 
 ### Packages
 <br>
-🟦 Essentials – £1,000/month
-Social media management (3 posts/week)
+🟦 Essentials – <!-- £1,000/month -->
+Social media management 
 
 Platforms: Instagram, Facebook, TikTok
 
@@ -107,27 +109,30 @@ Branded visuals + captions
 
 Content calendar + scheduling
 
+Optional add ons: AI Chatbot
 
-💡 Add Meta Ads Management: +£500/month
-💡 Add AI Chatbot: +£300 setup, £100/month
+<!--💡 Add Meta Ads Management: +£500/month
+💡 Add AI Chatbot: +£300 setup, £100/month -->
 
 
 
 <br>
-🟪 Growth – £1,800/month
-Everything in Essentials
+🟪 Growth – <!-- £1,800/month -->
+Everything in Essentials 
 
 AI chatbot (FAQ automation, lead capture)
 
 Booking funnel audit (guest journey review)
 
-Content upgrade: Reels or short-form videos (2/month)
+Content upgrade: Reels or short-form videos 
 
-💡 Add Meta Ads Management: +£500/month
-💡 Monthly analytics report
+Optional add ons: Meta Ads Management
+
+<!--💡 Add Meta Ads Management: +£500/month
+💡 Monthly analytics report -->
 
 <br>
-🟥 Elite – £2,500/month
+🟥 Elite – <!-- £2,500/month -->
 Everything in Growth
 
 Funnel optimization + landing page build
@@ -146,10 +151,9 @@ Concierge support (email + priority chat)
 Ad spend is separate from your monthly package and goes directly to Meta (Facebook/Instagram).
 
 
-🧠 We help you plan ad budgets that match your revenue goals and ROI targets.
+🧠 I help you plan ad budgets that match your revenue goals and ROI targets.
 
 ⚙️ Bespoke – Custom Quote
-Multi-property or agency support
 
 Multilingual chatbot support
 
