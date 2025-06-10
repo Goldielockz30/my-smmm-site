@@ -5,7 +5,7 @@ title: Mizz Media Pro
 
 # Mizz Media Pro
 
-I help clothing brands blow up — selling out collections with smart content, savage Meta ads, and AI that works harder than you do.
+I help clothing brands Glow up — selling out collections with smart content, savage Meta ads, and AI that works harder than you do.
 
 
 
@@ -29,7 +29,7 @@ Automate guest communication 24/7 with smart chatbots that answer FAQs and boost
 Level up your sales flow to turn browsers into buyers and boost your revenue.
 
 ### Performance Analytics Dashboards
-Live dashboards with real-time insights on growth, engagement, and conversations.
+Live dashboards with real-time insights on growth, engagement, and conversions.
 
 
 ## Demo Chatbot
@@ -61,7 +61,7 @@ Live dashboards with real-time insights on growth, engagement, and conversations
     const reply = document.createElement('div');
     reply.style.margin = '10px 0';
     reply.style.padding = '8px';
-    reply.style.background = '#e0e7ff';
+    reply.style.background = '#e775d0';
     reply.style.borderRadius = '5px';
     reply.textContent = msg;
     chatlog.appendChild(reply);
@@ -145,7 +145,7 @@ Custom funnel strategy
 
 Concierge support (email + priority chat)
 
-🎯 Ideal for superhosts, urban properties, or multi-unit listings
+🎯 Ideal for large retailers
 
 <br>
 Ad spend is separate from your monthly package and goes directly to Meta (Facebook/Instagram).
@@ -164,7 +164,10 @@ Email marketing automation
 Dedicated account manager
 
 ### Let’s tailor a plan to meet your goals.  
-[Book a Strategy Call](https://calendly.com/connect-mizzmediapro/30min)
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/mizzmediapro" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
 
 
 ### Contact
