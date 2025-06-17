@@ -1,14 +1,21 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Content Manager</title>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
   </head>
   <body>
-    <!-- 🚀 Required: this is where CMS loads -->
     <div id="cms"></div>
+
+    <!-- Load Netlify CMS after DOM is ready -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var script = document.createElement("script");
+        script.src = "https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js";
+        document.body.appendChild(script);
+      });
+    </script>
 
     <script>
       if (window.netlifyIdentity) {
@@ -23,3 +30,4 @@
     </script>
   </body>
 </html>
+
