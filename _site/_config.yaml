@@ -1,0 +1,10 @@
+title: Mizz Media Pro
+description: >-
+  Your site description here
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://mizzmediapro.com" # the base hostname & protocol for your site
+
+theme: minimal-mistakes-jekyll
+
+plugins:
+  - jekyll-seo-tag
