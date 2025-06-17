@@ -1,0 +1,49 @@
+---
+---
+
+/* Override Minimal Mistakes default colors */
+
+:root {
+  --color-primary: #800020;  /* Burgundy */
+  --color-bg: #FFFDD0;       /* Cream */
+  --color-text: #000000;     /* Black */
+}
+
+/* Background and text color for the whole site */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Header background and link colors */
+.site-header {
+  background-color: var(--color-primary);
+}
+
+.site-header a,
+.site-header a:visited {
+  color: var(--color-bg);
+}
+
+/* Navigation active link */
+.site-header .nav-item.current a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Footer styling */
+.site-footer {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+/* Buttons */
+.btn {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  border: none;
+}
+
+.btn:hover {
+  background-color: darken(var(--color-primary), 10%);
+}

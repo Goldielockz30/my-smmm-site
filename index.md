@@ -1,11 +1,15 @@
 ---
-layout: default
-title: Mizz Media Pro
+title: Home
+layout: home
+permalink: /
 ---
 
-# Mizz Media Pro
+Mizz Media Pro
 
-I help clothing brands Glow up — selling out collections with smart content, savage Meta ads, and AI that works harder than you do.
+I help Hair and Beauty brands Glow up — selling out collections with smart content, savage Meta ads, and AI that works harder than you do.
+
+
+
 
 
 

@@ -1,2 +1,56 @@
 site_name: Mizz Media Pro
 logo_url: https://placehold.co/100x100/png?text=MizzMediaPro
+
+theme: minimal-mistakes-jekyll
+
+sass:
+  style: compressed
+
+include:
+  - assets/css/custom.scss
+
+
+title: MizzMediaPro
+description: "Social Media Management and AI Solutions"
+
+author:
+  name: Nana Johnson
+  email: your-email@example.com
+  bio: "Helping clothing brands grow with AI & social media."
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Services
+    url: /services/
+  - title: Contact
+    url: /contact/
+
+collections:
+  pages:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "single"
+
+sass:
+  style: compressed
+
+include:
+  - assets/css/custom.scss
+
+markdown: kramdown
+kramdown:
+  input: GFM
