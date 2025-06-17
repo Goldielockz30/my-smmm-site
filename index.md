@@ -3,38 +3,35 @@ title: Home
 layout: home
 permalink: /
 ---
-
 Mizz Media Pro
 
 I help Hair and Beauty brands Glow up — selling out collections with smart content, savage Meta ads, and AI that works harder than you do.
 
+## About
 
-
-
-
-
-## About 
-
-Hi, I’m Nana Johnson — your go-to expert for helping clothing brands sell out collections and build their online presense by combining smart content, Meta ads, and AI magic. With years of experience in social media and automation, I create custom plans that get your collections selling out fast.
-
+Hi, I’m Nana Johnson — your go-to expert for helping Hair and Beauty brands sell out collections and build their online presence by combining smart content, Meta ads, and AI magic. With years of experience in social media and automation, I create custom plans that get your collections selling out fast.
 
 ## What I Offer
 
-### Social Media Management 
-Specialised content and marketing strategies, schedualing, copywriting, and community engagement accross multiple platforms.
+### Social Media Management
+
+Specialised content and marketing strategies, scheduling, copywriting, and community engagement across multiple platforms.
 
 ### Meta Ads Management
+
 Get laser-targeted Facebook and Instagram ads to maximise ROI.
 
 ### AI Chatbot Integration
+
 Automate guest communication 24/7 with smart chatbots that answer FAQs and boost sales.
 
 ### Sales Funnel Optimization
+
 Level up your sales flow to turn browsers into buyers and boost your revenue.
 
 ### Performance Analytics Dashboards
-Live dashboards with real-time insights on growth, engagement, and conversions.
 
+Live dashboards with real-time insights on growth, engagement, and conversions.
 
 ## Demo Chatbot
 
@@ -99,10 +96,8 @@ Live dashboards with real-time insights on growth, engagement, and conversions.
   }
 </script>
 
-
-
-
 ### Packages
+
 <br>
 🟦 Essentials – <!-- £1,000/month -->
 Social media management 
@@ -117,8 +112,6 @@ Optional add ons: AI Chatbot
 
 <!--💡 Add Meta Ads Management: +£500/month
 💡 Add AI Chatbot: +£300 setup, £100/month -->
-
-
 
 <br>
 🟪 Growth – <!-- £1,800/month -->
@@ -149,11 +142,10 @@ Custom funnel strategy
 
 Concierge support (email + priority chat)
 
-🎯 Ideal for large retailers
+🎯 Ideal for brands who want to scale
 
 <br>
 Ad spend is separate from your monthly package and goes directly to Meta (Facebook/Instagram).
-
 
 🧠 I help you plan ad budgets that match your revenue goals and ROI targets.
 
@@ -167,14 +159,16 @@ Email marketing automation
 
 Dedicated account manager
 
-### Let’s tailor a plan to meet your goals.  
+### Let’s tailor a plan to meet your goals.
+
 <!-- Calendly inline widget begin -->
+
 <div class="calendly-inline-widget" data-url="https://calendly.com/mizzmediapro" style="min-width:320px;height:700px;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <!-- Calendly inline widget end -->
 
-
 ### Contact
+
 <footer style="text-align:center; padding:20px 0; ">
 
   <a href="mailto:connect@mizzmediapro.com" style="margin:0 15px; display:inline-block;">
@@ -194,7 +188,3 @@ Dedicated account manager
   </a>
 
 </footer>
-
-
-
-
