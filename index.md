@@ -5,11 +5,27 @@ permalink: /
 ---
 Mizz Media Pro
 
-I help Hair and Beauty brands Glow up — selling out collections with smart content, savage Meta ads, and AI that works harder than you do.
+What about , I help hair & beauty brands glow up - selling out services and products with stunning content, smart meta ads, and AI that handles the hustle for you
+
+
 
 ## About
 
-Hi, I’m Nana Johnson — your go-to expert for helping Hair and Beauty brands sell out collections and build their online presence by combining smart content, Meta ads, and AI magic. With years of experience in social media and automation, I create custom plans that get your collections selling out fast.
+Hi, I’m Nana Johnson — your go-to expert for helping Hair & Beauty brands sell out services and products while building a powerful online presence.
+
+
+
+I blend smart content strategy, high-converting Meta ads, and AI magic to create custom marketing plans that actually work.
+
+
+
+With years of experience in hair, beauty, social media, and automation, I help ambitious brands stand out — and sell out.
+
+
+
+Whether you’re launching a new collection, opening a salon, or scaling your eCommerce store, I’m here to help you glow up and grow up, online.
+
+
 
 ## What I Offer
 
