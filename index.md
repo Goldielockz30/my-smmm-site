@@ -5,7 +5,7 @@ permalink: /
 ---
 Mizz Media Pro
 
-What about , I help hair & beauty brands glow up - selling out services and products with stunning content, smart meta ads, and AI that handles the hustle for you
+I help hair & beauty brands glow up - selling out services and products with stunning content, smart meta ads, and AI that handles the hustle for you
 
 ## About
 
