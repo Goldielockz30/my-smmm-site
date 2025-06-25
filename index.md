@@ -43,6 +43,8 @@ Live dashboards with real-time insights on growth, engagement, and conversions.
 
 ### Type 'hi', 'hello', 'ai', 'ads', 'price', or 'sales'
 
+### Type your email address into the chat for special new client offers! 
+
 <style>
   #chatbot-container {
     max-width: 400px;
@@ -108,7 +110,7 @@ Live dashboards with real-time insights on growth, engagement, and conversions.
 </style>
 
 <div id="chatbot-container">
-  <h3>💬 Ask MizzBot</h3>
+  <h3>💬 Ask MizzMediaBot</h3>
   <div id="chatlog" style="display: flex; flex-direction: column;"></div>
   <div id="input-area">
     <input id="userInput" type="text" placeholder="Ask me about AI, ads, pricing..." onkeydown="if(event.key==='Enter') sendMessage()" />
