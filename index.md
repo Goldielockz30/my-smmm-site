@@ -43,64 +43,154 @@ Live dashboards with real-time insights on growth, engagement, and conversions.
 
 ### Type 'hi', 'hello', 'ai', 'ads', 'price', or 'sales'
 
-<div id="chatbot" style="max-width:400px; border:1px solid #ccc; border-radius:8px; padding:10px; background:#f9f9f9;">
-  <div id="chatlog" style="height:200px; overflow-y:auto; border:1px solid #ddd; padding:10px; background:#fff;"></div>
-  <input id="userInput" type="text" placeholder="Type your message here..." 
-    style="width:calc(100% - 60px); padding:8px; margin-top:10px;" 
-    onkeypress="if(event.key === 'Enter'){ event.preventDefault(); sendMessage(); }" />
-  <button onclick="sendMessage()" style="padding:8px 10px; margin-top:10px; background:#89CFF0; border:none; border-radius:5px; color:#fff;">Send</button>
+<style>
+  #chatbot-container {
+    max-width: 400px;
+    margin: 40px auto;
+    font-family: sans-serif;
+    color: #1c1c1c;
+  }
+
+  #chatlog {
+    height: 300px;
+    overflow-y: auto;
+    background: #f2d8a7;
+    border: 2px solid #801336;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .chat-bubble {
+    margin: 10px 0;
+    padding: 10px 12px;
+    border-radius: 8px;
+    max-width: 85%;
+    word-wrap: break-word;
+  }
+
+  .user {
+    background: #801336;
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+  }
+
+  .bot {
+    background: #ffffff;
+    border: 1px solid #801336;
+  }
+
+  #input-area {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  #userInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #801336;
+    border-radius: 5px;
+  }
+
+  #sendBtn {
+    padding: 10px 15px;
+    background: #801336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #sendBtn:hover {
+    background: #a01246;
+  }
+</style>
+
+<div id="chatbot-container">
+  <h3>💬 Ask MizzBot</h3>
+  <div id="chatlog" style="display: flex; flex-direction: column;"></div>
+  <div id="input-area">
+    <input id="userInput" type="text" placeholder="Ask me about AI, ads, pricing..." onkeydown="if(event.key==='Enter') sendMessage()" />
+    <button id="sendBtn" onclick="sendMessage()">Send</button>
+  </div>
 </div>
 
 <script>
   const chatlog = document.getElementById('chatlog');
   const userInput = document.getElementById('userInput');
 
-  const responses = {
-    'hi': 'Hello! How can I help you with AI and ads today?',
-    'hello': 'Hi there! Ask me anything about using AI to elevate your brand.',
-    'ai': 'AI chatbots automate user messages 24/7.',
-    'ads': 'Meta Ads reach the perfect buyers for you.',
-    'price': 'Packages start at £1,000/month.',
-    'sales': 'I help optimize your sales funnel to turn more visitors into loyal customers and maximize revenue.'
-  };
+  const responses = [
+    {
+      keywords: ['hi', 'hello', 'hey'],
+      reply: 'Hey there! 👋 How can I help you with AI, content, or growing your brand?'
+    },
+    {
+      keywords: ['ai', 'chatbot'],
+      reply: 'AI chatbots automate your replies, answer FAQs, and close leads 24/7.'
+    },
+    {
+      keywords: ['ads', 'meta', 'facebook'],
+      reply: 'Meta Ads help you reach your dream buyers at the right time with the right message.'
+    },
+    {
+      keywords: ['price', 'cost', 'packages'],
+      reply: 'Our packages start at £1,000/month and include AI automation, ad strategy, and content.'
+    },
+    {
+      keywords: ['sales', 'funnel', 'convert'],
+      reply: 'I help you optimize your funnel to turn followers into paying customers faster.'
+    },
+    {
+      keywords: ['content', 'caption', 'calendar'],
+      reply: 'I can generate scroll-stopping captions and schedule a full month of content for you.'
+    }
+  ];
 
-  function botReply(msg) {
-    const reply = document.createElement('div');
-    reply.style.margin = '10px 0';
-    reply.style.padding = '8px';
-    reply.style.background = '#e775d0';
-    reply.style.borderRadius = '5px';
-    reply.textContent = msg;
-    chatlog.appendChild(reply);
+  function appendMessage(text, sender = 'bot') {
+    const bubble = document.createElement('div');
+    bubble.className = `chat-bubble ${sender}`;
+    bubble.textContent = text;
+    chatlog.appendChild(bubble);
     chatlog.scrollTop = chatlog.scrollHeight;
   }
 
   function sendMessage() {
-    const userText = userInput.value.trim().toLowerCase();
-    if (!userText) return;
+    const input = userInput.value.trim();
+    if (!input) return;
 
-    const userDiv = document.createElement('div');
-    userDiv.style.margin = '10px 0';
-    userDiv.style.padding = '8px';
-    userDiv.style.background = '#89CFF0';
-    userDiv.style.color = 'white';
-    userDiv.style.borderRadius = '5px';
-    userDiv.textContent = userInput.value;
-    chatlog.appendChild(userDiv);
-    chatlog.scrollTop = chatlog.scrollHeight;
+    const userText = input.toLowerCase();
+    appendMessage(input, 'user');
     userInput.value = '';
 
-    let reply = 'Sorry, I did not understand that. Try asking about AI, ads, or pricing.';
-    for (const key in responses) {
-      if (userText.includes(key)) {
-        reply = responses[key];
-        break;
-      }
-    }
+    // Typing indicator
+    const typing = document.createElement('div');
+    typing.className = 'chat-bubble bot';
+    typing.textContent = 'Typing...';
+    chatlog.appendChild(typing);
+    chatlog.scrollTop = chatlog.scrollHeight;
 
-    setTimeout(() => botReply(reply), 700);
+    setTimeout(() => {
+      typing.remove();
+
+      let reply = "Hmm, I didn't quite get that. Try asking about AI, ads, pricing, or content.";
+
+      if (userText.includes('@') && userText.includes('.')) {
+        reply = "Thanks! 💌 We’ll send a custom plan to your email shortly.";
+      } else {
+        for (const { keywords, reply: r } of responses) {
+          if (keywords.some(k => userText.includes(k))) {
+            reply = r;
+            break;
+          }
+        }
+      }
+
+      appendMessage(reply, 'bot');
+    }, 800);
   }
 </script>
+
 
 ### Packages
 
