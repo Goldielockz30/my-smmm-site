@@ -45,3 +45,11 @@ sass:
 markdown: kramdown
 kramdown:
   input: GFM
+
+# ✅ Add this line at the bottom to load your custom CSS
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      custom_css: "/assets/css/custom.css"
