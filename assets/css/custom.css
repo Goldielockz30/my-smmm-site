@@ -1,36 +1,31 @@
 /* Override Minimal Mistakes default colors */
-
-/* colors */
 :root {
-  --color-primary: #801336; /* Burgundy */
-  --color-bg: #f2d8a1;      /* Cream */
-  --color-text: #000000;    /* Black */
+  --color-primary: #801336;
+  --color-bg: #f2d8a1;
+  --color-text: #000000;
 }
 
-/* Global body styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, var(--color-primary), var(--color-bg));
   color: var(--color-text);
   margin: 0;
-  padding: 0;  /* REMOVE padding here to avoid indent */
+  padding: 0;
 }
 
-/* Container for page content */
 .container {
   max-width: 800px;
   margin: 30px auto 0 auto;
   background: rgba(242, 216, 161, 0.85);
-  padding: 20px 30px; /* padding inside container only */
+  padding: 20px 30px;
   border-radius: 12px;
 }
 
-/* Headings */
 h1, h2, h3 {
   color: var(--color-primary);
 }
 
-/* Header styles */
+/* Header and nav */
 header {
   background: none;
   border-bottom: 2px solid var(--color-primary);
@@ -38,24 +33,15 @@ header {
   text-align: center;
 }
 
-/* Navigation */
 nav {
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
-  width: 100%;         /* make nav full width */
+  width: 100%;
   background: none;
 }
 
-/* Hide toggle menu and quick start button if any */
-.toggle-menu,
-.quick-start,
-nav > *:not(a) {
-  display: none !important;
-}
-
-/* Show only direct nav links */
 nav a {
   margin: 0 15px;
   font-weight: bold;
@@ -68,7 +54,17 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Hide skip links */
+/* HIDE unwanted nav/toggle components */
+.site-nav-toggle,
+.masthead__menu-toggle,
+.toggle-menu,
+.js-toggle,
+.quick-start,
+.masthead__menu,
+.masthead__menu--slide,
+nav > *:not(a),
+.search__toggle,
+.page__footer-follow,
 a[href^="#primary-navigation"],
 a[href^="#content"],
 a[href^="#footer"],
