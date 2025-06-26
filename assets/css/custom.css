@@ -1,69 +1,73 @@
----
----
 
 /* Override Minimal Mistakes default colors */
 
+/* colors */
 :root {
-  --color-primary: #800020;  /* Burgundy */
-  --color-bg: #FFFDD0;       /* Cream */
-  --color-text: #000000;     /* Black */
+  --color-primary: #801336; /* Burgundy */
+  --color-bg: #f2d8a1;      /* Cream */
+  --color-text: #000000;    /* Black */
 }
 
-/* Background and text color for the whole site */
+/* Global body styles */
 body {
-  background-color: var(--color-bg);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-bg));
   color: var(--color-text);
+  margin: 0;
+  padding: 20px;
 }
 
-/* Header background and link colors */
-.site-header {
-  background-color: var(--color-primary);
+/* Container for page content */
+.container {
+  max-width: 800px;
+  margin: 30px auto 0 auto;
+  background: rgba(242, 216, 161, 0.85);
+  padding: 30px;
+  border-radius: 12px;
 }
 
-.site-header a,
-.site-header a:visited {
-  color: var(--color-bg);
+/* Headings */
+h1, h2, h3 {
+  color: var(--color-primary);
 }
 
-/* Navigation active link */
-.site-header .nav-item.current a {
-  font-weight: 700;
+/* Header styles */
+header {
+  background: none;
+  border-bottom: 2px solid var(--color-primary);
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  /* no extra styles needed here */
+}
+
+/* Hide toggle menu and quick start button if any */
+.toggle-menu,
+.quick-start,
+nav > *:not(a) {
+  display: none !important;
+}
+
+/* Show only direct nav links */
+nav a {
+  margin: 0 15px;
+  font-weight: bold;
+  color: var(--color-text);
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav a:hover {
   text-decoration: underline;
 }
 
-/* Footer styling */
-.site-footer {
-  background-color: var(--color-primary);
-  color: var(--color-bg);
-}
-
-/* Buttons */
-.btn {
-  background-color: var(--color-primary);
-  color: var(--color-bg);
-  border: none;
-}
-
-.btn:hover {
-  background-color: darken(var(--color-primary), 10%);
-}
-
 /* Hide skip links */
-a[href^="#skip"], /* skip links often have href="#skip..." */
-.skip-link,       /* common skip link class */
-.skip-to-content, /* sometimes used */
-.skip {
+a[href^="#primary-navigation"],
+a[href^="#content"],
+a[href^="#footer"],
+.skip-link {
   display: none !important;
 }
-
-/* Hide toggle menu button */
-.toggle-menu,
-.quick-start {
-  display: none !important;
-}
-
-/* Ensure your main nav is visible */
-#main-nav {
-  display: block !important;
-}
-
