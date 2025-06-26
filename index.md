@@ -2,7 +2,6 @@
 layout: default
 title: Welcome to Mizz Media Pro
 ---
-
 <style>
   :root {
     --color-primary: #801336; /* Burgundy */
@@ -221,27 +220,41 @@ title: Welcome to Mizz Media Pro
   <h2>Hi, I’m Nana Johnson</h2>
   <p>Your go-to expert for helping Hair & Beauty brands sell out services and products while building a powerful online presence.</p>
 
-  <ul>
-    <li>💡 Smart content strategy</li>
-    <li>📊 High-converting Meta ads</li>
-    <li>🤖 AI that works 24/7</li>
-  </ul>
+
 </section>
 
 <section id="offers">
   <h2>What I Offer</h2>
   <ul>
-    <li><strong>Social Media Management</strong> – Specialized content, copy, and scheduling</li>
-    <li><strong>Meta Ads</strong> – Targeted Facebook & Instagram campaigns</li>
-    <li><strong>AI Chatbot</strong> – 24/7 sales and FAQ automation</li>
-    <li><strong>Sales Funnels</strong> – Turn browsers into buyers</li>
-    <li><strong>Live Dashboards</strong> – Real-time performance tracking</li>
+  
+
+### Social Media Management
+
+Specialised content and marketing strategies, schedualing, copywriting, and community engagement accross multiple platforms.
+
+### Meta Ads Management
+
+Get laser-targeted Facebook and Instagram ads to maximise ROI.
+
+### AI Chatbot Integration
+
+Automate guest communication 24/7 with smart chatbots that answer FAQs and boost sales.
+
+### Sales Funnel Optimization
+
+Level up your sales flow to turn browsers into buyers and boost your revenue.
+
+### Performance Analytics Dashboards
+
+Live dashboards with real-time insights on growth, engagement, and conversions.
   </ul>
 </section>
 
 <section id="demo">
   <h2>Demo Chatbot</h2>
-  <p>Type "hi", "ai", "ads", "price", or "sales" to try it out! Enter your <strong>email</strong> in the chat to get special offers.</p>
+  <p>Type "hi", "ai", "ads", "price", or "sales" to try it out. 
+
+**Bonus*** Enter your <strong>email</strong> in the chat to get special offers!</p>
 
   <div id="chatbot-container">
     <h3>💬 Ask MizzMediaBot</h3>
@@ -299,14 +312,78 @@ title: Welcome to Mizz Media Pro
       }, 800);
     }
   </script>
+
 </section>
 
 <section id="packages">
   <h2>Packages</h2>
   <ul>
-    <li><strong>Starter</strong> – £1,000/month: Social media content + basic Meta ads</li>
-    <li><strong>Pro</strong> – £2,500/month: Starter + advanced AI chatbot + live dashboards</li>
-    <li><strong>Enterprise</strong> – Custom pricing: Full service + sales funnel + 1-on-1 consulting</li>
+  Packages
+
+<br>
+🟦 Essentials – <!-- £1,000/month -->
+Social media management 
+
+Platforms: Instagram, Facebook, TikTok
+
+Branded visuals + captions
+
+Content calendar + scheduling
+
+Optional add ons: AI Chatbot
+
+<!--💡 Add Meta Ads Management: +£500/month
+💡 Add AI Chatbot: +£300 setup, £100/month -->
+
+<br>
+🟪 Growth – <!-- £1,800/month -->
+Everything in Essentials 
+
+AI chatbot (FAQ automation, lead capture)
+
+Booking funnel audit (guest journey review)
+
+Content upgrade: Reels or short-form videos 
+
+Optional add ons: Meta Ads Management
+
+<!--💡 Add Meta Ads Management: +£500/month
+💡 Monthly analytics report -->
+
+<br>
+🟥 Elite – <!-- £2,500/month -->
+Everything in Growth
+
+Funnel optimization + landing page build
+
+Advanced Meta Ads: retargeting, conversion tracking
+
+Performance dashboard access
+
+Custom funnel strategy
+
+Concierge support (email + priority chat)
+
+🎯 Ideal for brands who want to scale fast
+
+<br>
+Ad spend is separate from your monthly package and goes directly to Meta (Facebook/Instagram).
+
+🧠 I help you plan ad budgets that match your revenue goals and ROI targets.
+
+
+
+⚙️ **Bespoke – Custom Quote**
+
+Multilingual chatbot support
+
+YouTube or Google Ads
+
+Email marketing automation
+
+Dedicated account manager
+
+### Let’s tailor a plan to meet your goals.
   </ul>
 </section>
 
@@ -322,26 +399,29 @@ title: Welcome to Mizz Media Pro
 
   <div id="contact-icons" style="display: flex; justify-content: center; gap: 20px; align-items: center;">
 
-    <a href="mailto:connect@mizzmediapro.com" title="Email">
-      <img src="/assets/images/email.png" alt="Email" style="height: 40px; width: auto;">
-    </a>
+```
+<a href="mailto:connect@mizzmediapro.com" title="Email">
+  <img src="/assets/images/email.png" alt="Email" style="height: 40px; width: auto;">
+</a>
 
-    <a href="https://www.instagram.com/mizzmediapro" target="_blank" rel="noopener" title="Instagram">
-      <img src="/assets/images/instagram.png" alt="Instagram" style="height: 40px; width: auto;">
-    </a>
+<a href="https://www.instagram.com/mizzmediapro" target="_blank" rel="noopener" title="Instagram">
+  <img src="/assets/images/instagram.png" alt="Instagram" style="height: 40px; width: auto;">
+</a>
 
-    <a href="https://www.tiktok.com/@mizzmedia" target="_blank" rel="noopener" title="TikTok">
-      <img src="/assets/images/tiktok.png" alt="TikTok" style="height: 40px; width: auto;">
-    </a>
+<a href="https://www.tiktok.com/@mizzmedia" target="_blank" rel="noopener" title="TikTok">
+  <img src="/assets/images/tiktok.png" alt="TikTok" style="height: 40px; width: auto;">
+</a>
 
-    <a href="https://www.linkedin.com/in/nana-e-a-johnson-282522a6" target="_blank" rel="noopener" title="LinkedIn">
-      <img src="/assets/images/linkedin.png" alt="LinkedIn" style="height: 40px; width: auto;">
-    </a>
-    
+<a href="https://www.linkedin.com/in/nana-e-a-johnson-282522a6" target="_blank" rel="noopener" title="LinkedIn">
+  <img src="/assets/images/linkedin.png" alt="LinkedIn" style="height: 40px; width: auto;">
+</a>
+```
+
   </div>
 </section>
 
 <!-- Floating Chatbot Icon -->
+
 <div id="floating-chat" onclick="document.getElementById('demo').scrollIntoView({ behavior: 'smooth' });">
   💬 Chat
 </div>
