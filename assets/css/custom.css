@@ -5,23 +5,27 @@
   --color-primary: #801336; /* Burgundy */
   --color-bg: #f2d8a1;      /* Cream */
   --color-text: #000000;    /* Black */
+  --color-gold: #D4AF37;    /* Gold */
 }
 
-/* Global body styles */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-bg));
-  color: var(--color-text);
+/* Global background and body styles */
+html, body {
+  height: 100%;
   margin: 0;
-  padding: 0;  /* REMOVE padding here to avoid indent */
+  padding: 0;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-bg));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-text);
 }
 
 /* Container for page content */
 .container {
   max-width: 800px;
   margin: 30px auto 0 auto;
-  background: rgba(242, 216, 161, 0.85);
-  padding: 20px 30px; /* padding inside container only */
+  background: rgba(212, 175, 55, 0.85); /* translucent gold */
+  padding: 20px 30px;
   border-radius: 12px;
 }
 
@@ -33,45 +37,29 @@ h1, h2, h3 {
 /* Header fixes */
 /* Remove white background and shadow from header */
 .site-header {
-  position: relative;
-  z-index: 10; /* Ensure above other content */
   background-color: transparent !important;
   box-shadow: none !important;
   border-bottom: 2px solid var(--color-primary);
-  padding-bottom: 20px; /* Extra space to extend background */
-}
-
-/* Extend gradient background below header to cover white strip */
-.site-header::after {
-  content: "";
-  position: absolute;
-  bottom: -20px; /* Position below the header */
-  left: 0;
-  right: 0;
-  height: 20px; /* Height to fully hide white */
-  background: linear-gradient(135deg, var(--color-primary), var(--color-bg));
-  z-index: -1; /* Behind header */
 }
 
 /* Navigation */
-/* Nav container */
 .site-header nav {
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
-  width: 100%;         /* make nav full width */
-  background: none;
+  width: 100%;
+  background: transparent !important;
 }
 
 /* Nav links */
 .site-header nav a {
   margin: 0 15px;
   font-weight: bold;
-  color: var(--color-text) !important;
+  color: #000 !important;  /* Force black text */
   text-decoration: none;
   display: inline-block;
-  padding: 10px 0; /* controls nav height */
+  padding: 10px 0;
 }
 
 .site-header nav a:hover {
