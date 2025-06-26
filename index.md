@@ -42,11 +42,10 @@ title: Welcome to Mizz Media Pro
 
  /* === Header Styling === */
 .site-header {
-  background: linear-gradient(
-    90deg,
-    var(--color-primary) 0%,
-    #6a1b1b 50%,
-    var(--color-primary) 100%
+ background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary)
   ) !important;
   box-shadow: none !important;
   border-bottom: 2px solid var(--color-primary);
