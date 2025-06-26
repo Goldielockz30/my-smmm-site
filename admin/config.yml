@@ -7,18 +7,12 @@ media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "homepage"
+    label: "Homepage"
     files:
-      - label: "About"
-        name: "about"
-        file: "about.md"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
-      - label: "Services"
-        name: "services"
-        file: "services.md"
+      - label: "Main Page"
+        name: "index"
+        file: "index.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
