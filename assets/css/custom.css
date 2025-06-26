@@ -48,11 +48,15 @@ body {
   background-color: darken(var(--color-primary), 10%);
 }
 
-/* Hide skip links and main nav */
-.skip-link,
-nav.primary-navigation,
-.menu-toggle,
-nav.primary-navigation + ul, /* or your menu list selector */
-.site-title {
+/* Hide skip links */
+a[href^="#skip"], /* skip links often have href="#skip..." */
+.skip-link,       /* common skip link class */
+.skip-to-content, /* sometimes used */
+.skip {
+  display: none !important;
+}
+
+/* Hide common nav elements by text content (fallback) */
+nav, header, .menu, .navigation, .nav, .nav-menu, .site-navigation {
   display: none !important;
 }
