@@ -6,9 +6,8 @@ title: Welcome to Mizz Media Pro
 <style>
   :root {
     --color-primary: #801336; /* Burgundy */
+    --color-gold: #f7e7ce;    /* Soft cream */
     --color-text: #000000;    /* Black */
-    --color-gold: #D4AF37;    /* Gold */
-    --color-bg: #F5F1E9;      /* Cream */
   }
 
   /* Full-page smooth gradient background */
@@ -21,20 +20,20 @@ title: Welcome to Mizz Media Pro
     color: var(--color-text);
   }
 
-  /* Remove backgrounds on wrappers & sections so gradient shows through */
+  /* Make all wrapper and containers transparent to show gradient */
   body, .page, .page__inner-wrap, .layout--single, #main, .wrapper, .wrapper--site, #content, section {
     background: transparent !important;
     box-shadow: none !important;
   }
 
-  /* Comfortable padding on sections */
+  /* Section padding and max width */
   section {
     padding: 60px 20px;
     max-width: 960px;
     margin: auto;
   }
 
-  /* Container backgrounds removed, keep text color */
+  /* Containers background transparent, text black */
   .container, .page__content {
     background: transparent !important;
     padding: 0;
@@ -42,7 +41,7 @@ title: Welcome to Mizz Media Pro
     color: var(--color-text);
   }
 
-  /* === KEEP HEADER STYLE SAME === */
+  /* === Header Styling === */
   .site-header {
     background-color: var(--color-primary) !important; /* Burgundy */
     box-shadow: none !important;
@@ -67,7 +66,7 @@ title: Welcome to Mizz Media Pro
   .site-header nav a {
     margin: 0 18px;
     font-weight: bold;
-    color: var(--color-bg) !important; /* cream text on burgundy header */
+    color: var(--color-gold) !important; /* cream text on burgundy header */
     text-decoration: none;
     display: inline-block;
     padding: 12px 0;
@@ -75,7 +74,7 @@ title: Welcome to Mizz Media Pro
   }
 
   .site-header nav a:hover {
-    color: var(--color-gold) !important;
+    color: var(--color-gold);
     text-decoration: underline;
   }
 
@@ -84,13 +83,18 @@ title: Welcome to Mizz Media Pro
     margin-top: 60px;
   }
 
-  /* Headings color */
+  /* Headings color black */
   h1, h2, h3 {
-    color: var(--color-primary);
+    color: var(--color-text);
   }
 
-  /* Links */
+  /* Links color black */
   a {
+    color: var(--color-text);
+    text-decoration: underline;
+  }
+
+  a:hover {
     color: var(--color-primary);
   }
 
@@ -105,7 +109,7 @@ title: Welcome to Mizz Media Pro
   #chatlog {
     height: 300px;
     overflow-y: auto;
-    background: var(--color-bg);
+    background: var(--color-gold);
     border: 2px solid var(--color-primary);
     padding: 10px;
     border-radius: 10px;
@@ -128,7 +132,7 @@ title: Welcome to Mizz Media Pro
   }
 
   .bot {
-    background: var(--color-bg);
+    background: var(--color-gold);
     border: 1px solid var(--color-primary);
   }
 
@@ -161,7 +165,7 @@ title: Welcome to Mizz Media Pro
     bottom: 25px;
     right: 25px;
     background: var(--color-primary);
-    color: var(--color-bg);
+    color: var(--color-gold);
     padding: 15px 20px;
     border-radius: 50px;
     cursor: pointer;
@@ -175,8 +179,28 @@ title: Welcome to Mizz Media Pro
     margin: 40px auto 20px;
     padding: 10px 20px;
     text-align: center;
-    color: var(--color-primary);
+    color: var(--color-text);
     font-weight: bold;
+  }
+
+  /* Contact links with icons horizontal */
+  #contact-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  #contact-links a img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+  }
+
+  #contact-links a img:hover {
+    transform: scale(1.1);
   }
 </style>
 
@@ -298,15 +322,20 @@ title: Welcome to Mizz Media Pro
   <p>Email: <a href="mailto:connect@mizzmediapro.com">connect@mizzmediapro.com</a></p>
 
   <p>Follow Me:</p>
-  <a href="https://www.instagram.com/mizzmediapro" target="_blank">Instagram</a> |
-  <a href="https://www.tiktok.com/@mizzmedia" target="_blank">TikTok</a> |
-  <a href="https://www.linkedin.com/in/nana-e-a-johnson-282522a6" target="_blank">LinkedIn</a>
+  <div id="contact-links">
+    <a href="https://www.instagram.com/mizzmediapro" target="_blank" title="Instagram">
+      <img src="https://raw.githubusercontent.com/Goldielockz30/my-smmm-site/main/assets/images/instagram-icon.png" alt="Instagram" />
+    </a>
+    <a href="https://www.tiktok.com/@mizzmedia" target="_blank" title="TikTok">
+      <img src="https://raw.githubusercontent.com/Goldielockz30/my-smmm-site/main/assets/images/tiktok-icon.png" alt="TikTok" />
+    </a>
+    <a href="https://www.linkedin.com/in/nana-e-a-johnson-282522a6" target="_blank" title="LinkedIn">
+      <img src="https://raw.githubusercontent.com/Goldielockz30/my-smmm-site/main/assets/images/linkedin-icon.png" alt="LinkedIn" />
+    </a>
+  </div>
 </section>
 
+<!-- Floating Chatbot Icon -->
 <div id="floating-chat" onclick="document.getElementById('demo').scrollIntoView({ behavior: 'smooth' });">
   💬 Chat
 </div>
-
-<footer>
-  &copy; 2025 Mizz Media Pro | Nana Johnson
-</footer>
