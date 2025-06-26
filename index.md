@@ -15,6 +15,7 @@ body {
   color: var(--text-color);
   background: linear-gradient(to bottom, var(--main-color), var(--highlight-color));
   margin: 0;
+  padding-top: 40px; /* space for fixed nav */
 }
 
 section {
@@ -33,21 +34,25 @@ a {
 }
 
 nav {
-  background-color: var(--highlight-color);
+  background-color: rgba(242, 216, 167, 0.85); /* semi-transparent cream */
+  backdrop-filter: blur(6px);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  padding: 10px 0;
+  padding: 5px 0;          /* smaller vertical padding */
   border-bottom: 2px solid var(--main-color);
   text-align: center;
+  font-size: 14px;         /* smaller font */
 }
 
 nav a {
-  margin: 0 15px;
+  margin: 0 10px;          /* smaller horizontal spacing */
   font-weight: bold;
   text-transform: uppercase;
   color: var(--main-color);
+  line-height: 1.5;
+  padding: 5px 0;          /* smaller vertical padding */
 }
 
 footer {
@@ -71,6 +76,8 @@ footer {
   border: 2px solid var(--main-color);
   padding: 10px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .chat-bubble {
@@ -136,8 +143,6 @@ footer {
   <a href="#contact">Contact</a>
 </nav>
 
-<br><br><br>
-
 <section id="welcome">
   <h1>Welcome to Mizz Media Pro</h1>
   <p>I help hair & beauty brands glow up — selling out services and products with stunning content, smart Meta ads, and AI that handles the hustle for you.</p>
@@ -169,7 +174,7 @@ footer {
 
   <div id="chatbot-container">
     <h3>💬 Ask MizzMediaBot</h3>
-    <div id="chatlog" style="display: flex; flex-direction: column;"></div>
+    <div id="chatlog"></div>
     <div id="input-area">
       <input id="userInput" type="text" placeholder="Ask me anything..." onkeydown="if(event.key==='Enter') sendMessage()" />
       <button id="sendBtn" onclick="sendMessage()">Send</button>
@@ -211,7 +216,7 @@ footer {
 
         if (emailRegex.test(userText)) {
           reply = "Thanks! 💌 Your email is saved. Look out for a free offer!";
-          // You can connect this to MailerLite via API later
+          // Connect to MailerLite API here if desired
         } else {
           for (const { keywords, reply: r } of responses) {
             if (keywords.some(k => userText.includes(k))) {
