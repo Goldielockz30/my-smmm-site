@@ -135,16 +135,19 @@ footer {
 }
 </style>
 
-<nav>
-  <a href="#welcome">Welcome</a>
-  <a href="#offers">What I Offer</a>
-  <a href="#demo">Demo Chatbot</a>
-  <a href="#packages">Packages</a>
-  <a href="#contact">Contact</a>
-</nav>
+<header class="site-header">
+  <nav>
+    <a href="#welcome">Welcome</a>
+    <a href="#offers">What I Offer</a>
+    <a href="#demo">Demo Chatbot</a>
+    <a href="#packages">Packages</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
 <section id="welcome">
-  <h1>Welcome to Mizz Media Pro </h1>hello
+  <h1>Welcome to Mizz Media Pro </h1>
+hello
   <p>I help hair & beauty brands glow up — selling out services and products with stunning content, smart Meta ads, and AI that handles the hustle for you.</p>
 
   <h2>Hi, I’m Nana Johnson</h2>
