@@ -5,16 +5,16 @@ title: Welcome to Mizz Media Pro
 
 <style>
 :root {
-  --main-color: #801336;      /* Burgundy */
-  --highlight-color: #f2d8a7; /* Gold-Beige */
-  --text-color: #1c1c1c;      /* Dark text */
+  --main-color: #801336; /* Burgundy */
+  --highlight-color: #f2d8a7; /* Gold beige */
+  --text-color: #000000; /* Black text */
 }
 
 body {
   font-family: 'Helvetica Neue', sans-serif;
   color: var(--text-color);
-  /* Burgundy to gold-beige gradient */
-  background: linear-gradient(to bottom, #801336, #f2d8a7);
+  background: linear-gradient(to bottom, var(--main-color), var(--highlight-color));
+  margin: 0;
 }
 
 section {
@@ -24,7 +24,7 @@ section {
 }
 
 h1, h2, h3 {
-  color: var(--main-color);
+  color: var(--text-color);
 }
 
 a {
@@ -33,7 +33,7 @@ a {
 }
 
 nav {
-  background-color: #fff;
+  background-color: var(--highlight-color);
   position: fixed;
   top: 0;
   width: 100%;
@@ -88,7 +88,7 @@ footer {
 }
 
 .bot {
-  background: #fff;
+  background: var(--highlight-color);
   border: 1px solid var(--main-color);
 }
 
@@ -103,6 +103,7 @@ footer {
   padding: 10px;
   border: 1px solid var(--main-color);
   border-radius: 5px;
+  color: var(--text-color);
 }
 
 #sendBtn {
