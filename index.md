@@ -4,135 +4,180 @@ title: Welcome to Mizz Media Pro
 ---
 
 <style>
-:root {
-  --main-color: #801336; /* Burgundy */
-  --highlight-color: #f2d8a7; /* Gold beige */
-  --text-color: #000000; /* Black text */
-}
+  :root {
+    --color-primary: #801336; /* Burgundy */
+    --color-bg: #f2d8a1;      /* Cream */
+    --color-text: #000000;    /* Black */
+    --color-gold: #D4AF37;    /* Gold */
+  }
 
-body {
-  font-family: 'Helvetica Neue', sans-serif;
-  color: var(--text-color);
-  background: linear-gradient(to bottom, var(--main-color), var(--highlight-color));
-  margin: 0;
-  padding-top: 40px; /* space for fixed nav */
-}
+  /* Full-page smooth gradient background */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-bg));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-text);
+  }
 
-section {
-  padding: 60px 20px;
-  max-width: 960px;
-  margin: auto;
-}
+  /* Remove backgrounds on wrappers & sections so gradient shows through */
+  body, .page, .page__inner-wrap, .layout--single, #main, .wrapper, .wrapper--site, #content, section {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
 
-h1, h2, h3 {
-  color: var(--text-color);
-}
+  /* Comfortable padding on sections */
+  section {
+    padding: 60px 20px;
+    max-width: 960px;
+    margin: auto;
+  }
 
-a {
-  color: var(--main-color);
-  text-decoration: underline;
-}
+  /* Container backgrounds removed, keep text color */
+  .container, .page__content {
+    background: transparent !important;
+    padding: 0;
+    border-radius: 0;
+    color: var(--color-text);
+  }
 
-nav {
-  background-color: rgba(242, 216, 167, 0.85); /* semi-transparent cream */
-  backdrop-filter: blur(6px);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  padding: 5px 0;          /* smaller vertical padding */
-  border-bottom: 2px solid var(--main-color);
-  text-align: center;
-  font-size: 14px;         /* smaller font */
-}
+  /* === KEEP HEADER STYLE SAME === */
+  .site-header {
+    background-color: var(--color-primary) !important; /* Burgundy */
+    box-shadow: none !important;
+    border-bottom: 2px solid var(--color-primary);
+    margin: 0;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+  }
 
-nav a {
-  margin: 0 10px;          /* smaller horizontal spacing */
-  font-weight: bold;
-  text-transform: uppercase;
-  color: var(--main-color);
-  line-height: 1.5;
-  padding: 5px 0;          /* smaller vertical padding */
-}
+  .site-header nav {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    max-width: 960px;
+  }
 
-footer {
-  text-align: center;
-  padding: 40px 20px;
-  background: var(--highlight-color);
-}
+  .site-header nav a {
+    margin: 0 18px;
+    font-weight: bold;
+    color: var(--color-bg) !important; /* cream text on burgundy header */
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
 
-/* Chatbot styles */
-#chatbot-container {
-  max-width: 500px;
-  margin: 40px auto;
-  font-family: sans-serif;
-  color: var(--text-color);
-}
+  .site-header nav a:hover {
+    color: var(--color-gold) !important;
+    text-decoration: underline;
+  }
 
-#chatlog {
-  height: 300px;
-  overflow-y: auto;
-  background: var(--highlight-color);
-  border: 2px solid var(--main-color);
-  padding: 10px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-}
+  /* To avoid content behind fixed nav */
+  body > *:not(.site-header) {
+    margin-top: 60px;
+  }
 
-.chat-bubble {
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 8px;
-  max-width: 85%;
-}
+  /* Headings color */
+  h1, h2, h3 {
+    color: var(--color-primary);
+  }
 
-.user {
-  background: var(--main-color);
-  color: white;
-  text-align: right;
-  align-self: flex-end;
-}
+  /* Links */
+  a {
+    color: var(--color-primary);
+  }
 
-.bot {
-  background: var(--highlight-color);
-  border: 1px solid var(--main-color);
-}
+  /* Chatbot styles */
+  #chatbot-container {
+    max-width: 500px;
+    margin: 40px auto 0;
+    font-family: sans-serif;
+    color: var(--color-text);
+  }
 
-#input-area {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
-}
+  #chatlog {
+    height: 300px;
+    overflow-y: auto;
+    background: var(--color-bg);
+    border: 2px solid var(--color-primary);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
 
-#userInput {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid var(--main-color);
-  border-radius: 5px;
-  color: var(--text-color);
-}
+  .chat-bubble {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 85%;
+  }
 
-#sendBtn {
-  background: var(--main-color);
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-}
+  .user {
+    background: var(--color-primary);
+    color: white;
+    text-align: right;
+    align-self: flex-end;
+  }
 
-/* Floating Chatbot Icon */
-#floating-chat {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background: var(--main-color);
-  color: white;
-  padding: 15px 20px;
-  border-radius: 50px;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
+  .bot {
+    background: var(--color-bg);
+    border: 1px solid var(--color-primary);
+  }
+
+  #input-area {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  #userInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    color: var(--color-text);
+  }
+
+  #sendBtn {
+    background: var(--color-primary);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Floating Chatbot Icon */
+  #floating-chat {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: var(--color-primary);
+    color: var(--color-bg);
+    padding: 15px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-weight: bold;
+    user-select: none;
+  }
+
+  footer {
+    max-width: 960px;
+    margin: 40px auto 20px;
+    padding: 10px 20px;
+    text-align: center;
+    color: var(--color-primary);
+    font-weight: bold;
+  }
 </style>
 
 <header class="site-header">
@@ -146,8 +191,7 @@ footer {
 </header>
 
 <section id="welcome">
-  <h1>Welcome to Mizz Media Pro </h1>
-hello
+  <h1>Welcome to Mizz Media Pro</h1>
   <p>I help hair & beauty brands glow up — selling out services and products with stunning content, smart Meta ads, and AI that handles the hustle for you.</p>
 
   <h2>Hi, I’m Nana Johnson</h2>
@@ -218,55 +262,27 @@ hello
         let reply = "Try asking about AI, pricing, or ads!";
 
         if (emailRegex.test(userText)) {
-          reply = "Thanks! 💌 Your email is saved. Look out for a free offer!";
-          // Connect to MailerLite API here if desired
+          reply = "Thanks for sharing your email! I'll send you exclusive offers soon.";
         } else {
-          for (const { keywords, reply: r } of responses) {
-            if (keywords.some(k => userText.includes(k))) {
-              reply = r;
+          for (const item of responses) {
+            if (item.keywords.some(k => userText.includes(k))) {
+              reply = item.reply;
               break;
             }
           }
         }
-        appendMessage(reply, 'bot');
-      }, 500);
+        appendMessage(reply);
+      }, 800);
     }
   </script>
 </section>
 
 <section id="packages">
   <h2>Packages</h2>
-
-  <h3>🟦 Essentials</h3>
   <ul>
-    <li>Social media management</li>
-    <li>Instagram, Facebook, TikTok</li>
-    <li>Branded visuals + captions</li>
-    <li>Optional AI chatbot</li>
-  </ul>
-
-  <h3>🟪 Growth</h3>
-  <ul>
-    <li>Everything in Essentials</li>
-    <li>AI chatbot + lead capture</li>
-    <li>Booking funnel audit</li>
-    <li>Content upgrade: Reels/shorts</li>
-  </ul>
-
-  <h3>🟥 Elite</h3>
-  <ul>
-    <li>Everything in Growth</li>
-    <li>Advanced Meta Ads + retargeting</li>
-    <li>Custom funnel & performance dashboard</li>
-    <li>Concierge support</li>
-  </ul>
-
-  <h3>⚙️ Bespoke – Custom Quote</h3>
-  <ul>
-    <li>Multilingual chatbot</li>
-    <li>Email marketing automation</li>
-    <li>Google & YouTube Ads</li>
-    <li>Dedicated account manager</li>
+    <li><strong>Starter</strong> – £1,000/month: Social media content + basic Meta ads</li>
+    <li><strong>Pro</strong> – £2,500/month: Starter + advanced AI chatbot + live dashboards</li>
+    <li><strong>Enterprise</strong> – Custom pricing: Full service + sales funnel + 1-on-1 consulting</li>
   </ul>
 </section>
 
