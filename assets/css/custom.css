@@ -1,8 +1,8 @@
 /* === Root color variables === */
 :root {
-  --color-primary: #801336; /* Burgundy */
-  --color-gold: #D4AF37;    /* Gold */
-  --color-text: #000000;    /* Black */
+  --color-primary: #7b2c35; /* Burgundy */
+  --color-secondary: #f7e7ce; /* Cream */
+  --color-text: #1c1c1c; /* Dark text */
 }
 
 /* === Smooth full-page background gradient === */
@@ -10,7 +10,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-gold)) !important;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)) !important;
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
   background-size: cover !important;
@@ -65,31 +65,35 @@ html, body {
 }
 
 .site-header nav a:hover {
-  color: var(--color-gold) !important;
+  color: var(--color-primary) !important;
   text-decoration: underline;
 }
 
-/* === Hide toggle menu, quick start and overlays === */
-.toggle-menu,
+/* === Headings color === */
+h1, h2, h3 {
+  color: var(--color-primary);
+}
+
+/* === FORCE HIDE QUICK START BANNER AND RELATED ELEMENTS === */
 .quick-start,
 .quick-start-overlay,
 .quick-start-container,
-.quick-start-banner,
-.site-header .site-title,
-.site-header .site-description {
+.toggle-menu {
+  all: unset !important;
   display: none !important;
   visibility: hidden !important;
   height: 0 !important;
+  width: 0 !important;
+  opacity: 0 !important;
   overflow: hidden !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  position: absolute !important;
+  position: fixed !important;
   top: 0 !important;
   left: 0 !important;
-  z-index: -9999 !important;
+  pointer-events: none !important;
+  z-index: -99999 !important;
 }
 
-/* === Hide skip links === */
+/* === Hide skip links for accessibility anchors === */
 a.skip-link,
 a[href^="#primary-navigation"],
 a[href^="#content"],
@@ -97,7 +101,5 @@ a[href^="#footer"] {
   display: none !important;
 }
 
-/* === Headings color === */
-h1, h2, h3 {
-  color: var(--color-primary);
-}
+
+
