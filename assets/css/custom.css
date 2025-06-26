@@ -1,6 +1,4 @@
 /* Override Minimal Mistakes default colors */
-
-/* colors */
 :root {
   --color-primary: #801336; /* Burgundy */
   --color-bg: #f2d8a1;      /* Cream */
@@ -16,14 +14,26 @@ html, body {
   background: linear-gradient(135deg, var(--color-primary), var(--color-bg));
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--color-text);
 }
 
-/* Container for page content */
-.container {
-  max-width: 800px;
-  margin: 30px auto 0 auto;
+/* Make all site sections transparent to let background show */
+.page,
+.page__inner-wrap,
+.layout--single,
+#main,
+.wrapper,
+.wrapper--site,
+#content {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Optional: add soft backdrop to the main content area */
+.container,
+.page__content {
   background: rgba(242, 216, 161, 0.85); /* semi-transparent cream */
   padding: 20px 30px;
   border-radius: 12px;
@@ -36,7 +46,6 @@ h1, h2, h3 {
 }
 
 /* Header fixes */
-/* Make header transparent to show gradient */
 .site-header {
   background-color: transparent !important;
   box-shadow: none !important;
@@ -44,31 +53,30 @@ h1, h2, h3 {
   margin: 0;
   padding: 0;
   position: relative;
-  z-index: 1000; /* ensure nav on top */
+  z-index: 1000;
 }
 
-/* Navigation */
 .site-header nav {
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
   width: 100%;
-  background: transparent !important; /* transparent nav background */
+  background: transparent !important;
 }
 
 /* Nav links */
 .site-header nav a {
   margin: 0 15px;
   font-weight: bold;
-  color: var(--color-text) !important;  /* black text */
+  color: var(--color-text) !important;
   text-decoration: none;
   display: inline-block;
   padding: 15px 0;
 }
 
 .site-header nav a:hover {
-  color: var(--color-gold) !important; /* gold highlight on hover */
+  color: var(--color-gold) !important;
   text-decoration: underline;
 }
 
