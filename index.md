@@ -323,7 +323,7 @@ Live dashboards with real-time insights on growth, engagement, and conversions.
 <section id="packages">
   <h2>Packages</h2>
 
-🟦 **Essentials** – Social media management
+<h3>🟦 **Essentials** – Social media management</h3>
 <br>
 Platforms: Instagram, Facebook, TikTok
 <br>
@@ -335,7 +335,7 @@ Optional add ons: AI Chatbot
 
 - - -
 
-🟪 **Growth** – Everything in Essentials
+<h3>🟪 **Growth** – Everything in Essentials</h3>
 <br>
 AI chatbot (FAQ automation, lead capture)
 <br>
@@ -347,7 +347,7 @@ Optional add ons: Meta Ads Management
 
 - - -
 
-🟥 **Elite** – Everything in Growth
+<h3>🟥 **Elite** – Everything in Growth</h3>
 <br>
 Funnel optimization + landing page build
 <br>
@@ -369,7 +369,7 @@ Ad spend is separate from your monthly package and goes directly to Meta (Facebo
 
 - - -
 
-⚙️ **Bespoke – Custom Quote**
+<h3>⚙️ **Bespoke – Custom Quote**</h3> 
 <br>
 Multilingual chatbot support
 <br>
