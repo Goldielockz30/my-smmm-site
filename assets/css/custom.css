@@ -38,19 +38,19 @@ h1, h2, h3 {
   border-bottom: 2px solid var(--color-primary);
 }
 
-/* Navigation */
-/* Nav container */
-.site-header nav {
+/* Also remove background & shadow from primary navigation */
+nav#primary-navigation {
+  background: transparent !important;
+  box-shadow: none !important;
   margin: 0;
   padding: 0;
-  list-style: none;
+  width: 100%;
   text-align: center;
-  width: 100%;         /* make nav full width */
-  background: none;
 }
 
 /* Nav links */
-.site-header nav a {
+.site-header nav a,
+nav#primary-navigation a {
   margin: 0 15px;
   font-weight: bold;
   color: var(--color-text) !important;
@@ -59,21 +59,4 @@ h1, h2, h3 {
   padding: 10px 0; /* controls nav height */
 }
 
-.site-header nav a:hover {
-  color: var(--color-primary) !important;
-  text-decoration: underline;
-}
-
-/* Hide toggle menu and quick start button if any */
-.toggle-menu,
-.quick-start {
-  display: none !important;
-}
-
-/* Hide skip links */
-a.skip-link,
-a[href^="#primary-navigation"],
-a[href^="#content"],
-a[href^="#footer"] {
-  display: none !important;
-}
+/* Hover ef*
