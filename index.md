@@ -253,7 +253,7 @@ Level up your sales flow to turn browsers into buyers and boost your revenue.
 <br>
 Live dashboards with real-time insights on growth, engagement, and conversions.
 
-<br>
+
 </section>
 
 <section id="demo">
@@ -324,39 +324,39 @@ Live dashboards with real-time insights on growth, engagement, and conversions.
   <h2>Packages</h2>
 
 🟦 **Essentials** – Social media management
-
+<br>
 Platforms: Instagram, Facebook, TikTok
-
+<br>
 Branded visuals + captions
-
+<br>
 Content calendar + scheduling
-
+<br>
 Optional add ons: AI Chatbot
 
 - - -
 
 🟪 **Growth** – Everything in Essentials
-
+<br>
 AI chatbot (FAQ automation, lead capture)
-
+<br>
 Booking funnel audit (guest journey review)
-
+<br>
 Content upgrade: Reels or short-form videos
-
+<br>
 Optional add ons: Meta Ads Management
 
 - - -
 
 🟥 **Elite** – Everything in Growth
-
+<br>
 Funnel optimization + landing page build
-
+<br>
 Advanced Meta Ads: retargeting, conversion tracking
-
+<br>
 Performance dashboard access
-
+<br>
 Custom funnel strategy
-
+<br>
 Concierge support (email + priority chat)
 
 🎯 Ideal for brands who want to scale fast
@@ -364,19 +364,19 @@ Concierge support (email + priority chat)
 - - -
 
 Ad spend is separate from your monthly package and goes directly to Meta (Facebook/Instagram).
-
+<br>
 🧠 I help you plan ad budgets that match your revenue goals and ROI targets.
 
 - - -
 
 ⚙️ **Bespoke – Custom Quote**
-
+<br>
 Multilingual chatbot support
-
+<br>
 YouTube or Google Ads
-
+<br>
 Email marketing automation
-
+<br>
 Dedicated account manager
 
 - - -
