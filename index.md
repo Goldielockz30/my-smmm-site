@@ -17,7 +17,6 @@ body {
   margin: 0;
 }
 
-
 section {
   padding: 60px 20px;
   max-width: 960px;
@@ -270,15 +269,12 @@ footer {
   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
   <br><br>
-
-  <h3>Contact</h3>
-  <p>Email: <a href="mailto:connect@mizzmediapro.com">connect@mizzmediapro.com</a></p>
-
-  <p>Follow Me:</p>
-  <a href="https://www.instagram.com/mizzmediapro" target="_blank">Instagram</a> |
-  <a href="https://www.tiktok.com/@mizzmedia" target="_blank">TikTok</a> |
-  <a href="https://www.linkedin.com/in/nana-e-a-johnson-282522a6" target="_blank">LinkedIn</a>
+  <p>Or email me directly: <a href="mailto:nana@mizzmediapro.com">nana@mizzmediapro.com</a></p>
 </section>
+
+<footer>
+  <p>© 2025 Mizz Media Pro | Nana Johnson</p>
+</footer>
 
 <!-- Floating Chatbot Icon -->
 <div id="floating-chat" onclick="document.getElementById('demo').scrollIntoView({ behavior: 'smooth' });">
