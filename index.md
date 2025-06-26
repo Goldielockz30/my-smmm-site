@@ -6,7 +6,7 @@ title: Welcome to Mizz Media Pro
 <style>
   :root {
     --color-primary: #801336; /* Burgundy */
-    --color-bg: #f2d8a1;      /* Cream */
+    
     --color-text: #000000;    /* Black */
     --color-gold: #D4AF37;    /* Gold */
   }
