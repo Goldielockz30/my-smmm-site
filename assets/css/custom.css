@@ -47,3 +47,12 @@ body {
 .btn:hover {
   background-color: darken(var(--color-primary), 10%);
 }
+
+/* Hide skip links and main nav */
+.skip-link,
+nav.primary-navigation,
+.menu-toggle,
+nav.primary-navigation + ul, /* or your menu list selector */
+.site-title {
+  display: none !important;
+}
