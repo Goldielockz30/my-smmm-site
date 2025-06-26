@@ -6,9 +6,9 @@ title: Welcome to Mizz Media Pro
 <style>
   :root {
     --color-primary: #801336; /* Burgundy */
-    
     --color-text: #000000;    /* Black */
     --color-gold: #D4AF37;    /* Gold */
+    --color-bg: #F5F1E9;      /* Cream */
   }
 
   /* Full-page smooth gradient background */
@@ -16,7 +16,7 @@ title: Welcome to Mizz Media Pro
     height: 100%;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-bg));
+    background: linear-gradient(135deg, var(--color-primary), var(--color-gold));
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--color-text);
   }
@@ -293,14 +293,20 @@ title: Welcome to Mizz Media Pro
   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
   <br><br>
-  <p>Or email me directly: <a href="mailto:nana@mizzmediapro.com">nana@mizzmediapro.com</a></p>
+
+  <h3>Contact</h3>
+  <p>Email: <a href="mailto:connect@mizzmediapro.com">connect@mizzmediapro.com</a></p>
+
+  <p>Follow Me:</p>
+  <a href="https://www.instagram.com/mizzmediapro" target="_blank">Instagram</a> |
+  <a href="https://www.tiktok.com/@mizzmedia" target="_blank">TikTok</a> |
+  <a href="https://www.linkedin.com/in/nana-e-a-johnson-282522a6" target="_blank">LinkedIn</a>
 </section>
 
-<footer>
-  <p>© 2025 Mizz Media Pro | Nana Johnson</p>
-</footer>
-
-<!-- Floating Chatbot Icon -->
 <div id="floating-chat" onclick="document.getElementById('demo').scrollIntoView({ behavior: 'smooth' });">
   💬 Chat
 </div>
+
+<footer>
+  &copy; 2025 Mizz Media Pro | Nana Johnson
+</footer>
