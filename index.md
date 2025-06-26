@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Welcome to Mizz Media Pro
+hide_title: true
 ---
 <style>
   :root {
