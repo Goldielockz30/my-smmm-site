@@ -5,6 +5,7 @@
   --color-text: #000000;
 }
 
+/* Global body styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, var(--color-primary), var(--color-bg));
@@ -13,6 +14,7 @@ body {
   padding: 0;
 }
 
+/* Container for page content */
 .container {
   max-width: 800px;
   margin: 30px auto 0 auto;
@@ -21,6 +23,7 @@ body {
   border-radius: 12px;
 }
 
+/* Headings */
 h1, h2, h3 {
   color: var(--color-primary);
 }
@@ -54,20 +57,20 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* HIDE unwanted nav/toggle components */
-.site-nav-toggle,
+/* Completely hide the Minimal Mistakes mobile toggle nav */
 .masthead__menu-toggle,
-.toggle-menu,
+.site-nav-toggle,
 .js-toggle,
-.quick-start,
 .masthead__menu,
 .masthead__menu--slide,
-nav > *:not(a),
-.search__toggle,
-.page__footer-follow,
+.masthead__menu-item,
+nav[role="navigation"],
+.quick-start,
+.skip-link,
 a[href^="#primary-navigation"],
 a[href^="#content"],
 a[href^="#footer"],
-.skip-link {
+.search__toggle,
+.page__footer-follow {
   display: none !important;
 }
