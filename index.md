@@ -221,11 +221,7 @@ title: Welcome to Mizz Media Pro
   <p>Your go-to expert for helping Hair & Beauty brands sell out services and products while building a powerful online presence.</p>
 
 
-</section>
-
-<section id="offers">
-  <h2>What I Offer</h2>
-  
+# W﻿hat I Offer 
   
 
 ### Social Media Management
@@ -247,8 +243,7 @@ Level up your sales flow to turn browsers into buyers and boost your revenue.
 ### Performance Analytics Dashboards
 
 Live dashboards with real-time insights on growth, engagement, and conversions.
-  
-</section>
+
 
 <section id="demo">
   <h2>Demo Chatbot</h2>
