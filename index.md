@@ -14,53 +14,46 @@ layout: single
   </nav>
 </header>
 
-<section id="welcome">
-  <h1>Welcome to Mizz Media Pro</h1>
-  <p>I help hair & beauty brands glow up — selling out services and products with stunning content, smart Meta ads, and AI that handles the hustle for you.</p>
 
-  <h2>Hi, I’m Nana Johnson</h2>
-  <p>Your go-to expert for helping Hair & Beauty brands sell out services and products while building a powerful online presence.</p>
-</section>
+# Welcome to Mizz Media Pro
+## Welcome {#welcome}
 
-<section id="offers">
-  <h2>What I Offer</h2>
+I help hair & beauty brands glow up — selling out services and products with stunning content, smart Meta ads, and AI that handles the hustle for you.
 
-<h3>Social Media Management</h3> 
+### Hi, I’m Nana Johnson
 
-<br>
+Your go-to expert for helping Hair & Beauty brands sell out services and products while building a powerful online presence.
+
+---
+
+## What I Offer {#offers}
+
+### Social Media Management
+
 Specialised content and marketing strategies, scheduling, copywriting, and community engagement across multiple platforms.
 
- <br>
-<h3>Meta Ads Management</h3>
+### Meta Ads Management
 
-<br>
 Get laser-targeted Facebook and Instagram ads to maximise ROI.
 
- <br>
-<h3>AI Chat Bot Integration</h3>
+### AI Chat Bot Integration
 
-<br>
 Automate guest communication 24/7 with smart chatbots that answer FAQs and boost sales.
 
-<br>
-<h3>Sales Funnel Optimisation</h3>
+### Sales Funnel Optimisation
 
-<br>
 Level up your sales flow to turn browsers into buyers and boost your revenue.
 
-<br>
-<h3>Performance Analytics Dashboards</h3>
+### Performance Analytics Dashboards
 
-<br>
 Live dashboards with real-time insights on growth, engagement, and conversions.
 
+---
 
-</section>
+## Demo Chatbot {#demo}
 
-<section id="demo">
-  <h2>Demo Chatbot</h2>
-  <p>Type "hi", "ai", "ads", "price", or "sales" to try it out.</p> 
-  <p><strong>Bonus</strong> Enter your <strong>email</strong> in the chat to get special offers!</p>
+Type "hi", "ai", "ads", "price", or "sales" to try it out.  
+**Bonus** Enter your **email** in the chat to get special offers!
 
   <div id="chatbot-container">
     <h3>💬 Ask MizzMediaBot</h3>
@@ -119,75 +112,40 @@ Live dashboards with real-time insights on growth, engagement, and conversions.
     }
   </script>
 
-</section>
-
-<section id="packages">
-  <h2>Packages</h2>
-
-<h3>🟦 **Essentials** – Social media management</h3>
-<br>
+## Packages {#packages}
+🟦 Essentials – Social media management
 Platforms: Instagram, Facebook, TikTok
-<br>
 Branded visuals + captions
-<br>
 Content calendar + scheduling
-<br>
 Optional add ons: AI Chatbot
 
-
-
-<h3>🟪 **Growth** – Everything in Essentials</h3>
-<br>
+🟪 Growth – Everything in Essentials
 AI chatbot (FAQ automation, lead capture)
-<br>
 Booking funnel audit (guest journey review)
-<br>
 Content upgrade: Reels or short-form videos
-<br>
 Optional add ons: Meta Ads Management
 
-
-
-<h3>🟥 **Elite** – Everything in Growth</h3>
-<br>
+🟥 Elite – Everything in Growth
 Funnel optimization + landing page build
-<br>
 Advanced Meta Ads: retargeting, conversion tracking
-<br>
 Performance dashboard access
-<br>
 Custom funnel strategy
-<br>
 Concierge support (email + priority chat)
-<br>
 🎯 Ideal for brands who want to scale fast
 
-
-<br>
 Ad spend is separate from your monthly package and goes directly to Meta (Facebook/Instagram).
-<br>
 🧠 I help you plan ad budgets that match your revenue goals and ROI targets.
 
-
-
-<h3>⚙️ **Bespoke – Custom Quote**</h3> 
-<br>
+⚙️ Bespoke – Custom Quote
 Multilingual chatbot support
-<br>
 YouTube or Google Ads
-<br>
 Email marketing automation
-<br>
 Dedicated account manager
 
+Let’s tailor a plan to meet your goals.
 
-
-<h3>Let’s tailor a plan to meet your goals.</h3>
-
-</section>
-
-<section id="contact">
-  <h2>Book a Free Call</h2>
+## Book a Free Call {#contact}
+Schedule a call with Calendly
 
   <div class="calendly-inline-widget" data-url="https://calendly.com/mizzmediapro" style="min-width:320px;height:700px;"></div>
   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
@@ -215,7 +173,7 @@ Dedicated account manager
 </a>
 
   </div>
-</section>
+
 
 <!-- Floating Chatbot Icon -->
 

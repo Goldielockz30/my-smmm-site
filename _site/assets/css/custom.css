@@ -1,10 +1,120 @@
-/* Hide toggle hamburger menu and quick start button */
-.toggle-menu,
-.quick-start {
+/* === Root color variables === */
+:root {
+  --color-primary: #801336; /* Burgundy */
+  --color-secondary: #f7e7ce; /* Cream */
+  --color-gold: #f7e7ce;    /* Soft cream */
+  --color-text: #1c1c1c; /* Dark text */
+}
+
+/* === Smooth scroll === */
+html {
+  scroll-behavior: smooth;
+}
+
+/* === Smooth full-page background gradient === */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)) !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+/* === Remove backgrounds from wrappers so gradient shows === */
+.page,
+.page__inner-wrap,
+.layout--single,
+#main,
+.wrapper,
+.wrapper--site,
+#content,
+.container,
+.page__content,
+section {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Section padding and max width */
+section {
+  padding: 60px 20px;
+  max-width: 960px;
+  margin: auto;
+}
+
+/* === Header styling === */
+.site-header {
+  background:  transparent !important;
+  box-shadow: none !important;
+  margin: 0;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+.site-header nav {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  max-width: 960px;
+}
+
+.site-header nav a {
+  margin: 0 18px;
+  font-weight: bold;
+  color: var(--color-gold) !important;
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 0;
+  font-size: 1rem;
+}
+
+.site-header nav a:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+/* To avoid content behind fixed nav */
+body > *:not(.site-header) {
+  margin-top: 60px;
+}
+
+/* Mobile-friendly nav */
+@media (max-width: 600px) {
+  .site-header nav a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 0;
+    font-size: 1.1rem;
+  }
+}
+
+/* === Headings color === */
+h1, h2, h3 {
+  color: var(--color-text);
+}
+
+/* === Anchor jump offset for fixed header === */
+h1[id], h2[id], h3[id] {
+  scroll-margin-top: 70px;
+}
+
+/* === Navigation override === */
+#site-nav {
   display: none !important;
 }
 
-/* Hide skip links */
+/* === Accessibility and skip links === */
 a.skip-link,
 a[href^="#primary-navigation"],
 a[href^="#content"],
@@ -12,59 +122,162 @@ a[href^="#footer"] {
   display: none !important;
 }
 
-/* Remove background and shadow from header and wrapper */
-.site-header,
-.site-header-container,
-.site-wrapper,
-.header-wrapper {
-  background-color: transparent !important;
-  box-shadow: none !important;
-  border: none !important;
+/* === Footer removal === */
+.site-footer,
+footer {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* Remove background and border from nav */
-nav#primary-navigation,
-nav.site-nav {
-  background-color: transparent !important;
-  box-shadow: none !important;
-  border: none !important;
-}
-
-/* Force body background */
-body {
-  background: linear-gradient(135deg, #801336, #f2d8a1) !important;
-}
-
-/* Center the nav menu */
-nav#primary-navigation ul.menu,
-nav.site-nav ul.menu {
-  display: flex !important;
-  justify-content: center !important;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* Nav items */
-nav#primary-navigation ul.menu li,
-nav.site-nav ul.menu li {
-  margin: 0 15px;
-  display: inline-block;
-}
-
-/* Nav links style */
-nav#primary-navigation ul.menu li a,
-nav.site-nav ul.menu li a {
-  font-weight: bold;
-  color: #000000 !important;
-  text-decoration: none;
-  padding: 10px 0;
-  display: inline-block;
-}
-
-/* Hover */
-nav#primary-navigation ul.menu li a:hover,
-nav.site-nav ul.menu li a:hover {
+/* === Link colors === */
+a {
+  color: var(--color-text);
   text-decoration: underline;
-  color: #801336 !important;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+/* === Chatbot styles === */
+#chatbot-container {
+  max-width: 500px;
+  margin: 40px auto 0;
+  font-family: sans-serif;
+  color: var(--color-text);
+}
+
+#chatlog {
+  height: 300px;
+  overflow-y: auto;
+  background: var(--color-gold);
+  border: 2px solid var(--color-primary);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-bubble {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 85%;
+}
+
+.user {
+  background: var(--color-primary);
+  color: white;
+  text-align: right;
+  align-self: flex-end;
+}
+
+.bot {
+  background: var(--color-gold);
+  border: 1px solid var(--color-primary);
+}
+
+#input-area {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#userInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  color: var(--color-text);
+}
+
+#sendBtn {
+  background: var(--color-primary);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* === Floating Chatbot Icon === */
+#floating-chat {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: var(--color-primary);
+  color: var(--color-gold);
+  padding: 15px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  font-weight: bold;
+  user-select: none;
+}
+
+/* === Contact section === */
+footer {
+  max-width: 960px;
+  margin: 40px auto 20px;
+  padding: 10px 20px;
+  text-align: center;
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+#contact-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#contact-links a img {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+}
+
+#contact-links a img:hover {
+  transform: scale(1.1);
+}
+
+h1[id], h2[id], h3[id] {
+  scroll-margin-top: 70px; /* adjust to your header height */
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+.header-anchor,
+.permalink {
+  display: none !important;
+}
+
+.permalink {
+  display: none !important;
+  font-size: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }

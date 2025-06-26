@@ -3,20 +3,16 @@ backend:
   repo: Goldielockz30/my-smmm-site
   branch: main
 
-media_folder: "assets/images"
-public_folder: "/assets/images"
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "homepage"
+    label: "Homepage"
     files:
-      - file: "index.md"
-        label: "Home Page"
-        name: "home"
+      - label: "Main Page"
+        name: "index"
+        file: "index.md"
         fields:
-          - label: "Title"
-            name: "title"
-            widget: "string"
-          - label: "Body"
-            name: "body"
-            widget: "markdown"
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }

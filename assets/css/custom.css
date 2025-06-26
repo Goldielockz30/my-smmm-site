@@ -50,9 +50,8 @@ section {
 
 /* === Header styling === */
 .site-header {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)) !important;
+  background:  transparent !important;
   box-shadow: none !important;
-  border-bottom: 2px solid var(--color-primary);
   margin: 0;
   padding: 10px 0;
   position: fixed;
@@ -103,6 +102,11 @@ body > *:not(.site-header) {
 /* === Headings color === */
 h1, h2, h3 {
   color: var(--color-text);
+}
+
+/* === Anchor jump offset for fixed header === */
+h1[id], h2[id], h3[id] {
+  scroll-margin-top: 70px;
 }
 
 /* === Navigation override === */
@@ -242,4 +246,38 @@ footer {
 
 #contact-links a img:hover {
   transform: scale(1.1);
+}
+
+h1[id], h2[id], h3[id] {
+  scroll-margin-top: 70px; /* adjust to your header height */
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+.header-anchor,
+.permalink {
+  display: none !important;
+}
+
+.permalink {
+  display: none !important;
+  font-size: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
