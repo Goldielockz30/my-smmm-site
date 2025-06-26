@@ -84,10 +84,13 @@ title: Welcome to Mizz Media Pro
 
   /* Mobile-friendly nav */
 @media (max-width: 600px) {
-  .site-header nav {
-    max-width: 100%;
-    padding: 0;
+  .site-header nav a {
+    display: inline-block;  /* keep horizontal */
+    margin: 0 10px;
+    padding: 10px 0;
+    font-size: 1.1rem;
   }
+}
 
   .site-header nav a {
     display: block;
