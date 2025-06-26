@@ -219,14 +219,14 @@ title: Welcome to Mizz Media Pro
 
   <h2>Hi, I’m Nana Johnson</h2>
   <p>Your go-to expert for helping Hair & Beauty brands sell out services and products while building a powerful online presence.</p>
+</section>
 
-
-# W﻿hat I Offer 
-  
+<section id="offers">
+  <h2>What I Offer</h2>
 
 ### Social Media Management
 
-Specialised content and marketing strategies, schedualing, copywriting, and community engagement accross multiple platforms.
+Specialised content and marketing strategies, scheduling, copywriting, and community engagement across multiple platforms.
 
 ### Meta Ads Management
 
@@ -244,12 +244,12 @@ Level up your sales flow to turn browsers into buyers and boost your revenue.
 
 Live dashboards with real-time insights on growth, engagement, and conversions.
 
+</section>
 
 <section id="demo">
   <h2>Demo Chatbot</h2>
-  <p>Type "hi", "ai", "ads", "price", or "sales" to try it out. 
-
-**Bonus*** Enter your <strong>email</strong> in the chat to get special offers!</p>
+  <p>Type "hi", "ai", "ads", "price", or "sales" to try it out.</p> 
+  <p><strong>Bonus</strong> Enter your <strong>email</strong> in the chat to get special offers!</p>
 
   <div id="chatbot-container">
     <h3>💬 Ask MizzMediaBot</h3>
@@ -303,22 +303,16 @@ Live dashboards with real-time insights on growth, engagement, and conversions.
             }
           }
         }
-        appendMessage(reply);
+        appendMessage(reply, 'bot');
       }, 800);
     }
   </script>
-
 </section>
 
 <section id="packages">
   <h2>Packages</h2>
-  <ul>
-  Packages
- ﻿
 
-<br>
-🟦 Essentials – <!-- £1,000/month -->
-Social media management 
+🟦 **Essentials** – Social media management
 
 Platforms: Instagram, Facebook, TikTok
 
@@ -328,29 +322,21 @@ Content calendar + scheduling
 
 Optional add ons: AI Chatbot
 
-<!--💡 Add Meta Ads Management: +£500/month
-💡 Add AI Chatbot: +£300 setup, £100/month -->
-<br>
+---
 
-<br>
-🟪 Growth – <!-- £1,800/month -->
-Everything in Essentials 
+🟪 **Growth** – Everything in Essentials
 
 AI chatbot (FAQ automation, lead capture)
 
 Booking funnel audit (guest journey review)
 
-Content upgrade: Reels or short-form videos 
+Content upgrade: Reels or short-form videos
 
 Optional add ons: Meta Ads Management
 
-<!--💡 Add Meta Ads Management: +£500/month
-💡 Monthly analytics report -->
-<br>
+---
 
-<br>
-🟥 Elite – <!-- £2,500/month -->
-Everything in Growth
+🟥 **Elite** – Everything in Growth
 
 Funnel optimization + landing page build
 
@@ -363,15 +349,14 @@ Custom funnel strategy
 Concierge support (email + priority chat)
 
 🎯 Ideal for brands who want to scale fast
-<br>
 
-<br>
+---
+
 Ad spend is separate from your monthly package and goes directly to Meta (Facebook/Instagram).
 
 🧠 I help you plan ad budgets that match your revenue goals and ROI targets.
 
-<br>
-
+---
 
 ⚙️ **Bespoke – Custom Quote**
 
@@ -382,10 +367,10 @@ YouTube or Google Ads
 Email marketing automation
 
 Dedicated account manager
-<br>
-<br>
+
+---
+
 ### Let’s tailor a plan to meet your goals.
-  </ul>
 </section>
 
 <section id="contact">
