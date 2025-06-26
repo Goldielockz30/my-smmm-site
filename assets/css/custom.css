@@ -10,12 +10,13 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-gold));
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-gold)) !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--color-text);
+  overflow-x: hidden;
 }
 
 /* === Remove backgrounds from wrappers so gradient shows === */
@@ -25,9 +26,12 @@ html, body {
 #main,
 .wrapper,
 .wrapper--site,
-#content {
+#content,
+.container,
+.page__content {
   background: transparent !important;
   box-shadow: none !important;
+  border: none !important;
 }
 
 /* === Header styling (unchanged) === */
