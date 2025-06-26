@@ -73,9 +73,8 @@ html, body {
 
 .site-header nav a:hover {
   color: var(--color-primary) !important;
-  text-decoration: none;  /* Remove underline on hover */
+  text-decoration: underline;
 }
-
 
 /* === Headings color === */
 h1, h2, h3 {
