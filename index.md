@@ -2,6 +2,7 @@
 layout: default
 title: Welcome to Mizz Media Pro
 ---
+<<<<<<< HEAD
 <style>
   :root {
     --color-primary: #801336; /* Burgundy */
@@ -375,6 +376,247 @@ Dedicated account manager
 
 <section id="contact">
   <h2>Book a Free Call</h2>
+=======
+
+:root {
+  --color-primary: #801336; /* Burgundy */
+  --color-gold: #f7e7ce;    /* Soft cream */
+  --color-text: #000000;    /* Black */
+}
+
+/* Full-page smooth gradient background */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-gold));
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-text);
+}
+
+/* Make all wrapper and containers transparent to show gradient */
+body, .page, .page__inner-wrap, .layout--single, #main, .wrapper, .wrapper--site, #content, section {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Section padding and max width */
+section {
+  padding: 60px 20px;
+  max-width: 960px;
+  margin: auto;
+}
+
+/* Containers background transparent, text black */
+.container, .page__content {
+  background: transparent !important;
+  padding: 0;
+  border-radius: 0;
+  color: var(--color-text);
+}
+
+/* === Header Styling === */
+.site-header {
+  background-color: var(--color-primary) !important; /* Burgundy */
+  box-shadow: none !important;
+  border-bottom: 2px solid var(--color-primary);
+  margin: 0;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+.site-header nav {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  max-width: 960px;
+}
+
+.site-header nav a {
+  margin: 0 18px;
+  font-weight: bold;
+  color: var(--color-gold) !important; /* cream text on burgundy header */
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 0;
+  font-size: 1rem;
+}
+
+.site-header nav a:hover {
+  color: var(--color-gold);
+  text-decoration: underline;
+}
+
+/* To avoid content behind fixed nav */
+body > *:not(.site-header) {
+  margin-top: 60px;
+}
+
+/* Headings color black */
+h1, h2, h3 {
+  color: var(--color-text);
+}
+
+/* Links color black */
+a {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+/* Chatbot styles */
+#chatbot-container {
+  max-width: 500px;
+  margin: 40px auto 0;
+  font-family: sans-serif;
+  color: var(--color-text);
+}
+
+#chatlog {
+  height: 300px;
+  overflow-y: auto;
+  background: var(--color-gold);
+  border: 2px solid var(--color-primary);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-bubble {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 85%;
+}
+
+.user {
+  background: var(--color-primary);
+  color: white;
+  text-align: right;
+  align-self: flex-end;
+}
+
+.bot {
+  background: var(--color-gold);
+  border: 1px solid var(--color-primary);
+}
+
+#input-area {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#userInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  color: var(--color-text);
+}
+
+#sendBtn {
+  background: var(--color-primary);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Floating Chatbot Icon */
+#floating-chat {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: var(--color-primary);
+  color: var(--color-gold);
+  padding: 15px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  font-weight: bold;
+  user-select: none;
+}
+
+footer {
+  max-width: 960px;
+  margin: 40px auto 20px;
+  padding: 10px 20px;
+  text-align: center;
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+/* Contact links with icons horizontal */
+#contact-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#contact-links a img {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+}
+
+#contact-links a img:hover {
+  transform: scale(1.1);
+}
+
+Welcome to Mizz Media Pro
+=========================
+
+I help hair & beauty brands glow up — selling out services and products with stunning content, smart Meta ads, and AI that handles the hustle for you.
+
+Hi, I’m Nana Johnson
+--------------------
+
+Your go-to expert for helping Hair & Beauty brands sell out services and products while building a powerful online presence.
+
+- 💡 Smart content strategy
+- 📊 High-converting Meta ads
+- 🤖 AI that works 24/7
+
+What I Offer
+------------
+
+- **Social Media Management** – Specialized content, copy, and scheduling
+- **Meta Ads** – Targeted Facebook & Instagram campaigns
+- **AI Chatbot** – 24/7 sales and FAQ automation
+- **Sales Funnels** – Turn browsers into buyers
+- **Live Dashboards** – Real-time performance tracking
+
+Demo Chatbot
+------------
+
+Type "hi", "ai", "ads", "price", or "sales" to try it out! Enter your **email** in the chat to get special offers.
+
+💬 Ask MizzMediaBot
+
+(Interactive chat UI here — code and interactivity omitted)
+
+Packages
+--------
+
+- **Starter** – £1,000/month: Social media content + basic Meta ads
+- **Pro** – £2,500/month: Starter + advanced AI chatbot + live dashboards
+- **Enterprise** – Custom pricing: Full service + sales funnel + 1-on-1 consulting
+  Book a Free Call
+>>>>>>> 58aebd1 (a)
 
   <div class="calendly-inline-widget" data-url="https://calendly.com/mizzmediapro" style="min-width:320px;height:700px;"></div>
   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
