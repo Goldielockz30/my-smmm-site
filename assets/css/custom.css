@@ -85,6 +85,27 @@ h1, h2, h3 {
   display: none !important;
 }
 
+.site-title {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: inline-block;
+}
+
+nav#site-nav,
+nav#site-nav ul,
+nav#site-nav li,
+nav#site-nav button {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  border: none;
+}
+
+.visible-links {
+  display: none; /* hide empty ul */
+}
+
 
 /* === Hide skip links for accessibility anchors === */
 a.skip-link,
