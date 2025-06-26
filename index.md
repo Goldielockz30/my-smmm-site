@@ -225,7 +225,7 @@ title: Welcome to Mizz Media Pro
 
 <section id="offers">
   <h2>What I Offer</h2>
-  <ul>
+  
   
 
 ### Social Media Management
@@ -247,7 +247,7 @@ Level up your sales flow to turn browsers into buyers and boost your revenue.
 ### Performance Analytics Dashboards
 
 Live dashboards with real-time insights on growth, engagement, and conversions.
-  </ul>
+  
 </section>
 
 <section id="demo">
