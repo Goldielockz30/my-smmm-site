@@ -358,7 +358,7 @@ Performance dashboard access
 Custom funnel strategy
 <br>
 Concierge support (email + priority chat)
-
+<br>
 🎯 Ideal for brands who want to scale fast
 
 
