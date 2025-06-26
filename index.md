@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 title: Welcome to Mizz Media Pro
 ---
 <style>
