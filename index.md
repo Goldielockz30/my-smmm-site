@@ -218,6 +218,16 @@ body > *:not(.site-header) {
   #contact-links a img:hover {
     transform: scale(1.1);
   }
+
+/* === Hide Quick Links (Table of Contents + Sidebar) === */
+  .toc,
+  .page__meta,
+  .page__content aside,
+  nav.toc,
+  .toc__menu {
+    display: none !important;
+  }
+
 </style>
 
 <header class="site-header">
