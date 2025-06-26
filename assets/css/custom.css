@@ -1,25 +1,23 @@
-/* Override Minimal Mistakes default colors */
+/* === Root color variables === */
 :root {
   --color-primary: #801336; /* Burgundy */
   --color-bg: #f2d8a1;      /* Cream */
-  --color-text: #000000;    /* Black */
+  --color-text: #000000;     /* Black */
   --color-gold: #D4AF37;    /* Gold */
 }
 
-/* Global background and body styles */
+/* === Smooth full-page background gradient === */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, var(--color-primary), var(--color-bg));
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--color-text);
+  /* Don't use background-attachment or background-size for gradients */
 }
 
-/* Make all site sections transparent to let background show */
+/* === Remove backgrounds from wrappers so gradient shows === */
 .page,
 .page__inner-wrap,
 .layout--single,
@@ -31,21 +29,16 @@ html, body {
   box-shadow: none !important;
 }
 
-/* Optional: add soft backdrop to the main content area */
+/* === Optional: semi-transparent container for main content === */
 .container,
 .page__content {
-  background: rgba(242, 216, 161, 0.85); /* semi-transparent cream */
+  background: rgba(242, 216, 161, 0.85); /* cream with some transparency */
   padding: 20px 30px;
   border-radius: 12px;
   color: var(--color-text);
 }
 
-/* Headings */
-h1, h2, h3 {
-  color: var(--color-primary);
-}
-
-/* Header fixes */
+/* === Header styling === */
 .site-header {
   background-color: transparent !important;
   box-shadow: none !important;
@@ -65,7 +58,7 @@ h1, h2, h3 {
   background: transparent !important;
 }
 
-/* Nav links */
+/* === Navigation links === */
 .site-header nav a {
   margin: 0 15px;
   font-weight: bold;
@@ -80,7 +73,7 @@ h1, h2, h3 {
   text-decoration: underline;
 }
 
-/* Hide toggle menu and quick start button if any */
+/* === Hide toggle menu, quick start and overlays === */
 .toggle-menu,
 .quick-start,
 .quick-start-overlay,
@@ -97,10 +90,15 @@ h1, h2, h3 {
   z-index: -9999 !important;
 }
 
-/* Hide skip links */
+/* === Hide skip links === */
 a.skip-link,
 a[href^="#primary-navigation"],
 a[href^="#content"],
 a[href^="#footer"] {
   display: none !important;
+}
+
+/* === Headings color === */
+h1, h2, h3 {
+  color: var(--color-primary);
 }
