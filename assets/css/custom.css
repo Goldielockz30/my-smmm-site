@@ -24,13 +24,10 @@ html, body {
 .container {
   max-width: 800px;
   margin: 30px auto 0 auto;
-  /* Use a translucent white overlay instead of cream to maintain smooth gradient effect */
-  background: rgba(255, 255, 255, 0.15);
-  padding: 30px 40px;
+  background: rgba(242, 216, 161, 0.85); /* semi-transparent cream */
+  padding: 20px 30px;
   border-radius: 12px;
   color: var(--color-text);
-  /* Optional subtle box shadow for separation */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 /* Headings */
@@ -47,7 +44,7 @@ h1, h2, h3 {
   margin: 0;
   padding: 0;
   position: relative;
-  z-index: 1001; /* keep header above the white gap fix */
+  z-index: 1000; /* ensure nav on top */
 }
 
 /* Navigation */
@@ -77,8 +74,19 @@ h1, h2, h3 {
 
 /* Hide toggle menu and quick start button if any */
 .toggle-menu,
-.quick-start {
+.quick-start,
+.quick-start-overlay,
+.quick-start-container {
   display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: -9999 !important;
 }
 
 /* Hide skip links */
@@ -87,17 +95,4 @@ a[href^="#primary-navigation"],
 a[href^="#content"],
 a[href^="#footer"] {
   display: none !important;
-}
-
-/* === FIX for white gap at very top === */
-body::before {
-  content: "";
-  display: block;
-  height: 6px; /* Adjust height to cover white gap */
-  width: 100%;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-bg));
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
 }
