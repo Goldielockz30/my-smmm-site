@@ -56,35 +56,12 @@ a[href^="#skip"], /* skip links often have href="#skip..." */
   display: none !important;
 }
 
-/* Show only the nav with your links */
-nav {
-  display: block !important;
-  background: white;
-  text-align: center;
-  padding: 10px 0;
-  border-bottom: 2px solid #801336; /* burgundy line */
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-/* Style the links */
-nav a {
-  margin: 0 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #801336; /* burgundy color */
-  text-decoration: none;
-  font-family: 'Helvetica Neue', sans-serif;
-}
-
-/* Optional: underline on hover */
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Hide everything else you don't want */
-header, .menu, .navigation, .nav-menu, .site-navigation {
+/* Hide all nav/menu elements except the header */
+nav, .menu, .navigation, .nav, .nav-menu, .site-navigation {
   display: none !important;
+}
+
+/* Make sure header is visible */
+header {
+  display: block !important;
 }
