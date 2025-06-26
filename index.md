@@ -4,7 +4,7 @@ layout: single
 ---
 <style>
   :root {
-    --color-primary: #7b2c35; /* Burgundy */
+    --color-primary: #801336; /* Burgundy */
     --color-gold: #f7e7ce;    /* Soft cream */
     --color-text: ##1c1c1c;    /* Black */
   }
