@@ -1,25 +1,27 @@
-/* Root colors */
+/* Override Minimal Mistakes default colors */
+
+/* colors */
 :root {
-  --color-primary: #801336;
-  --color-bg: #f2d8a1;
-  --color-text: #000000;
+  --color-primary: #801336; /* Burgundy */
+  --color-bg: #f2d8a1;      /* Cream */
+  --color-text: #000000;    /* Black */
 }
 
-/* Body background */
+/* Global body styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, var(--color-primary), var(--color-bg));
   color: var(--color-text);
   margin: 0;
-  padding: 0;
+  padding: 0;  /* REMOVE padding here to avoid indent */
 }
 
-/* Container */
+/* Container for page content */
 .container {
   max-width: 800px;
-  margin: 30px auto 0;
+  margin: 30px auto 0 auto;
   background: rgba(242, 216, 161, 0.85);
-  padding: 20px 30px;
+  padding: 20px 30px; /* padding inside container only */
   border-radius: 12px;
 }
 
@@ -28,43 +30,62 @@ h1, h2, h3 {
   color: var(--color-primary);
 }
 
-/* Fix header and nav backgrounds with forced overrides */
-.site-header,
-.site-header * {
-  background: transparent !important;
+/* Header fixes */
+/* Remove white background and shadow from header */
+.site-header {
+  position: relative;
+  z-index: 10; /* Ensure above other content */
+  background-color: transparent !important;
   box-shadow: none !important;
-  border: none !important;
-  color: var(--color-text) !important;
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 20px; /* Extra space to extend background */
 }
 
-/* Target the main navigation */
-#primary-navigation,
-#primary-navigation * {
-  background: transparent !important;
-  box-shadow: none !important;
-  border: none !important;
-  color: var(--color-text) !important;
+/* Extend gradient background below header to cover white strip */
+.site-header::after {
+  content: "";
+  position: absolute;
+  bottom: -20px; /* Position below the header */
+  left: 0;
+  right: 0;
+  height: 20px; /* Height to fully hide white */
+  background: linear-gradient(135deg, var(--color-primary), var(--color-bg));
+  z-index: -1; /* Behind header */
 }
 
-/* Nav links styling */
-#primary-navigation a {
-  color: var(--color-text) !important;
-  font-weight: bold;
-  text-decoration: none;
+/* Navigation */
+/* Nav container */
+.site-header nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  width: 100%;         /* make nav full width */
+  background: none;
+}
+
+/* Nav links */
+.site-header nav a {
   margin: 0 15px;
-  padding: 10px 0;
+  font-weight: bold;
+  color: var(--color-text) !important;
+  text-decoration: none;
   display: inline-block;
+  padding: 10px 0; /* controls nav height */
 }
 
-/* Nav links hover */
-#primary-navigation a:hover {
+.site-header nav a:hover {
   color: var(--color-primary) !important;
   text-decoration: underline;
 }
 
-/* Hide toggle menu, quick start button, and skip links */
+/* Hide toggle menu and quick start button if any */
 .toggle-menu,
-.quick-start,
+.quick-start {
+  display: none !important;
+}
+
+/* Hide skip links */
 a.skip-link,
 a[href^="#primary-navigation"],
 a[href^="#content"],
