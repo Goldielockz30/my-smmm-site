@@ -1,12 +1,8 @@
+# Site settings
 site_name: Mizz Media Pro
 logo_url: https://placehold.co/100x100/png?text=MizzMediaPro
 
 theme: minimal-mistakes-jekyll
-
-sass:
-  style: compressed
-
-
 
 title: MizzMediaPro
 description: "Social Media Management and AI Solutions"
@@ -45,9 +41,6 @@ defaults:
 
 sass:
   style: compressed
-
-include:
-  - assets/css/custom.scss
 
 markdown: kramdown
 kramdown:
