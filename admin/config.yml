@@ -1,47 +1,24 @@
-# _config.yml
+backend:
+  name: github
+  repo: Goldielockz30/my-smmm-site
+  branch: main
 
-# Site settings
-title: Mizz Media Pro
-description: "Social Media Management and AI Solutions"
-author:
-  name: Nana Johnson
-  email: your-email@example.com
-  bio: "Helping clothing brands grow with AI & social media."
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
 
-theme: minimal-mistakes-jekyll
-
-quick_start: false   # <--- This disables the quick start banner
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-navigation:
-  - title: Home
-    url: /
-  - title: About
-    url: /about/
-  - title: Services
-    url: /services/
-  - title: Contact
-    url: /contact/
+media_library:
+  name: default
 
 collections:
-  pages:
-    output: true
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "single"
-
-sass:
-  style: compressed
-
-markdown: kramdown
-kramdown:
-  input: GFM
+  - name: "pages"
+    label: "Pages"
+    folder: "_pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
