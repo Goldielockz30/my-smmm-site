@@ -421,3 +421,26 @@ Dedicated account manager
 <div id="floating-chat" onclick="document.getElementById('demo').scrollIntoView({ behavior: 'smooth' });">
   💬 Chat
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.site-header nav');
+
+    if (menuButton && navMenu) {
+      menuButton.addEventListener('click', () => {
+        navMenu.classList.toggle('open');
+      });
+    }
+  });
+</script>
+
+<style>
+  .site-header nav {
+    display: none;
+  }
+
+  .site-header nav.open {
+    display: block;
+  }
+</style>
