@@ -89,6 +89,7 @@ body > *:not(.site-header) {
   margin-top: 60px;
 }
 
+
 /* Mobile-friendly nav */
 @media (max-width: 600px) {
   .site-header nav a {
@@ -98,6 +99,8 @@ body > *:not(.site-header) {
     font-size: 1.1rem;
   }
 }
+
+
 
 /* === Headings color === */
 h1, h2, h3 {
