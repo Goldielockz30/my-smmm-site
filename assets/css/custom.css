@@ -73,8 +73,9 @@ html, body {
 
 .site-header nav a:hover {
   color: var(--color-primary) !important;
-  text-decoration: underline;
+  text-decoration: none;  /* Remove underline on hover */
 }
+
 
 /* === Headings color === */
 h1, h2, h3 {
@@ -83,18 +84,6 @@ h1, h2, h3 {
 
 #site-nav {
   display: none !important;
-}
-/* Remove underline and border-bottom from site title and nav links */
-#site-nav .site-title,
-#site-nav .site-title:hover,
-#site-nav .site-title:focus,
-#site-nav .site-title:active,
-#site-nav a,
-#site-nav a:hover,
-#site-nav a:focus,
-#site-nav a:active {
-  text-decoration: none !important;
-  border-bottom: none !important;
 }
 
 
