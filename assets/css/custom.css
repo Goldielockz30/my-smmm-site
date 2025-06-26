@@ -24,9 +24,10 @@ html, body {
 .container {
   max-width: 800px;
   margin: 30px auto 0 auto;
-  background: rgba(212, 175, 55, 0.85); /* translucent gold */
+  background: rgba(242, 216, 161, 0.85); /* semi-transparent cream */
   padding: 20px 30px;
   border-radius: 12px;
+  color: var(--color-text);
 }
 
 /* Headings */
@@ -35,11 +36,13 @@ h1, h2, h3 {
 }
 
 /* Header fixes */
-/* Remove white background and shadow from header */
+/* Make header transparent to show gradient */
 .site-header {
   background-color: transparent !important;
   box-shadow: none !important;
   border-bottom: 2px solid var(--color-primary);
+  margin: 0;
+  padding: 0;
 }
 
 /* Navigation */
@@ -49,21 +52,21 @@ h1, h2, h3 {
   list-style: none;
   text-align: center;
   width: 100%;
-  background: transparent !important;
+  background: transparent !important; /* transparent nav background */
 }
 
 /* Nav links */
 .site-header nav a {
   margin: 0 15px;
   font-weight: bold;
-  color: #000 !important;  /* Force black text */
+  color: var(--color-text) !important;  /* black text */
   text-decoration: none;
   display: inline-block;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 .site-header nav a:hover {
-  color: var(--color-primary) !important;
+  color: var(--color-gold) !important; /* gold highlight on hover */
   text-decoration: underline;
 }
 
