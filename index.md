@@ -82,6 +82,22 @@ title: Welcome to Mizz Media Pro
     margin-top: 60px;
   }
 
+  /* Mobile-friendly nav */
+@media (max-width: 600px) {
+  .site-header nav {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .site-header nav a {
+    display: block;
+    margin: 8px 0;
+    padding: 10px 0;
+    font-size: 1.1rem;
+  }
+}
+
+
   /* Headings color black */
   h1, h2, h3 {
     color: var(--color-text);
@@ -422,25 +438,4 @@ Dedicated account manager
   💬 Chat
 </div>
 
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const menuButton = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('.site-header nav');
 
-    if (menuButton && navMenu) {
-      menuButton.addEventListener('click', () => {
-        navMenu.classList.toggle('open');
-      });
-    }
-  });
-</script>
-
-<style>
-  .site-header nav {
-    display: none;
-  }
-
-  .site-header nav.open {
-    display: block;
-  }
-</style>
