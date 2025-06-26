@@ -1,11 +1,11 @@
-/* Override Minimal Mistakes default colors */
+/* Theme color overrides */
 :root {
   --color-primary: #801336;
   --color-bg: #f2d8a1;
   --color-text: #000000;
 }
 
-/* Global body styles */
+/* Base body styling */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, var(--color-primary), var(--color-bg));
@@ -14,7 +14,7 @@ body {
   padding: 0;
 }
 
-/* Container for page content */
+/* Page container styling */
 .container {
   max-width: 800px;
   margin: 30px auto 0 auto;
@@ -28,7 +28,7 @@ h1, h2, h3 {
   color: var(--color-primary);
 }
 
-/* Header and nav */
+/* Header styling */
 header {
   background: none;
   border-bottom: 2px solid var(--color-primary);
@@ -36,41 +36,41 @@ header {
   text-align: center;
 }
 
+/* Custom nav bar */
 nav {
   margin: 0;
   padding: 0;
-  list-style: none;
   text-align: center;
   width: 100%;
   background: none;
 }
 
 nav a {
+  display: inline-block;
   margin: 0 15px;
+  padding: 10px 0;
   font-weight: bold;
   color: var(--color-text);
   text-decoration: none;
-  display: inline-block;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
-/* Completely hide the Minimal Mistakes mobile toggle nav */
+/* 🛑 Hide all default toggle and dropdown elements from Minimal Mistakes */
 .masthead__menu-toggle,
 .site-nav-toggle,
 .js-toggle,
 .masthead__menu,
 .masthead__menu--slide,
-.masthead__menu-item,
-nav[role="navigation"],
 .quick-start,
+.search__toggle,
+.page__footer-follow,
 .skip-link,
 a[href^="#primary-navigation"],
 a[href^="#content"],
 a[href^="#footer"],
-.search__toggle,
-.page__footer-follow {
+nav > *:not(a) {
   display: none !important;
 }
