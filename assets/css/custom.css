@@ -41,7 +41,12 @@ header {
 
 /* Navigation */
 nav {
-  /* no extra styles needed here */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  width: 100%;         /* make nav full width */
+  box-sizing: border-box; /* include padding/border in width */
 }
 
 /* Hide toggle menu and quick start button if any */
