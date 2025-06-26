@@ -56,12 +56,14 @@ a[href^="#skip"], /* skip links often have href="#skip..." */
   display: none !important;
 }
 
-/* Hide all nav/menu elements except the header */
-nav, .menu, .navigation, .nav, .nav-menu, .site-navigation {
+/* Hide toggle menu button */
+.toggle-menu,
+.quick-start {
   display: none !important;
 }
 
-/* Make sure header is visible */
-header {
+/* Ensure your main nav is visible */
+#main-nav {
   display: block !important;
 }
+
