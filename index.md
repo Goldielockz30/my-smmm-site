@@ -333,7 +333,7 @@ Content calendar + scheduling
 <br>
 Optional add ons: AI Chatbot
 
-- - -
+
 
 <h3>🟪 **Growth** – Everything in Essentials</h3>
 <br>
@@ -345,7 +345,7 @@ Content upgrade: Reels or short-form videos
 <br>
 Optional add ons: Meta Ads Management
 
-- - -
+
 
 <h3>🟥 **Elite** – Everything in Growth</h3>
 <br>
@@ -361,13 +361,13 @@ Concierge support (email + priority chat)
 
 🎯 Ideal for brands who want to scale fast
 
-- - -
 
+<br>
 Ad spend is separate from your monthly package and goes directly to Meta (Facebook/Instagram).
 <br>
 🧠 I help you plan ad budgets that match your revenue goals and ROI targets.
 
-- - -
+
 
 <h3>⚙️ **Bespoke – Custom Quote**</h3> 
 <br>
@@ -379,7 +379,7 @@ Email marketing automation
 <br>
 Dedicated account manager
 
-- - -
+
 
 <h3>Let’s tailor a plan to meet your goals.</h3>
 
