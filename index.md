@@ -224,31 +224,31 @@ title: Welcome to Mizz Media Pro
 <section id="offers">
   <h2>What I Offer</h2>
 
-### Social Media Management
+<h3>Social Media Management</h3> 
 
 <br>
 Specialised content and marketing strategies, scheduling, copywriting, and community engagement across multiple platforms.
 
-### <br>
-Meta Ads Management
+ <br>
+<h3>Meta Ads Management</h3>
 
 <br>
 Get laser-targeted Facebook and Instagram ads to maximise ROI.
 
-### <br>
-AI Chatbot Integration
+ <br>
+<h3>AI Chat Bot Integration</h3>
 
 <br>
 Automate guest communication 24/7 with smart chatbots that answer FAQs and boost sales.
 
-### <br>
-Sales Funnel Optimisation
+<br>
+<h3>Sales Funnel Optimisation</h3>
 
 <br>
 Level up your sales flow to turn browsers into buyers and boost your revenue.
 
-### <br>
-Performance Analytics Dashboards
+<br>
+<h3>Performance Analytics Dashboards</h3>
 
 <br>
 Live dashboards with real-time insights on growth, engagement, and conversions.
