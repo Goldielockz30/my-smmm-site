@@ -1,46 +1,72 @@
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="/assets/css/custom.css" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flush Nav Test</title>
+  <style>
+    /* Reset all margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<style>
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #801336, #f2d8a1); /* burgundy to cream */
-    color: #1c1c1c; /* dark text */
-    margin: 0;
-    padding: 20px;
-  }
-  .container {
-    max-width: 800px;
-    margin: auto;
-    background: rgba(242, 216, 161, 0.85); /* cream with slight opacity */
-    padding: 30px;
-    border-radius: 12px;
-  }
-  h1, h2, h3 {
-    color: #801336; /* burgundy headings */
-  }
-  a {
-    color: #801336; /* burgundy links */
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #801336, #f2d8a1);
+      color: #000;
+      padding: 0; /* no padding to keep nav flush */
+      margin: 0;
+    }
 
-  a[href="#primary-navigation"],
-  a[href="#content"],
-  a[href="#footer"],
-  .skip-link {
-    display: none !important;
-  }
-</style>
+    nav {
+      background: none;
+      border-bottom: 2px solid #801336;
+      text-align: center;
+      width: 100%;
+    }
 
-<!-- NAVIGATION GOES HERE, OUTSIDE STYLE -->
-<nav style="background: none; padding: 10px 0; text-align: center; border-bottom: 2px solid #801336;">
-  <a href="#welcome" style="margin: 0 15px; font-weight: bold; color: black; text-decoration: none;">Welcome</a>
-  <a href="#offers" style="margin: 0 15px; font-weight: bold; color: black; text-decoration: none;">What I Offer</a>
-  <a href="#demo" style="margin: 0 15px; font-weight: bold; color: black; text-decoration: none;">Demo Chatbot</a>
-  <a href="#packages" style="margin: 0 15px; font-weight: bold; color: black; text-decoration: none;">Packages</a>
-  <a href="#contact" style="margin: 0 15px; font-weight: bold; color: black; text-decoration: none;">Contact</a>
-</nav>
+    nav a {
+      display: inline-block;
+      margin: 0 15px;
+      padding: 10px 0; /* Controls nav height */
+      font-weight: bold;
+      color: #000;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto 0 auto;
+      background: rgba(242, 216, 161, 0.85);
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    h1, h2, h3 {
+      color: #801336;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#welcome">Welcome</a>
+    <a href="#offers">What I Offer</a>
+    <a href="#demo">Demo Chatbot</a>
+    <a href="#packages">Packages</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h1>Welcome Section</h1>
+    <p>Content goes here...</p>
+  </div>
+
+</body>
+</html>
