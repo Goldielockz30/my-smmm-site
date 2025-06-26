@@ -24,10 +24,13 @@ html, body {
 .container {
   max-width: 800px;
   margin: 30px auto 0 auto;
-  background: rgba(242, 216, 161, 0.85); /* semi-transparent cream */
-  padding: 20px 30px;
+  /* Use a translucent white overlay instead of cream to maintain smooth gradient effect */
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px 40px;
   border-radius: 12px;
   color: var(--color-text);
+  /* Optional subtle box shadow for separation */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 /* Headings */
@@ -43,6 +46,8 @@ h1, h2, h3 {
   border-bottom: 2px solid var(--color-primary);
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 1001; /* keep header above the white gap fix */
 }
 
 /* Navigation */
