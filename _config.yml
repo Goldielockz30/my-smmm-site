@@ -6,8 +6,6 @@ theme: minimal-mistakes-jekyll
 sass:
   style: compressed
 
-include:
-  - assets/css/custom.scss
 
 
 title: MizzMediaPro

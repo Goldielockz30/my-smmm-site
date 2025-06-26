@@ -1,72 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Flush Nav Test</title>
-  <style>
-    /* Reset all margins and paddings */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <title>{{ page.title }} | {{ site.title }}</title>
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #801336, #f2d8a1);
-      color: #000;
-      padding: 0; /* no padding to keep nav flush */
-      margin: 0;
-    }
+  <!-- Minimal Mistakes main CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  <!-- Your custom overrides -->
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}" />
 
-    nav {
-      background: none;
-      border-bottom: 2px solid #801336;
-      text-align: center;
-      width: 100%;
-    }
-
-    nav a {
-      display: inline-block;
-      margin: 0 15px;
-      padding: 10px 0; /* Controls nav height */
-      font-weight: bold;
-      color: #000;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 30px auto 0 auto;
-      background: rgba(242, 216, 161, 0.85);
-      padding: 30px;
-      border-radius: 12px;
-    }
-
-    h1, h2, h3 {
-      color: #801336;
-    }
-  </style>
+  {%- seo -%}
 </head>
-<body>
-
-  <nav>
-    <a href="#welcome">Welcome</a>
-    <a href="#offers">What I Offer</a>
-    <a href="#demo">Demo Chatbot</a>
-    <a href="#packages">Packages</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <div class="container">
-    <h1>Welcome Section</h1>
-    <p>Content goes here...</p>
-  </div>
-
-</body>
-</html>

@@ -1,25 +1,27 @@
-/* Theme color overrides */
+/* Override Minimal Mistakes default colors */
+
+/* colors */
 :root {
-  --color-primary: #801336;
-  --color-bg: #f2d8a1;
-  --color-text: #000000;
+  --color-primary: #801336; /* Burgundy */
+  --color-bg: #f2d8a1;      /* Cream */
+  --color-text: #000000;    /* Black */
 }
 
-/* Base body styling */
+/* Global body styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, var(--color-primary), var(--color-bg));
   color: var(--color-text);
   margin: 0;
-  padding: 0;
+  padding: 0;  /* REMOVE padding here to avoid indent */
 }
 
-/* Page container styling */
+/* Container for page content */
 .container {
   max-width: 800px;
   margin: 30px auto 0 auto;
   background: rgba(242, 216, 161, 0.85);
-  padding: 20px 30px;
+  padding: 20px 30px; /* padding inside container only */
   border-radius: 12px;
 }
 
@@ -28,49 +30,50 @@ h1, h2, h3 {
   color: var(--color-primary);
 }
 
-/* Header styling */
-header {
-  background: none;
+/* Header fixes */
+/* Remove white background and shadow from header */
+.site-header {
+  background-color: transparent !important;
+  box-shadow: none !important;
   border-bottom: 2px solid var(--color-primary);
-  padding: 10px 0;
-  text-align: center;
 }
 
-/* Custom nav bar */
-nav {
+/* Navigation */
+/* Nav container */
+.site-header nav {
   margin: 0;
   padding: 0;
+  list-style: none;
   text-align: center;
-  width: 100%;
+  width: 100%;         /* make nav full width */
   background: none;
 }
 
-nav a {
-  display: inline-block;
+/* Nav links */
+.site-header nav a {
   margin: 0 15px;
-  padding: 10px 0;
   font-weight: bold;
-  color: var(--color-text);
+  color: var(--color-text) !important;
   text-decoration: none;
+  display: inline-block;
+  padding: 10px 0; /* controls nav height */
 }
 
-nav a:hover {
+.site-header nav a:hover {
+  color: var(--color-primary) !important;
   text-decoration: underline;
 }
 
-/* 🛑 Hide all default toggle and dropdown elements from Minimal Mistakes */
-.masthead__menu-toggle,
-.site-nav-toggle,
-.js-toggle,
-.masthead__menu,
-.masthead__menu--slide,
-.quick-start,
-.search__toggle,
-.page__footer-follow,
-.skip-link,
+/* Hide toggle menu and quick start button if any */
+.toggle-menu,
+.quick-start {
+  display: none !important;
+}
+
+/* Hide skip links */
+a.skip-link,
 a[href^="#primary-navigation"],
 a[href^="#content"],
-a[href^="#footer"],
-nav > *:not(a) {
+a[href^="#footer"] {
   display: none !important;
 }
