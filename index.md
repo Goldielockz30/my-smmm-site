@@ -6,8 +6,9 @@ title: Welcome to Mizz Media Pro
 <style>
   :root {
     --color-primary: #801336; /* Burgundy */
-    --color-gold: #f7e7ce;    /* Soft cream */
+    --color-bg: #f7e7ce;      /* Cream gradient end */
     --color-text: #000000;    /* Black */
+    --color-gold: #D4AF37;    /* Gold */
   }
 
   /* Full-page smooth gradient background */
@@ -15,25 +16,25 @@ title: Welcome to Mizz Media Pro
     height: 100%;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-gold));
+    background: linear-gradient(135deg, var(--color-primary), var(--color-bg));
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--color-text);
   }
 
-  /* Make all wrapper and containers transparent to show gradient */
+  /* Remove backgrounds on wrappers & sections so gradient shows through */
   body, .page, .page__inner-wrap, .layout--single, #main, .wrapper, .wrapper--site, #content, section {
     background: transparent !important;
     box-shadow: none !important;
   }
 
-  /* Section padding and max width */
+  /* Comfortable padding on sections */
   section {
     padding: 60px 20px;
     max-width: 960px;
     margin: auto;
   }
 
-  /* Containers background transparent, text black */
+  /* Container backgrounds removed, keep text color */
   .container, .page__content {
     background: transparent !important;
     padding: 0;
@@ -41,7 +42,7 @@ title: Welcome to Mizz Media Pro
     color: var(--color-text);
   }
 
-  /* === Header Styling === */
+  /* === KEEP HEADER STYLE SAME === */
   .site-header {
     background-color: var(--color-primary) !important; /* Burgundy */
     box-shadow: none !important;
@@ -66,7 +67,7 @@ title: Welcome to Mizz Media Pro
   .site-header nav a {
     margin: 0 18px;
     font-weight: bold;
-    color: var(--color-gold) !important; /* cream text on burgundy header */
+    color: var(--color-bg) !important; /* cream text on burgundy header */
     text-decoration: none;
     display: inline-block;
     padding: 12px 0;
@@ -74,7 +75,7 @@ title: Welcome to Mizz Media Pro
   }
 
   .site-header nav a:hover {
-    color: var(--color-gold);
+    color: var(--color-gold) !important;
     text-decoration: underline;
   }
 
@@ -83,19 +84,37 @@ title: Welcome to Mizz Media Pro
     margin-top: 60px;
   }
 
-  /* Headings color black */
+  /* Headings color */
   h1, h2, h3 {
-    color: var(--color-text);
-  }
-
-  /* Links color black */
-  a {
-    color: var(--color-text);
-    text-decoration: underline;
-  }
-
-  a:hover {
     color: var(--color-primary);
+  }
+
+  /* Links */
+  a {
+    color: var(--color-primary);
+  }
+
+  /* Contact links with icons horizontally */
+  .contact-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .contact-icons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: bold;
+  }
+
+  .contact-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
   }
 
   /* Chatbot styles */
@@ -109,7 +128,7 @@ title: Welcome to Mizz Media Pro
   #chatlog {
     height: 300px;
     overflow-y: auto;
-    background: var(--color-gold);
+    background: var(--color-bg);
     border: 2px solid var(--color-primary);
     padding: 10px;
     border-radius: 10px;
@@ -132,7 +151,7 @@ title: Welcome to Mizz Media Pro
   }
 
   .bot {
-    background: var(--color-gold);
+    background: var(--color-bg);
     border: 1px solid var(--color-primary);
   }
 
@@ -165,7 +184,7 @@ title: Welcome to Mizz Media Pro
     bottom: 25px;
     right: 25px;
     background: var(--color-primary);
-    color: var(--color-gold);
+    color: var(--color-bg);
     padding: 15px 20px;
     border-radius: 50px;
     cursor: pointer;
@@ -179,28 +198,8 @@ title: Welcome to Mizz Media Pro
     margin: 40px auto 20px;
     padding: 10px 20px;
     text-align: center;
-    color: var(--color-text);
+    color: var(--color-primary);
     font-weight: bold;
-  }
-
-  /* Contact links with icons horizontal */
-  #contact-links {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    margin-top: 10px;
-  }
-
-  #contact-links a img {
-    width: 32px;
-    height: 32px;
-    vertical-align: middle;
-    border-radius: 5px;
-    transition: transform 0.2s ease;
-  }
-
-  #contact-links a img:hover {
-    transform: scale(1.1);
   }
 </style>
 
@@ -319,18 +318,25 @@ title: Welcome to Mizz Media Pro
   <br><br>
 
   <h3>Contact</h3>
-  <p>Email: <a href="mailto:connect@mizzmediapro.com">connect@mizzmediapro.com</a></p>
+  <div class="contact-icons">
+    <a href="mailto:connect@mizzmediapro.com">
+      <img src="https://raw.githubusercontent.com/Goldielockz30/my-smmm-site/main/assets/images/email.png" alt="Email" />
+      connect@mizzmediapro.com
+    </a>
 
-  <p>Follow Me:</p>
-  <div id="contact-links">
-    <a href="https://www.instagram.com/mizzmediapro" target="_blank" title="Instagram">
-      <img src="https://raw.githubusercontent.com/Goldielockz30/my-smmm-site/main/assets/images/instagram-icon.png" alt="Instagram" />
+    <a href="https://www.instagram.com/mizzmediapro" target="_blank" rel="noopener">
+      <img src="https://raw.githubusercontent.com/Goldielockz30/my-smmm-site/main/assets/images/instagram.png" alt="Instagram" />
+      Instagram
     </a>
-    <a href="https://www.tiktok.com/@mizzmedia" target="_blank" title="TikTok">
-      <img src="https://raw.githubusercontent.com/Goldielockz30/my-smmm-site/main/assets/images/tiktok-icon.png" alt="TikTok" />
+
+    <a href="https://www.tiktok.com/@mizzmedia" target="_blank" rel="noopener">
+      <img src="https://raw.githubusercontent.com/Goldielockz30/my-smmm-site/main/assets/images/tiktok.png" alt="TikTok" />
+      TikTok
     </a>
-    <a href="https://www.linkedin.com/in/nana-e-a-johnson-282522a6" target="_blank" title="LinkedIn">
-      <img src="https://raw.githubusercontent.com/Goldielockz30/my-smmm-site/main/assets/images/linkedin-icon.png" alt="LinkedIn" />
+
+    <a href="https://www.linkedin.com/in/nana-e-a-johnson-282522a6" target="_blank" rel="noopener">
+      <img src="https://raw.githubusercontent.com/Goldielockz30/my-smmm-site/main/assets/images/linkedin.png" alt="LinkedIn" />
+      LinkedIn
     </a>
   </div>
 </section>
