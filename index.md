@@ -5,53 +5,27 @@ title: Welcome to Mizz Media Pro
 
 <style>
 :root {
-  --main-color: #801336;
-  --highlight-color: #f2d8a7;
-  --text-color: #1c1c1c;
+  --main-color: #801336; /* Burgundy */
+  --highlight-color: #f2d8a7; /* Gold beige */
+  --text-color: #000000; /* Black text */
 }
 
 body {
   font-family: 'Helvetica Neue', sans-serif;
   color: var(--text-color);
-  background: linear-gradient(to bottom, #801336, #f2d8a7);
+  background: linear-gradient(to bottom, var(--main-color), var(--highlight-color));
   margin: 0;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 15px 20px;
-  background-color: white;
-  border-bottom: 2px solid var(--main-color);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-nav a {
-  color: var(--main-color);
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
 
 section {
-  padding: 100px 20px 60px; /* top padding extra for fixed nav */
+  padding: 60px 20px;
   max-width: 960px;
   margin: auto;
 }
 
 h1, h2, h3 {
-  color: var(--main-color);
-  margin-bottom: 20px;
+  color: var(--text-color);
 }
 
 a {
@@ -59,10 +33,99 @@ a {
   text-decoration: underline;
 }
 
+nav {
+  background-color: var(--highlight-color);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 0;
+  border-bottom: 2px solid var(--main-color);
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
 footer {
   text-align: center;
   padding: 40px 20px;
   background: var(--highlight-color);
+}
+
+/* Chatbot styles */
+#chatbot-container {
+  max-width: 500px;
+  margin: 40px auto;
+  font-family: sans-serif;
+  color: var(--text-color);
+}
+
+#chatlog {
+  height: 300px;
+  overflow-y: auto;
+  background: var(--highlight-color);
+  border: 2px solid var(--main-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.chat-bubble {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 85%;
+}
+
+.user {
+  background: var(--main-color);
+  color: white;
+  text-align: right;
+  align-self: flex-end;
+}
+
+.bot {
+  background: var(--highlight-color);
+  border: 1px solid var(--main-color);
+}
+
+#input-area {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#userInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  color: var(--text-color);
+}
+
+#sendBtn {
+  background: var(--main-color);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Floating Chatbot Icon */
+#floating-chat {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: var(--main-color);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 </style>
 
@@ -73,6 +136,8 @@ footer {
   <a href="#packages">Packages</a>
   <a href="#contact">Contact</a>
 </nav>
+
+<br><br><br>
 
 <section id="welcome">
   <h1>Welcome to Mizz Media Pro</h1>
@@ -147,7 +212,7 @@ footer {
 
         if (emailRegex.test(userText)) {
           reply = "Thanks! 💌 Your email is saved. Look out for a free offer!";
-          // Connect to MailerLite API or other email service here
+          // You can connect this to MailerLite via API later
         } else {
           for (const { keywords, reply: r } of responses) {
             if (keywords.some(k => userText.includes(k))) {
@@ -160,64 +225,6 @@ footer {
       }, 500);
     }
   </script>
-
-  <style>
-    #chatbot-container {
-      max-width: 500px;
-      margin: 40px auto;
-      font-family: sans-serif;
-      color: #1c1c1c;
-    }
-
-    #chatlog {
-      height: 300px;
-      overflow-y: auto;
-      background: var(--highlight-color);
-      border: 2px solid var(--main-color);
-      padding: 10px;
-      border-radius: 10px;
-    }
-
-    .chat-bubble {
-      margin: 10px 0;
-      padding: 10px;
-      border-radius: 8px;
-      max-width: 85%;
-    }
-
-    .user {
-      background: var(--main-color);
-      color: white;
-      text-align: right;
-      align-self: flex-end;
-    }
-
-    .bot {
-      background: white;
-      border: 1px solid var(--main-color);
-    }
-
-    #input-area {
-      display: flex;
-      gap: 10px;
-      margin-top: 10px;
-    }
-
-    #userInput {
-      flex: 1;
-      padding: 10px;
-      border: 1px solid var(--main-color);
-      border-radius: 5px;
-    }
-
-    #sendBtn {
-      background: var(--main-color);
-      color: white;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-    }
-  </style>
 </section>
 
 <section id="packages">
@@ -273,6 +280,7 @@ footer {
   <a href="https://www.linkedin.com/in/nana-e-a-johnson-282522a6" target="_blank">LinkedIn</a>
 </section>
 
-<footer>
-  <p>© 2025 Mizz Media Pro — Nana Johnson</p>
-</footer>
+<!-- Floating Chatbot Icon -->
+<div id="floating-chat" onclick="document.getElementById('demo').scrollIntoView({ behavior: 'smooth' });">
+  💬 Chat
+</div>
