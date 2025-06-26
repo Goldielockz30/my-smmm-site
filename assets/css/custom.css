@@ -1,67 +1,36 @@
 /* === Root color variables === */
 :root {
   --color-primary: #801336; /* Burgundy */
-  --color-bg: #f2d8a1;      /* Cream */
-  --color-text: #000000;    /* Black */
   --color-gold: #D4AF37;    /* Gold */
+  --color-text: #000000;    /* Black */
 }
 
 /* === Smooth full-page background gradient === */
 html, body {
   height: 100%;
-  width: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-bg));
+  background: linear-gradient(135deg, var(--color-primary), var(--color-gold));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--color-text);
-  overflow-x: hidden;
 }
 
-/* === Remove backgrounds from wrappers and sections === */
-html, body,
+/* === Remove backgrounds from wrappers so gradient shows === */
 .page,
 .page__inner-wrap,
 .layout--single,
 #main,
 .wrapper,
 .wrapper--site,
-#content,
-.container,
-.page__content,
-section,
-main,
-article,
-header,
-footer,
-aside,
-div,
-nav,
-.row,
-.grid,
-.hero,
-.banner,
-.intro,
-.feature,
-.author,
-.sidebar {
+#content {
   background: transparent !important;
   box-shadow: none !important;
-  border: none !important;
 }
 
-/* === Optional: Frosted glass content areas for readability === */
-.container,
-.page__content {
-  background: rgba(255, 255, 255, 0.3); /* light overlay */
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  padding: 20px 30px;
-  border-radius: 12px;
-  color: var(--color-text);
-}
-
-/* === Header styling === */
+/* === Header styling (unchanged) === */
 .site-header {
   background-color: transparent !important;
   box-shadow: none !important;
