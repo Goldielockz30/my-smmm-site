@@ -335,7 +335,7 @@ Optional add ons: AI Chatbot
 
 <!--💡 Add Meta Ads Management: +£500/month
 💡 Add AI Chatbot: +£300 setup, £100/month -->
-
+<br>
 
 <br>
 🟪 Growth – <!-- £1,800/month -->
@@ -351,7 +351,7 @@ Optional add ons: Meta Ads Management
 
 <!--💡 Add Meta Ads Management: +£500/month
 💡 Monthly analytics report -->
-
+<br>
 
 <br>
 🟥 Elite – <!-- £2,500/month -->
@@ -368,7 +368,7 @@ Custom funnel strategy
 Concierge support (email + priority chat)
 
 🎯 Ideal for brands who want to scale fast
-
+<br>
 
 <br>
 Ad spend is separate from your monthly package and goes directly to Meta (Facebook/Instagram).
@@ -388,7 +388,7 @@ Email marketing automation
 
 Dedicated account manager
 <br>
-
+<br>
 ### Let’s tailor a plan to meet your goals.
   </ul>
 </section>
