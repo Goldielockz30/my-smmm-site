@@ -46,7 +46,7 @@ nav {
   list-style: none;
   text-align: center;
   width: 100%;         /* make nav full width */
-  box-sizing: border-box; /* include padding/border in width */
+  
 }
 
 /* Hide toggle menu and quick start button if any */
