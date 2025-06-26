@@ -224,26 +224,36 @@ title: Welcome to Mizz Media Pro
 <section id="offers">
   <h2>What I Offer</h2>
 
-Social Media Management
-<br>
+### Social Media Management
+
+<br>
 Specialised content and marketing strategies, scheduling, copywriting, and community engagement across multiple platforms.
-<br>
+
+### <br>
 Meta Ads Management
-<br>
+
+<br>
 Get laser-targeted Facebook and Instagram ads to maximise ROI.
-<br>
+
+### <br>
 AI Chatbot Integration
-<br>
+
+<br>
 Automate guest communication 24/7 with smart chatbots that answer FAQs and boost sales.
-<br>
+
+### <br>
 Sales Funnel Optimisation
-<br>
+
+<br>
 Level up your sales flow to turn browsers into buyers and boost your revenue.
-<br>
+
+### <br>
 Performance Analytics Dashboards
-<br>
+
+<br>
 Live dashboards with real-time insights on growth, engagement, and conversions.
-<br>
+
+<br>
 </section>
 
 <section id="demo">
@@ -307,6 +317,7 @@ Live dashboards with real-time insights on growth, engagement, and conversions.
       }, 800);
     }
   </script>
+
 </section>
 
 <section id="packages">
@@ -322,7 +333,7 @@ Content calendar + scheduling
 
 Optional add ons: AI Chatbot
 
----
+- - -
 
 🟪 **Growth** – Everything in Essentials
 
@@ -334,7 +345,7 @@ Content upgrade: Reels or short-form videos
 
 Optional add ons: Meta Ads Management
 
----
+- - -
 
 🟥 **Elite** – Everything in Growth
 
@@ -350,13 +361,13 @@ Concierge support (email + priority chat)
 
 🎯 Ideal for brands who want to scale fast
 
----
+- - -
 
 Ad spend is separate from your monthly package and goes directly to Meta (Facebook/Instagram).
 
 🧠 I help you plan ad budgets that match your revenue goals and ROI targets.
 
----
+- - -
 
 ⚙️ **Bespoke – Custom Quote**
 
@@ -368,9 +379,10 @@ Email marketing automation
 
 Dedicated account manager
 
----
+- - -
 
 ### Let’s tailor a plan to meet your goals.
+
 </section>
 
 <section id="contact">
@@ -384,7 +396,6 @@ Dedicated account manager
   <h3>Contact</h3>
 
   <div id="contact-icons" style="display: flex; justify-content: center; gap: 20px; align-items: center;">
-
 
 <a href="mailto:connect@mizzmediapro.com" title="Email">
   <img src="/assets/images/email.png" alt="Email" style="height: 40px; width: auto;">
@@ -401,7 +412,6 @@ Dedicated account manager
 <a href="https://www.linkedin.com/in/nana-e-a-johnson-282522a6" target="_blank" rel="noopener" title="LinkedIn">
   <img src="/assets/images/linkedin.png" alt="LinkedIn" style="height: 40px; width: auto;">
 </a>
-
 
   </div>
 </section>
