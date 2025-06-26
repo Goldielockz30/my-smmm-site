@@ -144,7 +144,7 @@ footer {
 </nav>
 
 <section id="welcome">
-  <h1>Welcome to Mizz Media Pro</h1>
+  <h1>Welcome to Mizz Media Pro </h1>hello
   <p>I help hair & beauty brands glow up — selling out services and products with stunning content, smart Meta ads, and AI that handles the hustle for you.</p>
 
   <h2>Hi, I’m Nana Johnson</h2>
