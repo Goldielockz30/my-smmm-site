@@ -47,12 +47,7 @@ nav {
 }
 
 nav a {
-  margin: 0 10px;          /* smaller horizontal spacing */
-  font-weight: bold;
-  text-transform: uppercase;
-  color: var(--main-color);
-  line-height: 1.5;
-  padding: 5px 0;          /* smaller vertical padding */
+          /* smaller vertical padding */
 }
 
 footer {
