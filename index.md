@@ -405,7 +405,7 @@ Dedicated account manager
 
   <div id="contact-icons" style="display: flex; justify-content: center; gap: 20px; align-items: center;">
 
-```
+
 <a href="mailto:connect@mizzmediapro.com" title="Email">
   <img src="/assets/images/email.png" alt="Email" style="height: 40px; width: auto;">
 </a>
@@ -421,7 +421,7 @@ Dedicated account manager
 <a href="https://www.linkedin.com/in/nana-e-a-johnson-282522a6" target="_blank" rel="noopener" title="LinkedIn">
   <img src="/assets/images/linkedin.png" alt="LinkedIn" style="height: 40px; width: auto;">
 </a>
-```
+
 
   </div>
 </section>
