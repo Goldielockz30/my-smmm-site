@@ -100,3 +100,13 @@ a[href^="#content"],
 a[href^="#footer"] {
   display: none !important;
 }
+
+.site-footer,
+footer {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
