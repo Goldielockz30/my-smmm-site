@@ -5,6 +5,13 @@
   --color-text: #1c1c1c; /* Dark text */
 }
 
+/* === Smooth scroll === */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* === Smooth full-page background gradient === */
 html, body {
   height: 100%;
