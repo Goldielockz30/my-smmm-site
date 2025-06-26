@@ -40,49 +40,49 @@ title: Welcome to Mizz Media Pro
     color: var(--color-text);
   }
 
-  /* === Header Styling === */
-  .site-header {
-    background-color: var(--color-primary) !important; /* Burgundy */
-    box-shadow: none !important;
-    border-bottom: 2px solid var(--color-primary);
-    margin: 0;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10000;
-  }
+ /* === Header Styling === */
+.site-header {
+  background-color: var(--color-primary) !important; /* Burgundy */
+  box-shadow: none !important;
+  border-bottom: 2px solid var(--color-primary);
+  margin: 0;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
 
-  .site-header nav {
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    max-width: 960px;
-  }
+.site-header nav {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  max-width: 960px;
+}
 
-  .site-header nav a {
-    margin: 0 18px;
-    font-weight: bold;
-    color: var(--color-gold) !important; /* cream text on burgundy header */
-    text-decoration: none;
-    display: inline-block;
-    padding: 12px 0;
-    font-size: 1rem;
-  }
+.site-header nav a {
+  margin: 0 18px;
+  font-weight: bold;
+  color: var(--color-gold) !important; /* cream text on burgundy header */
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 0;
+  font-size: 1rem;
+}
 
-  .site-header nav a:hover {
-    color: var(--color-gold);
-    text-decoration: underline;
-  }
+.site-header nav a:hover {
+  color: var(--color-gold);
+  text-decoration: underline;
+}
 
-  /* To avoid content behind fixed nav */
-  body > *:not(.site-header) {
-    margin-top: 60px;
-  }
+/* To avoid content behind fixed nav */
+body > *:not(.site-header) {
+  margin-top: 60px;
+}
 
-  /* Mobile-friendly nav */
+/* Mobile-friendly nav */
 @media (max-width: 600px) {
   .site-header nav a {
     display: inline-block;  /* keep horizontal */
@@ -92,13 +92,6 @@ title: Welcome to Mizz Media Pro
   }
 }
 
-  .site-header nav a {
-    display: block;
-    margin: 8px 0;
-    padding: 10px 0;
-    font-size: 1.1rem;
-  }
-}
 
 
   /* Headings color black */
