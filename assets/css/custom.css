@@ -20,15 +20,29 @@ html, body {
   color: var(--color-text);
 }
 
-/* Fix to remove white gap above header */
+/* Container for page content */
+.container {
+  max-width: 800px;
+  margin: 30px auto 0 auto;
+  background: rgba(242, 216, 161, 0.85); /* semi-transparent cream */
+  padding: 20px 30px;
+  border-radius: 12px;
+  color: var(--color-text);
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: var(--color-primary);
+}
+
+/* Header fixes */
+/* Make header transparent to show gradient */
 .site-header {
   background-color: transparent !important;
   box-shadow: none !important;
   border-bottom: 2px solid var(--color-primary);
   margin: 0;
   padding: 0;
-  position: relative;  /* added to avoid white gap */
-  z-index: 10;         /* ensure header overlays background properly */
 }
 
 /* Navigation */
@@ -56,21 +70,6 @@ html, body {
   text-decoration: underline;
 }
 
-/* Container for page content */
-.container {
-  max-width: 800px;
-  margin: 30px auto 0 auto;
-  background: rgba(242, 216, 161, 0.85); /* semi-transparent cream */
-  padding: 20px 30px;
-  border-radius: 12px;
-  color: var(--color-text);
-}
-
-/* Headings */
-h1, h2, h3 {
-  color: var(--color-primary);
-}
-
 /* Hide toggle menu and quick start button if any */
 .toggle-menu,
 .quick-start {
@@ -83,4 +82,17 @@ a[href^="#primary-navigation"],
 a[href^="#content"],
 a[href^="#footer"] {
   display: none !important;
+}
+
+/* === FIX for white gap at very top === */
+body::before {
+  content: "";
+  display: block;
+  height: 6px; /* Adjust height to cover white gap */
+  width: 100%;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-bg));
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
