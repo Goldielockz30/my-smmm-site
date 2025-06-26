@@ -77,7 +77,7 @@ title: Welcome to Mizz Media Pro
 }
 
 .site-header nav a:hover {
-  color: var(--color-gold);
+  color: var(--color-text);
   text-decoration: underline;
 }
 
