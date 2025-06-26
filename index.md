@@ -319,6 +319,7 @@ Live dashboards with real-time insights on growth, engagement, and conversions.
   <h2>Packages</h2>
   <ul>
   Packages
+ ﻿
 
 <br>
 🟦 Essentials – <!-- £1,000/month -->
@@ -335,6 +336,7 @@ Optional add ons: AI Chatbot
 <!--💡 Add Meta Ads Management: +£500/month
 💡 Add AI Chatbot: +£300 setup, £100/month -->
 
+
 <br>
 🟪 Growth – <!-- £1,800/month -->
 Everything in Essentials 
@@ -349,6 +351,7 @@ Optional add ons: Meta Ads Management
 
 <!--💡 Add Meta Ads Management: +£500/month
 💡 Monthly analytics report -->
+
 
 <br>
 🟥 Elite – <!-- £2,500/month -->
@@ -366,11 +369,13 @@ Concierge support (email + priority chat)
 
 🎯 Ideal for brands who want to scale fast
 
+
 <br>
 Ad spend is separate from your monthly package and goes directly to Meta (Facebook/Instagram).
 
 🧠 I help you plan ad budgets that match your revenue goals and ROI targets.
 
+<br>
 
 
 ⚙️ **Bespoke – Custom Quote**
@@ -382,6 +387,7 @@ YouTube or Google Ads
 Email marketing automation
 
 Dedicated account manager
+<br>
 
 ### Let’s tailor a plan to meet your goals.
   </ul>
