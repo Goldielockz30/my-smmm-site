@@ -1,4 +1,3 @@
-
 /* Override Minimal Mistakes default colors */
 
 /* colors */
@@ -14,7 +13,7 @@ body {
   background: linear-gradient(135deg, var(--color-primary), var(--color-bg));
   color: var(--color-text);
   margin: 0;
-  padding: 20px;
+  padding: 0;  /* REMOVE padding here to avoid indent */
 }
 
 /* Container for page content */
@@ -22,7 +21,7 @@ body {
   max-width: 800px;
   margin: 30px auto 0 auto;
   background: rgba(242, 216, 161, 0.85);
-  padding: 30px;
+  padding: 20px 30px; /* padding inside container only */
   border-radius: 12px;
 }
 
@@ -46,7 +45,7 @@ nav {
   list-style: none;
   text-align: center;
   width: 100%;         /* make nav full width */
-  
+  background: none;
 }
 
 /* Hide toggle menu and quick start button if any */
