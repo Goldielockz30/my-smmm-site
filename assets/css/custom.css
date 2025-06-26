@@ -20,29 +20,15 @@ html, body {
   color: var(--color-text);
 }
 
-/* Container for page content */
-.container {
-  max-width: 800px;
-  margin: 30px auto 0 auto;
-  background: rgba(242, 216, 161, 0.85); /* semi-transparent cream */
-  padding: 20px 30px;
-  border-radius: 12px;
-  color: var(--color-text);
-}
-
-/* Headings */
-h1, h2, h3 {
-  color: var(--color-primary);
-}
-
-/* Header fixes */
-/* Make header transparent to show gradient */
+/* Fix to remove white gap above header */
 .site-header {
   background-color: transparent !important;
   box-shadow: none !important;
   border-bottom: 2px solid var(--color-primary);
   margin: 0;
   padding: 0;
+  position: relative;  /* added to avoid white gap */
+  z-index: 10;         /* ensure header overlays background properly */
 }
 
 /* Navigation */
@@ -68,6 +54,21 @@ h1, h2, h3 {
 .site-header nav a:hover {
   color: var(--color-gold) !important; /* gold highlight on hover */
   text-decoration: underline;
+}
+
+/* Container for page content */
+.container {
+  max-width: 800px;
+  margin: 30px auto 0 auto;
+  background: rgba(242, 216, 161, 0.85); /* semi-transparent cream */
+  padding: 20px 30px;
+  border-radius: 12px;
+  color: var(--color-text);
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: var(--color-primary);
 }
 
 /* Hide toggle menu and quick start button if any */
