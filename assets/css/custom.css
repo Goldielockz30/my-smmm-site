@@ -286,7 +286,7 @@ footer {
   }
 
   .site-header nav {
-    display: none; /* Hide nav by default on mobile */
+   
     flex-direction: column;
     background: var(--color-primary);
     position: absolute;
