@@ -186,7 +186,7 @@ Schedule a call with Calendly
 
   <div class="calendly-inline-widget" data-url="https://calendly.com/mizzmediapro" style="min-width:320px;height:700px;"></div>
   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<h3>Contact</h3> 
+<h2>Contact</h2> 
 
   <div id="contact-icons" style="display: flex; justify-content: center; gap: 20px; align-items: center;">
 
