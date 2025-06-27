@@ -101,7 +101,7 @@ Type "hi", "ai", "ads", "price", or "sales" to try it out.\
       const emailRegex = /\S+@\S+\.\S+/;
 
       setTimeout(() => {
-        let reply = "Try asking about AI, pricing, or ads!";
+        let reply = "Try asking about AI, price, or ads!";
 
         if (emailRegex.test(userText)) {
           reply = "Thanks for sharing your email! I'll send you exclusive offers soon.";
