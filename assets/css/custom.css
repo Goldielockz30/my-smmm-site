@@ -281,22 +281,30 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .menu-toggle {
-    display: none !important; /* hide hamburger */
-  }
-
   .site-header nav {
-    display: flex !important; /* show nav */
+    display: flex !important;
     flex-direction: column;
-    background: var(--color-primary);
-    position: relative; /* so it doesn’t overlap */
-    padding: 10px 0;
+    background: rgba(128, 19, 54, 0.1); /* light transparent burgundy */
+    position: relative; /* no absolute, so it doesn't cover content */
+    padding: 5px 0;
     justify-content: center;
+    border-radius: 8px;
+    max-width: 90%;
+    margin: 10px auto 0 auto;
   }
 
   .site-header nav a {
-    margin: 10px 0;
-    font-size: 1.2rem;
-    display: block;
+    margin: 8px 0;
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .site-header nav a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
   }
 }
