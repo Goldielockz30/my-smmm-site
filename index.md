@@ -135,6 +135,7 @@ Content calendar + scheduling
 
 Optional add ons: AI Chatbot
 
+
 🟪 Growth – Everything in Essentials
 
 AI chatbot (FAQ automation, lead capture)
@@ -144,6 +145,7 @@ Booking funnel audit (guest journey review)
 Content upgrade: Reels or short-form videos
 
 Optional add ons: Meta Ads Management
+
 
 🟥 Elite – Everything in Growth
 
@@ -159,9 +161,11 @@ Concierge support (email + priority chat)
 
 🎯 Ideal for brands who want to scale fast
 
+
 Ad spend is separate from your monthly package and goes directly to Meta (Facebook/Instagram).
 
 🧠 I help you plan ad budgets that match your revenue goals and ROI targets.
+
 
 ⚙️ Bespoke – Custom Quote
 <br>
@@ -181,8 +185,6 @@ Schedule a call with Calendly
 
   <div class="calendly-inline-widget" data-url="https://calendly.com/mizzmediapro" style="min-width:320px;height:700px;"></div>
   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-
-
 <h3>Contact</h3> 
 
   <div id="contact-icons" style="display: flex; justify-content: center; gap: 20px; align-items: center;">
