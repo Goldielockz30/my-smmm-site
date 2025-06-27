@@ -64,7 +64,7 @@ Live dashboards with real-time insights on growth, engagement, and conversions.
 ## Demo Chatbot {#demo}
 
 Type "hi", "ai", "ads", "price", or "sales" to try it out.\
-**Bonus** Enter your **email** in the chat to a special offer!
+**Bonus** Enter your **email** in the chat to get a special offer!
 
   <div id="chatbot-container">
     <h3>💬 Ask MizzMediaBot</h3>
