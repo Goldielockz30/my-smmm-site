@@ -109,7 +109,9 @@ h1[id], h2[id], h3[id] {
 a.skip-link,
 a[href^="#primary-navigation"],
 a[href^="#content"],
-a[href^="#footer"] {
+a[href^="#footer"],
+a[href^="#"]
+{
   display: none !important;
 }
 
