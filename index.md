@@ -3,6 +3,7 @@ layout: single
 permalink: /
 title: "Welcome to Mizz Media Pro"
 hide_title: true
+header: false
 ---
 
 ---
