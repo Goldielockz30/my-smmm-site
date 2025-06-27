@@ -14,7 +14,7 @@ permalink: /
   </nav>
 </header>
 
-# Welcome to Mizz Media Pro
+<h1 style="text-align: center;">Mizz Media Pro</h1>
 
 ## AI Digital Product Creator & Social Media Marketing Manager {#welcome}
 I help hair and beauty brands sell out their products and services while building a powerful online presence using smart content, Meta ads, and a touch of AI magic.
