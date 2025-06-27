@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /
-title: Mizz Media Pro
+title: Home
 ---
 <header class="site-header">
   <nav>
@@ -16,9 +16,9 @@ title: Mizz Media Pro
 # Welcome to Mizz Media Pro
 
 ## AI Digital Product Creator & Social Media Marketing Manager {#welcome}
-I help hair & beauty brands sell out products & services 
+I help hair & beauty brands glow up — selling out services and products with stunning content, smart Meta ads, and AI that handles the hustle for you. 
 ### Hi, I’m Nana Johnson
-
+Your go-to expert for helping Hair & Beauty brands sell out services and products while building a powerful online presence.
 
 - - -
 
