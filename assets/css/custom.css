@@ -51,7 +51,7 @@ section {
 
 /* === Header styling === */
 .site-header {
-  background: transparent !important;
+  background:  transparent !important;
   box-shadow: none !important;
   margin: 0;
   padding: 10px 0;
@@ -68,6 +68,8 @@ section {
   list-style: none;
   text-align: center;
   max-width: 960px;
+  display: flex; /* make nav visible by default */
+  justify-content: center;
 }
 
 .site-header nav a {
@@ -100,7 +102,7 @@ h1[id], h2[id], h3[id] {
   scroll-margin-top: 70px;
 }
 
-/* === Hide #site-nav (quick links) === */
+/* === Navigation override === */
 #site-nav {
   display: none !important;
 }
@@ -266,26 +268,21 @@ footer {
 }
 
 /* === Mobile-friendly nav & menu toggle === */
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: var(--color-gold);
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  z-index: 10001;
-  cursor: pointer;
-}
-
 @media (max-width: 600px) {
   .menu-toggle {
     display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--color-gold);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 10001;
+    cursor: pointer;
   }
 
   .site-header nav {
-    display: none;
     flex-direction: column;
     background: var(--color-primary);
     position: absolute;
@@ -294,6 +291,7 @@ footer {
     right: 0;
     text-align: center;
     padding: 20px 0;
+    display: flex; /* always visible */
   }
 
   .site-header nav.open {
