@@ -282,11 +282,13 @@ footer {
 
 @media (max-width: 600px) {
   .menu-toggle {
-    display: block; /* Show toggle on mobile */
+  display: none !important; /* Always hide the hamburger toggle */
+}
+
   }
 
   .site-header nav {
-   
+    display: none; /* Hide nav by default on mobile */
     flex-direction: column;
     background: var(--color-primary);
     position: absolute;
