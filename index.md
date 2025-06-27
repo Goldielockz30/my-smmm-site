@@ -104,7 +104,7 @@ Type "hi", "ai", "ads", "price", or "sales" to try it out.\
         let reply = "Try asking about AI, price, or ads!";
 
         if (emailRegex.test(userText)) {
-          reply = "Thanks for sharing your email! I'll send you exclusive offers soon.";
+          reply = "Thanks for sharing your email! I'll send you exclusive offers now.";
         } else {
           for (const item of responses) {
             if (item.keywords.some(k => userText.includes(k))) {
