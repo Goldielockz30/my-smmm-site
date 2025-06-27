@@ -10,6 +10,7 @@ permalink: /
   <a href="#offers" class="nav-link">What I Offer</a>
   <a href="#demo" class="nav-link">Demo Chatbot</a>
   <a href="#packages" class="nav-link">Packages</a>
+  <a href="#bookings" class="nav-link">Book a Call</a>
   <a href="#contact" class="nav-link">Contact</a>
 </nav>
 
@@ -180,13 +181,14 @@ Dedicated account manager
 
 Let’s tailor a plan to meet your goals.
 
-## Book a Free Call {#contact}
+## Book a Free Call {#bookings}
 
 Schedule a call with Calendly
 
   <div class="calendly-inline-widget" data-url="https://calendly.com/mizzmediapro" style="min-width:320px;height:700px;"></div>
   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<h2>Contact</h2> 
+
+## Contact {#contact}
 
   <div id="contact-icons" style="display: flex; justify-content: center; gap: 20px; align-items: center;">
 
