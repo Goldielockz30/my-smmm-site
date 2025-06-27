@@ -8,7 +8,7 @@ permalink: /
   <nav>
   <a href="#welcome" class="nav-link">Welcome</a>
   <a href="#offers" class="nav-link">What I Offer</a>
-  <a href="#demo" class="nav-link">Demo Chatbot</a>
+  <a href="#demo" class="nav-link">Chatbot</a>
   <a href="#packages" class="nav-link">Packages</a>
   <a href="#bookings" class="nav-link">Book a Call</a>
   <a href="#contact" class="nav-link">Contact</a>
