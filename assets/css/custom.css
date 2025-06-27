@@ -273,3 +273,15 @@ footer {
   white-space: nowrap !important;
   border: 0 !important;
 }
+
+/* Increase scroll offset on mobile for headings and top margin */
+@media (max-width: 600px) {
+  h1[id], h2[id], h3[id] {
+    scroll-margin-top: 90px;  /* increase from 70px to 90px */
+  }
+  
+  /* Also increase margin top on all sections except the header */
+  body > *:not(.site-header) {
+    margin-top: 90px;  /* increase from 60px to 90px */
+  }
+}
