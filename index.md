@@ -1,11 +1,7 @@
 ---
 layout: single
 permalink: /
-title: "Mizz Media Pro"  # optional — still good for SEO
-hide_title: true
 ---
-
-
 <header class="site-header">
   <nav>
     <a href="#welcome">Welcome</a>
@@ -16,17 +12,14 @@ hide_title: true
   </nav>
 </header>
 
-
 # Welcome to Mizz Media Pro
-## Welcome {#welcome}
 
-I help hair & beauty brands glow up — selling out services and products with stunning content, smart Meta ads, and AI that handles the hustle for you.
-
+## AI Digital Product Creator & Social Media Marketing Manager {#welcome}
+I help hair & beauty brands glow up — selling out services and products with stunning content, smart Meta ads, and AI that handles the hustle for you. 
 ### Hi, I’m Nana Johnson
-
 Your go-to expert for helping Hair & Beauty brands sell out services and products while building a powerful online presence.
 
----
+- - -
 
 ## What I Offer {#offers}
 
@@ -50,11 +43,11 @@ Level up your sales flow to turn browsers into buyers and boost your revenue.
 
 Live dashboards with real-time insights on growth, engagement, and conversions.
 
----
+- - -
 
 ## Demo Chatbot {#demo}
 
-Type "hi", "ai", "ads", "price", or "sales" to try it out.  
+Type "hi", "ai", "ads", "price", or "sales" to try it out.\
 **Bonus** Enter your **email** in the chat to get special offers!
 
   <div id="chatbot-container">
@@ -115,6 +108,7 @@ Type "hi", "ai", "ads", "price", or "sales" to try it out.
   </script>
 
 ## Packages {#packages}
+
 🟦 Essentials – Social media management
 Platforms: Instagram, Facebook, TikTok
 Branded visuals + captions
@@ -147,6 +141,7 @@ Dedicated account manager
 Let’s tailor a plan to meet your goals.
 
 ## Book a Free Call {#contact}
+
 Schedule a call with Calendly
 
   <div class="calendly-inline-widget" data-url="https://calendly.com/mizzmediapro" style="min-width:320px;height:700px;"></div>
@@ -176,11 +171,8 @@ Schedule a call with Calendly
 
   </div>
 
-
 <!-- Floating Chatbot Icon -->
 
 <div id="floating-chat" onclick="document.getElementById('demo').scrollIntoView({ behavior: 'smooth' });">
   💬 Chat
 </div>
-
-
