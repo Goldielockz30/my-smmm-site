@@ -1,9 +1,8 @@
 ---
 layout: single
 permalink: /
+title: Mizz Media Pro
 ---
-
-
 <header class="site-header">
   <nav>
     <a href="#welcome">Welcome</a>
@@ -14,17 +13,25 @@ permalink: /
   </nav>
 </header>
 
-
 # Welcome to Mizz Media Pro
-## Welcome {#welcome}
 
-I help hair & beauty brands glow up — selling out services and products with stunning content, smart Meta ads, and AI that handles the hustle for you.
+## AI Digital Product Creator & Social Media Marketing Manager {#welcome}
+
+I’m an AI Digital Product Creator & Social Media Marketing Manager who built a powerful app to automate your workflows, boost efficiency, and simplify client management
 
 ### Hi, I’m Nana Johnson
 
-Your go-to expert for helping Hair & Beauty brands sell out services and products while building a powerful online presence.
+As a Social Media Marketing Manager myself, I know how overwhelming it can be to juggle multiple clients, content calendars, and constant deadlines.
 
----
+That’s exactly why I created this app — to help SMMMs like you automate repetitive tasks, streamline your daily workflows, and scale your services without burning out.
+
+Everything in this app is designed to support the way we actually work — fast, smart, and client-focused.
+
+Built with ❤️ by a fellow SMMM who truly gets it.
+
+
+
+- - -
 
 ## What I Offer {#offers}
 
@@ -48,11 +55,11 @@ Level up your sales flow to turn browsers into buyers and boost your revenue.
 
 Live dashboards with real-time insights on growth, engagement, and conversions.
 
----
+- - -
 
 ## Demo Chatbot {#demo}
 
-Type "hi", "ai", "ads", "price", or "sales" to try it out.  
+Type "hi", "ai", "ads", "price", or "sales" to try it out.\
 **Bonus** Enter your **email** in the chat to get special offers!
 
   <div id="chatbot-container">
@@ -113,6 +120,7 @@ Type "hi", "ai", "ads", "price", or "sales" to try it out.
   </script>
 
 ## Packages {#packages}
+
 🟦 Essentials – Social media management
 Platforms: Instagram, Facebook, TikTok
 Branded visuals + captions
@@ -145,6 +153,7 @@ Dedicated account manager
 Let’s tailor a plan to meet your goals.
 
 ## Book a Free Call {#contact}
+
 Schedule a call with Calendly
 
   <div class="calendly-inline-widget" data-url="https://calendly.com/mizzmediapro" style="min-width:320px;height:700px;"></div>
@@ -174,11 +183,8 @@ Schedule a call with Calendly
 
   </div>
 
-
 <!-- Floating Chatbot Icon -->
 
 <div id="floating-chat" onclick="document.getElementById('demo').scrollIntoView({ behavior: 'smooth' });">
   💬 Chat
 </div>
-
-
