@@ -16,20 +16,8 @@ title: Mizz Media Pro
 # Welcome to Mizz Media Pro
 
 ## AI Digital Product Creator & Social Media Marketing Manager {#welcome}
-I help hair & beauty brands sell out products & services — and I empower social media managers with the tools to do the same.
-
-I built a powerful app to automate your workflows, boost efficiency, and simplify client management.
-
+I help hair & beauty brands sell out products & services 
 ### Hi, I’m Nana Johnson
-
-As a Social Media Marketing Manager myself, I know how overwhelming it can be to juggle multiple clients, content calendars, and constant deadlines.
-
-That’s exactly why I created this app — to help SMMMs like you automate repetitive tasks, streamline your daily workflows, and scale your services without burning out.
-
-Everything in this app is designed to support the way we actually work — fast, smart, and client-focused.
-
-Built with ❤️ by a fellow SMMM who truly gets it.
-
 
 
 - - -
