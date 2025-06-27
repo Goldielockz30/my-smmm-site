@@ -1,10 +1,9 @@
 ---
 layout: single
 permalink: /
-
 ---
 
----
+
 <header class="site-header">
   <nav>
     <a href="#welcome">Welcome</a>
@@ -19,10 +18,19 @@ permalink: /
 
 ## AI Digital Product Creator & Social Media Marketing Manager {#welcome}
 I help hair & beauty brands glow up — selling out services and products with stunning content, smart Meta ads, and AI that handles the hustle for you. 
+I empower social media marketing managers with the tools to do the same.
+I built a powerful app to automate workflows, boost efficiency, and simplify client management.
+
 ### Hi, I’m Nana Johnson
 Your go-to expert for helping Hair & Beauty brands sell out services and products while building a powerful online presence.
 
-- - -
+As a Social Media Marketing Manager myself, I know how overwhelming it can be to juggle multiple clients, content calendars, and constant deadlines.
+
+That’s exactly why I created an app — to help SMMMs like you automate repetitive tasks, streamline your daily workflows, and scale your services without burning out.
+
+Everything in this app is designed to support the way we actually work — fast, smart, and client-focused.
+
+### Check out my app here --> (link to app)
 
 ## What I Offer {#offers}
 
@@ -46,7 +54,7 @@ Level up your sales flow to turn browsers into buyers and boost your revenue.
 
 Live dashboards with real-time insights on growth, engagement, and conversions.
 
-- - -
+
 
 ## Demo Chatbot {#demo}
 
@@ -136,6 +144,7 @@ Ad spend is separate from your monthly package and goes directly to Meta (Facebo
 🧠 I help you plan ad budgets that match your revenue goals and ROI targets.
 
 ⚙️ Bespoke – Custom Quote
+<br>
 Multilingual chatbot support
 YouTube or Google Ads
 Email marketing automation
@@ -150,7 +159,6 @@ Schedule a call with Calendly
   <div class="calendly-inline-widget" data-url="https://calendly.com/mizzmediapro" style="min-width:320px;height:700px;"></div>
   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
-  <br><br>
 
   <h3>Contact</h3>
 
