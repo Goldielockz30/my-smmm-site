@@ -267,27 +267,43 @@ footer {
   border: 0 !important;
 }
 
+.menu-toggle {
+  display: none; /* Hidden on desktop */
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--color-gold);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 10001;
+}
+
 @media (max-width: 600px) {
   .menu-toggle {
-    display: none; /* Hide hamburger */
+    display: block; /* Show toggle on mobile */
   }
 
   .site-header nav {
-    display: flex !important;
+    display: none; /* Hide nav by default on mobile */
     flex-direction: column;
     background: var(--color-primary);
+    position: absolute;
+    top: 60px;  /* Just below your fixed header */
+    left: 0;
+    right: 0;
+    text-align: center;
     padding: 20px 0;
-    max-width: 300px;     /* limit nav width */
-    margin: 10px auto;    /* center horizontally with some spacing */
-    border-radius: 8px;   /* soften edges */
+  }
+
+  .site-header nav.open {
+    display: flex; /* Show nav when .open is toggled */
   }
 
   .site-header nav a {
     margin: 10px 0;
     font-size: 1.2rem;
-    padding: 6px 12px;    /* add some padding so links don’t stretch full width */
-    border-radius: 4px;
-    max-width: 260px;     /* keep links a bit narrower */
+    display: block;
   }
 }
-
