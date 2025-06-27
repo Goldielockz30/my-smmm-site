@@ -5,7 +5,13 @@ permalink: /
 
 
 <header class="site-header">
-<button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+  <button 
+    class="menu-toggle" 
+    aria-label="Toggle menu"
+    onclick="document.querySelector('nav').classList.toggle('open')"
+  >
+    ☰
+  </button>
 
   <nav>
     <a href="#welcome">Welcome</a>
