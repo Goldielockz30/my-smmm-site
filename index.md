@@ -59,7 +59,7 @@ Live dashboards with real-time insights on growth, engagement, and conversions.
 ## Demo Chatbot {#demo}
 
 Type "hi", "ai", "ads", "price", or "sales" to try it out.\
-**Bonus** Enter your **email** in the chat to get special offers!
+**Bonus** Enter your **email** in the chat to a special offer!
 
   <div id="chatbot-container">
     <h3>💬 Ask MizzMediaBot</h3>
@@ -104,7 +104,7 @@ Type "hi", "ai", "ads", "price", or "sales" to try it out.\
         let reply = "Try asking about AI, price, or ads!";
 
         if (emailRegex.test(userText)) {
-          reply = "Thanks for sharing your email! I'll send you exclusive offers now.";
+          reply = "Thanks for sharing your email! I'll send you an exclusive offer now.";
         } else {
           for (const item of responses) {
             if (item.keywords.some(k => userText.includes(k))) {
