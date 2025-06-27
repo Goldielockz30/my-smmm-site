@@ -1,6 +1,8 @@
 ---
 layout: single
 permalink: /
+title: "Mizz Media Pro"  # optional — still good for SEO
+hide_title: true
 ---
 
 
