@@ -5,14 +5,6 @@ permalink: /
 
 
 <header class="site-header">
-  <button 
-    class="menu-toggle" 
-    aria-label="Toggle menu"
-    onclick="document.querySelector('nav').classList.toggle('open')"
-  >
-    ☰
-  </button>
-
   <nav>
     <a href="#welcome">Welcome</a>
     <a href="#offers">What I Offer</a>
