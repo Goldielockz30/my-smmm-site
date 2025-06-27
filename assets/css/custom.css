@@ -68,16 +68,15 @@ section {
   list-style: none;
   text-align: center;
   max-width: 960px;
-  display: flex; /* make nav visible by default */
+  display: flex;
   justify-content: center;
+  gap: 36px;
 }
 
 .site-header nav a {
-  margin: 0 18px;
   font-weight: bold;
   color: var(--color-gold) !important;
   text-decoration: none;
-  display: inline-block;
   padding: 12px 0;
   font-size: 1rem;
 }
@@ -267,3 +266,22 @@ footer {
   border: 0 !important;
 }
 
+/* === Mobile-friendly nav (NO hamburger, stacked nav) === */
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: none; /* Hide the hamburger */
+  }
+
+  .site-header nav {
+    display: flex !important;
+    flex-direction: column;
+    background: var(--color-primary);
+    padding: 20px 0;
+    max-width: 100%;
+  }
+
+  .site-header nav a {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+}
