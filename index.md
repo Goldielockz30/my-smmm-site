@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /
-title: Home
+title: Mizz Media Pro
 ---
 <header class="site-header">
   <nav>
