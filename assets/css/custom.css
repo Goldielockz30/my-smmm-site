@@ -268,7 +268,7 @@ footer {
 }
 
 .menu-toggle {
-  display: none; /* Hidden on desktop */
+  display: none;
   font-size: 2rem;
   background: none;
   border: none;
@@ -276,31 +276,22 @@ footer {
   position: absolute;
   top: 10px;
   right: 20px;
-  cursor: pointer;
   z-index: 10001;
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {
   .menu-toggle {
-  display: none !important; /* Always hide the hamburger toggle */
-}
-
+    display: none !important; /* hide hamburger */
   }
 
   .site-header nav {
-    display: none; /* Hide nav by default on mobile */
+    display: flex !important; /* show nav */
     flex-direction: column;
     background: var(--color-primary);
-    position: absolute;
-    top: 60px;  /* Just below your fixed header */
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding: 20px 0;
-  }
-
-  .site-header nav.open {
-    display: flex; /* Show nav when .open is toggled */
+    position: relative; /* so it doesn’t overlap */
+    padding: 10px 0;
+    justify-content: center;
   }
 
   .site-header nav a {
