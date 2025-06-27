@@ -85,6 +85,10 @@ section {
   text-decoration: underline;
 }
 
+/* === Offset below fixed nav === */
+body > *:not(.site-header) {
+  margin-top: 60px;
+}
 
 /* === Mobile nav === */
 @media (max-width: 600px) {
