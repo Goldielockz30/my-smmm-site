@@ -218,24 +218,15 @@ Schedule a call with Calendly
 
 <script>
   document.querySelectorAll('.site-header nav a').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
+    link.addEventListener('click', e => {
+      e.preventDefault(); // stop default jump
 
-    const targetId = link.getAttribute('href').substring(1);
-    const target = document.getElementById(targetId);
+      const targetId = link.getAttribute('href').substring(1);
+      const target = document.getElementById(targetId);
 
-    if (target) {
-      // Calculate position minus header height (60px)
-      const headerOffset = 60;
-      const elementPosition = target.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
   });
-});
-
 </script>
