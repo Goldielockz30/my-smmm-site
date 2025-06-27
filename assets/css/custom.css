@@ -267,3 +267,27 @@ footer {
   border: 0 !important;
 }
 
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: none; /* Hide hamburger */
+  }
+
+  .site-header nav {
+    display: flex !important;
+    flex-direction: column;
+    background: var(--color-primary);
+    padding: 20px 0;
+    max-width: 300px;     /* limit nav width */
+    margin: 10px auto;    /* center horizontally with some spacing */
+    border-radius: 8px;   /* soften edges */
+  }
+
+  .site-header nav a {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    padding: 6px 12px;    /* add some padding so links don’t stretch full width */
+    border-radius: 4px;
+    max-width: 260px;     /* keep links a bit narrower */
+  }
+}
+
