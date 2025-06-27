@@ -160,7 +160,7 @@ Schedule a call with Calendly
   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
 
-  <h3>Contact</h3>
+  ## Contact
 
   <div id="contact-icons" style="display: flex; justify-content: center; gap: 20px; align-items: center;">
 
