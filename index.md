@@ -6,12 +6,13 @@ permalink: /
 
 <header class="site-header">
   <nav>
-    <a href="#welcome">Welcome</a>
-    <a href="#offers">What I Offer</a>
-    <a href="#demo">Demo Chatbot</a>
-    <a href="#packages">Packages</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <a href="#welcome" class="nav-link">Welcome</a>
+  <a href="#offers" class="nav-link">What I Offer</a>
+  <a href="#demo" class="nav-link">Demo Chatbot</a>
+  <a href="#packages" class="nav-link">Packages</a>
+  <a href="#contact" class="nav-link">Contact</a>
+</nav>
+
 </header>
 
 <h1 style="text-align: center;">Mizz Media Pro</h1>
@@ -212,3 +213,18 @@ Schedule a call with Calendly
 <div id="floating-chat" onclick="document.getElementById('demo').scrollIntoView({ behavior: 'smooth' });">
   💬 Chat
 </div>
+
+<script>
+  document.querySelectorAll('.site-header nav a').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault(); // stop default jump
+
+      const targetId = link.getAttribute('href').substring(1);
+      const target = document.getElementById(targetId);
+
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
