@@ -7,10 +7,10 @@ permalink: /
 <header class="site-header">
   <nav>
   <a href="#welcome" class="nav-link">Welcome</a>
-  <a href="#offers" class="nav-link">What I Offer</a>
-  <a href="#demo" class="nav-link">Chatbot</a>
+  <a href="#offers" class="nav-link">Services</a>
+  <a href="#demo" class="nav-link">Demo Chatbot</a>
   <a href="#packages" class="nav-link">Packages</a>
-  <a href="#bookings" class="nav-link">Book a Call</a>
+  <a href="#app" class="nav-link">Demo app</a>
   <a href="#contact" class="nav-link">Contact</a>
 </nav>
 
@@ -38,9 +38,9 @@ That’s exactly why I built an app to support both SMMMs and brands: automating
 
 Everything in this app is designed to support how we really work: fast, smart, and client-focused.
 
-### Ready to streamline your social media business?
+## Ready to streamline your social media business? {#app}
 
-### 👇 Click here to explore the demo app 
+### 👇 Click here to explore the demo app:
 <br/>
 <a href="https://ai-content-generator-y.streamlit.app/" 
    target="_blank" 
@@ -194,16 +194,13 @@ Dedicated account manager
 
 Let’s tailor a plan to meet your goals.
 
-## Book a Free Call {#bookings}
+## Connect With Me {#contact}
 
-Schedule a call with Calendly
+Want to connect or ask a quick question? Reach out using the links below. You can also book a free discovery call to chat more in-depth.
 
-  <div class="calendly-inline-widget" data-url="https://calendly.com/mizzmediapro" style="min-width:320px;height:700px;"></div>
-  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+### 📬 Social & Email
 
-## Contact {#contact}
-
-  <div id="contact-icons" style="display: flex; justify-content: center; gap: 20px; align-items: center;">
+<div id="contact-icons" style="display: flex; justify-content: center; gap: 20px; align-items: center; margin-bottom: 20px;">
 
 <a href="mailto:connect@mizzmediapro.com" title="Email">
   <img src="/assets/images/email.png" alt="Email" style="height: 40px; width: auto;">
@@ -221,7 +218,14 @@ Schedule a call with Calendly
   <img src="/assets/images/linkedin.png" alt="LinkedIn" style="height: 40px; width: auto;">
 </a>
 
-  </div>
+</div>
+
+### 💬 Let's Talk!
+
+Schedule a no-pressure call to explore how I can support your brand or business goals.
+
+<div class="calendly-inline-widget" data-url="https://calendly.com/mizzmediapro" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
 <!-- Floating Chatbot Icon -->
 
