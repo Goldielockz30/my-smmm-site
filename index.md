@@ -38,7 +38,8 @@ Everything in this app is designed to support how we really work: fast, smart, a
 
 ### Ready to streamline your social media business?
 
-### 👉 Click here to explore the demo app (https://ai-content-generator-y.streamlit.app/)
+### 👉 Click here to explore the demo app <a href="https://ai-content-generator-y.streamlit.app/" style="color: #1c1c1c; text-decoration: none;">My Custom Link</a>
+
 
 
 ## What I Offer {#offers}
