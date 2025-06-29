@@ -1,6 +1,7 @@
 ---
 layout: single
 permalink: /
+title: .
 ---
 
 
@@ -38,7 +39,8 @@ Everything in this app is designed to support how we really work: fast, smart, a
 
 ### Ready to streamline your social media business?
 
-### 👉 Click here to explore the app (replace with your link)
+### 👉 Click here to explore the demo app [app demo](https://ai-content-generator-y.streamlit.app/)
+
 
 ## What I Offer {#offers}
 
