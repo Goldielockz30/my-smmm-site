@@ -39,7 +39,13 @@ Everything in this app is designed to support how we really work: fast, smart, a
 ### Ready to streamline your social media business?
 
 ### 👇 Click here to explore the demo app 
-<a href="https://ai-content-generator-y.streamlit.app/" style="color: #1c1c1c; text-decoration: none;">Mizz Media Pro App Demo</a>
+<a href="https://ai-content-generator-y.streamlit.app/" 
+   target="_blank" 
+   rel="noopener noreferrer" 
+   style="color: #1c1c1c; text-decoration: none;">
+   Mizz Media Pro App Demo
+</a>
+
 
 
 
