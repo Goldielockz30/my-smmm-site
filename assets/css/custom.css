@@ -288,6 +288,6 @@ contact-icons {
 
 @media (max-width: 768px) {
   #floating-chat {
-    bottom: 80px; /* or higher if needed */
+    bottom: 70px; /* Adjust until it no longer hides content */
   }
 }
