@@ -40,7 +40,7 @@ Everything in this app is designed to support how we really work: fast, smart, a
 
 ## Ready to streamline your social media business? {#app}
 
-### 👇 Click here to explore the demo app:
+### 👇 Click here to explore my demo app:
 <br/>
 <a href="https://ai-content-generator-y.streamlit.app/" 
    target="_blank" 
