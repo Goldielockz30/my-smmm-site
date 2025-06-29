@@ -51,7 +51,7 @@ section {
 
 /* === Fixed header === */
 .site-header {
-  background: transparent !important;
+  background: var(--color-primary) !important;
   box-shadow: none !important;
   margin: 0;
   padding: 10px 0;

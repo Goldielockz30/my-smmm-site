@@ -1,17 +1,18 @@
 /* === Root color variables === */
 :root {
-  --color-primary: #801336; /* Burgundy */
-  --color-secondary: #f7e7ce; /* Cream */
-  --color-gold: #f7e7ce;    /* Soft cream */
-  --color-text: #1c1c1c; /* Dark text */
+  --color-primary: #801336;     /* Burgundy */
+  --color-secondary: #f7e7ce;   /* Cream */
+  --color-gold: #f7e7ce;        /* Soft cream */
+  --color-text: #1c1c1c;        /* Dark text */
 }
 
 /* === Smooth scroll === */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 60px;
 }
 
-/* === Smooth full-page background gradient === */
+/* === Background gradient === */
 html, body {
   height: 100%;
   margin: 0;
@@ -25,7 +26,7 @@ html, body {
   overflow-x: hidden;
 }
 
-/* === Remove backgrounds from wrappers so gradient shows === */
+/* === Transparent wrappers === */
 .page,
 .page__inner-wrap,
 .layout--single,
@@ -41,16 +42,16 @@ section {
   border: none !important;
 }
 
-/* Section padding and max width */
+/* === Section layout === */
 section {
   padding: 60px 20px;
   max-width: 960px;
   margin: auto;
 }
 
-/* === Header styling === */
+/* === Fixed header === */
 .site-header {
-  background:  transparent !important;
+  background: var(--color-primary) !important;
   box-shadow: none !important;
   margin: 0;
   padding: 10px 0;
@@ -84,13 +85,12 @@ section {
   text-decoration: underline;
 }
 
-/* To avoid content behind fixed nav */
+/* === Offset below fixed nav === */
 body > *:not(.site-header) {
   margin-top: 60px;
 }
 
-
-/* Mobile-friendly nav */
+/* === Mobile nav === */
 @media (max-width: 600px) {
   .site-header nav a {
     display: inline-block;
@@ -100,24 +100,20 @@ body > *:not(.site-header) {
   }
 }
 
-
-
-/* === Headings color === */
+/* === Headings === */
 h1, h2, h3 {
   color: var(--color-text);
 }
 
-/* === Anchor jump offset for fixed header === */
 h1[id], h2[id], h3[id] {
   scroll-margin-top: 70px;
 }
 
-/* === Navigation override === */
+/* === Hide unwanted nav or elements === */
 #site-nav {
   display: none !important;
 }
 
-/* === Accessibility and skip links === */
 a.skip-link,
 a[href^="#primary-navigation"],
 a[href^="#content"],
@@ -136,7 +132,7 @@ footer {
   padding: 0 !important;
 }
 
-/* === Link colors === */
+/* === Link styles === */
 a {
   color: var(--color-text);
   text-decoration: underline;
@@ -146,7 +142,7 @@ a:hover {
   color: var(--color-primary);
 }
 
-/* === Chatbot styles === */
+/* === Chatbot === */
 #chatbot-container {
   max-width: 500px;
   margin: 40px auto 0;
@@ -207,7 +203,7 @@ a:hover {
   cursor: pointer;
 }
 
-/* === Floating Chatbot Icon === */
+/* === Floating chatbot icon === */
 #floating-chat {
   position: fixed;
   bottom: 25px;
@@ -222,8 +218,8 @@ a:hover {
   user-select: none;
 }
 
-/* === Contact section === */
-footer {
+/* === Contact icons === */
+contact-icons {
   max-width: 960px;
   margin: 40px auto 20px;
   padding: 10px 20px;
@@ -251,20 +247,13 @@ footer {
   transform: scale(1.1);
 }
 
-h1[id], h2[id], h3[id] {
-  scroll-margin-top: 70px; /* adjust to your header height */
-}
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 60px;
-}
+/* === Hidden elements === */
 .header-anchor,
 .permalink {
   display: none !important;
 }
 
 .permalink {
-  display: none !important;
   font-size: 0 !important;
   height: 0 !important;
   overflow: hidden !important;
@@ -283,4 +272,16 @@ html {
   clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
   border: 0 !important;
+}
+
+/* Increase scroll offset on mobile for headings and top margin */
+@media (max-width: 600px) {
+  h1[id], h2[id], h3[id] {
+    scroll-margin-top: 90px;  /* increase from 70px to 90px */
+  }
+  
+  /* Also increase margin top on all sections except the header */
+  body > *:not(.site-header) {
+    margin-top: 90px;  /* increase from 60px to 90px */
+  }
 }
