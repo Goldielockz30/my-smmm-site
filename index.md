@@ -196,7 +196,9 @@ Let’s tailor a plan to meet your goals.
 
 ## Connect With Me {#contact}
 
-Want to connect or ask a quick question? Reach out using the links below. You can also book a free discovery call to chat more in-depth.
+Want to connect or ask a quick question? 
+Reach out using the links below. 
+You can also book a free discovery call to chat more in-depth.
 
 ### 📬 Social & Email
 
