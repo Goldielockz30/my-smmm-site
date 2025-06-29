@@ -51,7 +51,7 @@ section {
 
 /* === Fixed header === */
 .site-header {
-  background: var(--color-primary) !important;
+  background: transparent !important;
   box-shadow: none !important;
   margin: 0;
   padding: 10px 0;
@@ -283,5 +283,11 @@ contact-icons {
   /* Also increase margin top on all sections except the header */
   body > *:not(.site-header) {
     margin-top: 90px;  /* increase from 60px to 90px */
+  }
+}
+
+@media (max-width: 768px) {
+  #floating-chat {
+    bottom: 70px; /* Adjust until it no longer hides content */
   }
 }

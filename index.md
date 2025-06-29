@@ -19,26 +19,29 @@ permalink: /
 <h1 style="text-align: center;">Mizz Media Pro</h1>
 
 ## AI Digital Product Creator & Social Media Marketing Manager {#welcome}
-I help hair and beauty brands sell out their products and services while building a powerful online presence using smart content, Meta ads, and a touch of AI magic.
+
+I help hair and beauty brands sell out their products and services through smart content, Meta ads, and a touch of AI magic.
+
+I also support social media marketing managers with tools to grow, streamline, and scale their services with less stress.
 
 With years of experience in social media and automation, I craft custom strategies tailored to your niche, leveraging AI to take the hustle off your hands.
 
-I also empower social media marketing managers with the tools to do the same.
-
-Most recently, I built a powerful app designed to automate workflows, boost efficiency, and simplify client management.
+To make that easier, I created an AI-powered app that automates workflows, boosts efficiency, and simplifies client management.
 
 ### Hi, I’m Nana Johnson
+
 Your go-to expert for helping hair and beauty brands sell out their services and products while building a powerful online presence.
 
 As a Social Media Marketing Manager myself, I know how overwhelming it can be to juggle multiple clients, manage content calendars, and meet nonstop deadlines.
 
-That’s exactly why I created an app—to help SMMMs like you automate repetitive tasks, streamline daily workflows, and scale your services without burning out.
+That’s exactly why I built an app to support both SMMMs and brands: automating repetitive tasks, simplifying daily workflows, and scaling your services without burning out.
 
 Everything in this app is designed to support how we really work: fast, smart, and client-focused.
 
 ### Ready to streamline your social media business?
 
 ### 👇 Click here to explore the demo app 
+<br/>
 <a href="https://ai-content-generator-y.streamlit.app/" 
    target="_blank" 
    rel="noopener noreferrer" 
@@ -46,6 +49,7 @@ Everything in this app is designed to support how we really work: fast, smart, a
    Mizz Media Pro App Demo
 </a>
 
+### Built for social media managers and hair & beauty brands who want to scale using AI.
 
 
 
