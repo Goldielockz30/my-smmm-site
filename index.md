@@ -7,10 +7,10 @@ permalink: /
 <header class="site-header">
   <nav>
   <a href="#welcome" class="nav-link">Welcome</a>
+  <a href="#app" class="nav-link">Demo app</a>
   <a href="#offers" class="nav-link">Services</a>
   <a href="#demo" class="nav-link">Demo Chatbot</a>
   <a href="#packages" class="nav-link">Packages</a>
-  <a href="#app" class="nav-link">Demo app</a>
   <a href="#contact" class="nav-link">Contact</a>
 </nav>
 
