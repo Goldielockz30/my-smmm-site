@@ -46,63 +46,73 @@ Everything in this app is designed to support how we really work: fast, smart, a
 Type "hi", "hello" "ai", "ads", "cost" "content", "meta", "chatbot", "price", or "sales" to try it out.\
 **Bonus** Enter your **email** in the ChatBot to get a special offer!
 
-  <div id="chatbot-container">
-    <h3>💬 Ask MizzMediaBot</h3>
-    <div id="chatlog"></div>
-    <div id="input-area">
-      <input id="userInput" type="text" placeholder="Ask me anything..." onkeydown="if(event.key==='Enter') sendMessage()" />
-      <button id="sendBtn" onclick="sendMessage()">Send</button>
-    </div>
-  </div>
-
   <script>
-    const chatlog = document.getElementById('chatlog');
-    const userInput = document.getElementById('userInput');
+  const chatlog = document.getElementById('chatlog');
+  const userInput = document.getElementById('userInput');
 
-    const responses = [
-      { keywords: ['hi', 'hello'], reply: 'Hi there! Need help with content, ads or AI? 😊' },
-      { keywords: ['ai', 'chatbot'], reply: 'Automate replies 24/7 using smart chatbots!' },
-      { keywords: ['ads', 'meta'], reply: 'Meta Ads help you attract your dream clients.' },
-      { keywords: ['price', 'cost'], reply: 'Every project is custom — even if you choose a package. Let’s talk about what fits your goals and budget.' },
-      { keywords: ['content'], reply: 'I create scroll-stopping content tailored to your brand.' },
-      { keywords: ['sales'], reply: 'I help optimize sales funnels to boost conversions.' }
-    ];
+  const responses = [
+    { keywords: ['hi', 'hello'], reply: 'Hi there! Need help with content, ads or AI? 😊' },
+    { keywords: ['ai', 'chatbot'], reply: 'Automate replies 24/7 using smart chatbots!' },
+    { keywords: ['ads', 'meta'], reply: 'Meta Ads help you attract your dream clients.' },
+    { keywords: ['price', 'cost'], reply: 'Every project is custom — even if you choose a package. Let’s talk about what fits your goals and budget.' },
+    { keywords: ['content'], reply: 'I create scroll-stopping content tailored to your brand.' },
+    { keywords: ['sales'], reply: 'I help optimize sales funnels to boost conversions.' }
+  ];
 
-    function appendMessage(text, sender = 'bot') {
-      const bubble = document.createElement('div');
-      bubble.className = `chat-bubble ${sender}`;
-      bubble.textContent = text;
-      chatlog.appendChild(bubble);
-      chatlog.scrollTop = chatlog.scrollHeight;
-    }
+  function appendMessage(text, sender = 'bot') {
+    const bubble = document.createElement('div');
+    bubble.className = `chat-bubble ${sender}`;
+    bubble.textContent = text;
+    chatlog.appendChild(bubble);
+    chatlog.scrollTop = chatlog.scrollHeight;
+  }
 
-    function sendMessage() {
-      const input = userInput.value.trim();
-      if (!input) return;
+  function sendMessage() {
+    const input = userInput.value.trim();
+    if (!input) return;
 
-      appendMessage(input, 'user');
-      userInput.value = '';
+    appendMessage(input, 'user');
+    userInput.value = '';
 
-      const userText = input.toLowerCase();
-      const emailRegex = /\S+@\S+\.\S+/;
+    const userText = input.toLowerCase();
+    const emailRegex = /\S+@\S+\.\S+/;
 
-      setTimeout(() => {
-        let reply = "Try asking about AI, price, or ads!";
+    setTimeout(() => {
+      let reply = "Try asking about AI, price, or ads!";
 
-        if (emailRegex.test(userText)) {
-          reply = "Thanks for sharing your email! I'll send you an exclusive offer now.";
-        } else {
-          for (const item of responses) {
-            if (item.keywords.some(k => userText.includes(k))) {
-              reply = item.reply;
-              break;
-            }
+      if (emailRegex.test(userText)) {
+        reply = "Thanks for sharing your email! I'll send you an exclusive offer now.";
+
+        // ✅ Secure MailerLite Integration via Netlify Function
+        fetch("/.netlify/functions/subscribe", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ email: userText })
+        })
+        .then(response => {
+          if (!response.ok) {
+            console.error("MailerLite error:", response.status);
+          }
+        })
+        .catch(error => console.error("Fetch error:", error));
+
+      } else {
+        for (const item of responses) {
+          if (item.keywords.some(k => userText.includes(k))) {
+            reply = item.reply;
+            break;
           }
         }
-        appendMessage(reply, 'bot');
-      }, 800);
-    }
-  </script>
+      }
+
+      appendMessage(reply, 'bot');
+    }, 800);
+  }
+</script>
+
+
 ### 💡 Want your own lead funnel like this?
 
 I can set one up for your brand, fully customized and connected to your MailerLite. 
