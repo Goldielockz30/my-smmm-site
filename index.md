@@ -44,7 +44,7 @@ Everything in this app is designed to support how we really work: fast, smart, a
 ## Demo Chatbot {#demo}
 
 Type "hi", "hello" "ai", "ads", "cost" "content", "meta", "chatbot", "price", or "sales" to try it out.\
-**Bonus** Enter your **email** in the chat to get a special offer!
+**Bonus** Enter your **email** in the ChatBot to get a special offer!
 
   <div id="chatbot-container">
     <h3>💬 Ask MizzMediaBot</h3>
