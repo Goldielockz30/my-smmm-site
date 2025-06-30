@@ -113,6 +113,7 @@ Type "hi", "hello" "ai", "ads", "cost" "content", "meta", "chatbot", "price", or
 </script>
 
 
+
 ### 💡 Want your own lead funnel like this?
 
 I can set one up for your brand, fully customized and connected to your MailerLite. 
