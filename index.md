@@ -96,9 +96,10 @@ Type "hi", "ai", "ads", "price", or "sales" to try it out.\
 
     const responses = [
       { keywords: ['hi', 'hello'], reply: 'Hi there! Need help with content, ads or AI? 😊' },
-      { keywords: ['ai', 'chatbot'], reply: 'I automate replies 24/7 using smart chatbots!' },
+      { keywords: ['ai', 'chatbot'], reply: 'Automate replies 24/7 using smart chatbots!' },
       { keywords: ['ads', 'meta'], reply: 'Meta Ads help you attract your dream clients.' },
       { keywords: ['price', 'cost'], reply: 'Packages start at £1,000/month. Ask for more!' },
+      { keywords: ['content'], reply: 'I create scroll-stopping content tailored to your brand.' },
       { keywords: ['sales'], reply: 'I help optimize funnels to boost conversions.' }
     ];
 
@@ -140,7 +141,7 @@ Type "hi", "ai", "ads", "price", or "sales" to try it out.\
 
 ## Packages {#packages}
 
-🟦 Essentials – Social media management
+### 🟦 Essentials – Social Media Management
 
 Platforms: Instagram, Facebook, TikTok
 
@@ -148,51 +149,58 @@ Branded visuals + captions
 
 Content calendar + scheduling
 
-Optional add ons: AI Chatbot
+Optional add-ons:
+AI Chatbot
 
+### 🟪 Growth – Everything in Essentials
 
-🟪 Growth – Everything in Essentials
+- AI Chatbot (FAQ automation, lead capture)
 
-AI chatbot (FAQ automation, lead capture)
+- Booking funnel audit (guest journey review)
 
-Booking funnel audit (guest journey review)
+- Content upgrade: Reels or short-form videos
 
-Content upgrade: Reels or short-form videos
+### Optional add-ons:
+- Meta Ads Management
 
-Optional add ons: Meta Ads Management
+### 🟥 Elite – Everything in Growth
 
+- Funnel optimization + landing page build
 
-🟥 Elite – Everything in Growth
+- Advanced Meta Ads: retargeting, conversion tracking
 
-Funnel optimization + landing page build
+- Performance dashboard access
 
-Advanced Meta Ads: retargeting, conversion tracking
+- Custom growth strategy
 
-Performance dashboard access
+- Concierge support (email + priority chat)
 
-Custom funnel strategy
+### Optional add-ons:
 
-Concierge support (email + priority chat)
+-  Dedicated account manager for hands-on, high-touch support
 
 🎯 Ideal for brands who want to scale fast
 
+### ⚙️ Bespoke – Everything in Growth
 
-Ad spend is separate from your monthly package and goes directly to Meta (Facebook/Instagram).
+✅ Done-for-you funnel setup
+- Includes integration + customization of my chatbot and app demo on your website
+-  Lead capture + offer automation using MailerLite
 
-🧠 I help you plan ad budgets that match your revenue goals and ROI targets.
+✅ Custom automations
+-  Email marketing sequences
+-  Performance tracking
+-  Smart content delivery (automated posts + tailored messaging)
 
+✅ Support
 
-⚙️ Bespoke – Custom Quote
-<br>
-Multilingual chatbot support
+-  Dedicated account manager for hands-on, high-touch support
 
-YouTube or Google Ads
+🚀 Perfect for brands or SMMMs who want a ready-to-launch system with no tech headaches.
 
-Email marketing automation
+🧠 Ad spend is separate from your monthly package and goes directly to Meta (Facebook/Instagram). I help you plan ad budgets that match your revenue goals and ROI targets.
 
-Dedicated account manager
-
-Let’s tailor a plan to meet your goals.
+Want a custom quote? Let’s tailor a plan to meet your goals.
 
 ## Connect With Me {#contact}
 
