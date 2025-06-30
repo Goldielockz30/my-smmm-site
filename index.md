@@ -7,9 +7,9 @@ permalink: /
 <header class="site-header">
   <nav>
   <a href="#welcome" class="nav-link">Welcome</a>
-  <a href="#app" class="nav-link">Demo app</a>
+  <a href="#demo" class="nav-link">Demo Chatbot</a> 
   <a href="#offers" class="nav-link">Services</a>
-  <a href="#demo" class="nav-link">Demo Chatbot</a>
+  <a href="#app" class="nav-link">Demo app</a>
   <a href="#packages" class="nav-link">Packages</a>
   <a href="#contact" class="nav-link">Contact</a>
 </nav>
@@ -40,44 +40,6 @@ As a Social Media Marketing Manager myself, I know how overwhelming it can be to
 That’s exactly why I built an app to support both SMMMs and brands: automating repetitive tasks, simplifying daily workflows, and scaling your services without burning out.
 
 Everything in this app is designed to support how we really work: fast, smart, and client-focused.
-
-## Ready to streamline your social media business? {#app}
-
-### 👇 Click here to explore my demo app:
-<br/>
-<a href="https://ai-content-generator-y.streamlit.app/" 
-   target="_blank" 
-   rel="noopener noreferrer" 
-   style="display: inline-block; padding: 12px 24px; background-color: #801336; color: #f7e7ce; text-decoration: none; border-radius: 8px; font-weight: bold;">
-   Mizz Media Pro App Demo
-</a>
-
-### Built for social media managers and hair & beauty brands who want to scale using AI.
-
-
-
-## What I Offer {#offers}
-
-### Social Media Management
-
-Specialised content and marketing strategies, scheduling, copywriting, and community engagement across multiple platforms.
-
-### Meta Ads Management
-
-Get laser-targeted Facebook and Instagram ads to maximise ROI.
-
-### AI Chat Bot Integration
-
-Automate guest communication 24/7 with smart chatbots that answer FAQs and boost sales.
-
-### Sales Funnel Optimisation
-
-Level up your sales flow to turn browsers into buyers and boost your revenue.
-
-### Performance Analytics Dashboards
-
-Live dashboards with real-time insights on growth, engagement, and conversions.
-
 
 ## Demo Chatbot {#demo}
 
@@ -146,6 +108,42 @@ Type "hi", "hello" "ai", "ads", "cost" "content", "meta", "chatbot", "price", or
 I can set one up for your brand, fully customized and connected to your MailerLite. 
 ### Click here to book a setup session 👉 <a href="#bookings" style="display: inline-block; padding: 12px 24px; background-color: #801336; color: #f7e7ce; text-decoration: none; border-radius: 8px; font-weight: bold;">Setup</a>
 
+
+## What I Offer {#offers}
+
+### Social Media Management
+
+Specialised content and marketing strategies, scheduling, copywriting, and community engagement across multiple platforms.
+
+### Meta Ads Management
+
+Get laser-targeted Facebook and Instagram ads to maximise ROI.
+
+### AI Chat Bot Integration
+
+Automate guest communication 24/7 with smart chatbots that answer FAQs and boost sales.
+
+### Sales Funnel Optimisation
+
+Level up your sales flow to turn browsers into buyers and boost your revenue.
+
+### Performance Analytics Dashboards
+
+Live dashboards with real-time insights on growth, engagement, and conversions.
+
+
+## Ready to streamline your social media business? {#app}
+
+### 👇 Click here to explore my demo app:
+<br/>
+<a href="https://ai-content-generator-y.streamlit.app/" 
+   target="_blank" 
+   rel="noopener noreferrer" 
+   style="display: inline-block; padding: 12px 24px; background-color: #801336; color: #f7e7ce; text-decoration: none; border-radius: 8px; font-weight: bold;">
+   Mizz Media Pro App Demo
+</a>
+
+### Built for social media managers and hair & beauty brands who want to scale using AI.
 
 
 ## Packages {#packages}
