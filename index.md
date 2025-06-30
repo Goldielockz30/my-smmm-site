@@ -81,7 +81,7 @@ Live dashboards with real-time insights on growth, engagement, and conversions.
 
 ## Demo Chatbot {#demo}
 
-Type "hi", "hello" "ai", "ads", "cost" "content, "meta", "chatbot", "price", or "sales" to try it out.\
+Type "hi", "hello" "ai", "ads", "cost" "content", "meta", "chatbot", "price", or "sales" to try it out.\
 **Bonus** Enter your **email** in the chat to get a special offer!
 
   <div id="chatbot-container">
