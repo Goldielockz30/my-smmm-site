@@ -114,14 +114,17 @@
         <header class="site-header">
   <nav>
   <a href="#welcome" class="nav-link">Welcome</a>
+  <a href="#app" class="nav-link">Demo app</a>
   <a href="#offers" class="nav-link">Services</a>
   <a href="#demo" class="nav-link">Demo Chatbot</a>
   <a href="#packages" class="nav-link">Packages</a>
-  <a href="#app" class="nav-link">Demo app</a>
   <a href="#contact" class="nav-link">Contact</a>
 </nav>
 
 </header>
+<div style="text-align: center; margin-top: 0; margin-bottom: 20px;">
+  <img src="assets\AIBANNER.PNG" alt="Mizz Media Pro Banner" style="max-width: 100%; height: auto;" />
+</div>
 
 <h1 style="text-align: center;">Mizz Media Pro</h1>
 
@@ -149,7 +152,7 @@
 
 <h3 id="-click-here-to-explore-my-demo-app">👇 Click here to explore my demo app:</h3>
 <p><br />
-<a href="https://ai-content-generator-y.streamlit.app/" target="_blank" rel="noopener noreferrer" style="color: #1c1c1c; text-decoration: none;">
+<a href="https://ai-content-generator-y.streamlit.app/" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 12px 24px; background-color: #801336; color: #f7e7ce; text-decoration: none; border-radius: 8px; font-weight: bold;">
    Mizz Media Pro App Demo
 </a></p>
 
@@ -179,7 +182,7 @@
 
 <h2 id="demo">Demo Chatbot</h2>
 
-<p>Type “hi”, “ai”, “ads”, “price”, or “sales” to try it out.<br />
+<p>Type “hi”, “hello” “ai”, “ads”, “cost” “content, “meta”, “chatbot”, “price”, or “sales” to try it out.<br />
 <strong>Bonus</strong> Enter your <strong>email</strong> in the chat to get a special offer!</p>
 
 <div id="chatbot-container">
@@ -197,10 +200,11 @@
 
     const responses = [
       { keywords: ['hi', 'hello'], reply: 'Hi there! Need help with content, ads or AI? 😊' },
-      { keywords: ['ai', 'chatbot'], reply: 'I automate replies 24/7 using smart chatbots!' },
+      { keywords: ['ai', 'chatbot'], reply: 'Automate replies 24/7 using smart chatbots!' },
       { keywords: ['ads', 'meta'], reply: 'Meta Ads help you attract your dream clients.' },
-      { keywords: ['price', 'cost'], reply: 'Packages start at £1,000/month. Ask for more!' },
-      { keywords: ['sales'], reply: 'I help optimize funnels to boost conversions.' }
+      { keywords: ['price', 'cost'], reply: 'Every project is custom — even if you choose a package. Let’s talk about what fits your goals and budget.' },
+      { keywords: ['content'], reply: 'I create scroll-stopping content tailored to your brand.' },
+      { keywords: ['sales'], reply: 'I help optimize sales funnels to boost conversions.' }
     ];
 
     function appendMessage(text, sender = 'bot') {
@@ -239,57 +243,121 @@
     }
   </script>
 
+<h3 id="-want-your-own-lead-funnel-like-this">💡 Want your own lead funnel like this?</h3>
+
+<p>I can set one up for your brand, fully customized and connected to your MailerLite.</p>
+<h3 id="click-here-to-book-a-setup-session--setup">Click here to book a setup session 👉 <a href="#bookings" style="display: inline-block; padding: 12px 24px; background-color: #801336; color: #f7e7ce; text-decoration: none; border-radius: 8px; font-weight: bold;">Setup</a></h3>
+
 <h2 id="packages">Packages</h2>
 
-<p>🟦 Essentials – Social media management</p>
+<h3 id="-essentials--social-media-management">🟦 Essentials – Social Media Management</h3>
 
-<p>Platforms: Instagram, Facebook, TikTok</p>
+<ul>
+  <li>
+    <p>Platforms: Instagram, Facebook, TikTok</p>
+  </li>
+  <li>
+    <p>Branded visuals + captions</p>
+  </li>
+  <li>
+    <p>Content calendar + scheduling</p>
+  </li>
+</ul>
 
-<p>Branded visuals + captions</p>
+<h3 id="optional-add-ons">Optional add-ons:</h3>
 
-<p>Content calendar + scheduling</p>
+<ul>
+  <li>AI Chatbot</li>
+</ul>
 
-<p>Optional add ons: AI Chatbot</p>
+<h3 id="-growth--everything-in-essentials">🟪 Growth – Everything in Essentials</h3>
 
-<p>🟪 Growth – Everything in Essentials</p>
+<ul>
+  <li>
+    <p>AI Chatbot (FAQ automation, lead capture)</p>
+  </li>
+  <li>
+    <p>Booking funnel audit (guest journey review)</p>
+  </li>
+  <li>
+    <p>Content upgrade: Reels or short-form videos</p>
+  </li>
+</ul>
 
-<p>AI chatbot (FAQ automation, lead capture)</p>
+<h3 id="optional-add-ons-1">Optional add-ons:</h3>
 
-<p>Booking funnel audit (guest journey review)</p>
+<ul>
+  <li>Meta Ads Management</li>
+</ul>
 
-<p>Content upgrade: Reels or short-form videos</p>
+<h3 id="-elite--everything-in-growth">🟥 Elite – Everything in Growth</h3>
 
-<p>Optional add ons: Meta Ads Management</p>
+<ul>
+  <li>
+    <p>Funnel optimization + landing page build</p>
+  </li>
+  <li>
+    <p>Advanced Meta Ads: retargeting, conversion tracking</p>
+  </li>
+  <li>
+    <p>Performance dashboard access</p>
+  </li>
+  <li>
+    <p>Custom growth strategy</p>
+  </li>
+  <li>
+    <p>Concierge support (email + priority chat)</p>
+  </li>
+</ul>
 
-<p>🟥 Elite – Everything in Growth</p>
+<h3 id="optional-add-ons-2">Optional add-ons:</h3>
 
-<p>Funnel optimization + landing page build</p>
-
-<p>Advanced Meta Ads: retargeting, conversion tracking</p>
-
-<p>Performance dashboard access</p>
-
-<p>Custom funnel strategy</p>
-
-<p>Concierge support (email + priority chat)</p>
+<ul>
+  <li>Dedicated account manager for hands-on, high-touch support</li>
+</ul>
 
 <p>🎯 Ideal for brands who want to scale fast</p>
 
-<p>Ad spend is separate from your monthly package and goes directly to Meta (Facebook/Instagram).</p>
+<h3 id="️-bespoke--everything-in-elite">⚙️ Bespoke – Everything in Elite</h3>
 
-<p>🧠 I help you plan ad budgets that match your revenue goals and ROI targets.</p>
+<p>✅ Done-for-you funnel setup</p>
 
-<p>⚙️ Bespoke – Custom Quote
-<br />
-Multilingual chatbot support</p>
+<ul>
+  <li>
+    <p>Includes integration + customization of my chatbot and app demo on your website</p>
+  </li>
+  <li>
+    <p>Lead capture + offer automation using MailerLite</p>
+  </li>
+</ul>
 
-<p>YouTube or Google Ads</p>
+<p>✅ Custom automations</p>
 
-<p>Email marketing automation</p>
+<ul>
+  <li>
+    <p>Email marketing sequences</p>
+  </li>
+  <li>
+    <p>Performance tracking</p>
+  </li>
+  <li>
+    <p>Smart content delivery (automated posts + tailored messaging)</p>
+  </li>
+</ul>
 
-<p>Dedicated account manager</p>
+<p>✅ Support</p>
 
-<p>Let’s tailor a plan to meet your goals.</p>
+<ul>
+  <li>Dedicated account manager for hands-on, high-touch support</li>
+</ul>
+
+<p>🚀 Perfect for brands or SMMMs who want a ready-to-launch system with no tech headaches.</p>
+
+<p>🧠 Ad spend is separate from your monthly package and goes directly to Meta (Facebook/Instagram).</p>
+
+<p>I help you plan ad budgets that match your revenue goals and ROI targets.</p>
+
+<h3 id="want-a-custom-quote-lets-tailor-a-plan-to-meet-your-goals">Want a custom quote? Let’s tailor a plan to meet your goals.</h3>
 
 <h2 id="contact">Connect With Me</h2>
 
@@ -321,7 +389,7 @@ Multilingual chatbot support</p>
 
 </div>
 
-<h3 id="-lets-talk">💬 Let’s Talk!</h3>
+<h3 id="-lets-talk">💬 <span id="bookings">Let’s Talk!</span></h3>
 
 <p>Schedule a no-pressure call to explore how I can support your brand or business goals.</p>
 

@@ -291,3 +291,62 @@ contact-icons {
     bottom: 70px; /* Adjust until it no longer hides content */
   }
 }
+
+
+/* 1. Make banner image full-width but not too tall */
+header + div img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* === Remove all top spacing and hidden nav spacing === */
+
+/* Hide nav bar and remove any leftover spacing */
+#site-nav,
+.masthead,
+.nav__inner {
+  display: none !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Remove all spacing from header wrapper */
+header#masthead,
+.masthead__inner-wrap {
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 0 !important;
+  height: auto !important;
+}
+
+/* Remove hero section spacing */
+.page__hero,
+.page__hero--overlay {
+  padding: 0 !important;
+  margin: 0 !important;
+  min-height: 0 !important;
+}
+
+/* Remove spacing around title */
+.page__title {
+  margin: 0 !important;
+  padding: 0.2em 0 0.3em 0 !important;
+}
+
+/* Remove spacing around page content */
+.page__content,
+.page__meta,
+.page__lead {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Remove top padding from body */
+body {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+

@@ -15,6 +15,9 @@ permalink: /
 </nav>
 
 </header>
+<div style="text-align: center; margin-top: 0; margin-bottom: 20px;">
+  <img src="assets\AIBANNER.PNG" alt="Mizz Media Pro Banner" style="max-width: 100%; height: auto;" />
+</div>
 
 <h1 style="text-align: center;">Mizz Media Pro</h1>
 
@@ -45,7 +48,7 @@ Everything in this app is designed to support how we really work: fast, smart, a
 <a href="https://ai-content-generator-y.streamlit.app/" 
    target="_blank" 
    rel="noopener noreferrer" 
-   style="color: #1c1c1c; text-decoration: none;">
+   style="display: inline-block; padding: 12px 24px; background-color: #801336; color: #f7e7ce; text-decoration: none; border-radius: 8px; font-weight: bold;">
    Mizz Media Pro App Demo
 </a>
 
@@ -78,7 +81,7 @@ Live dashboards with real-time insights on growth, engagement, and conversions.
 
 ## Demo Chatbot {#demo}
 
-Type "hi", "ai", "ads", "price", or "sales" to try it out.\
+Type "hi", "hello" "ai", "ads", "cost" "content, "meta", "chatbot", "price", or "sales" to try it out.\
 **Bonus** Enter your **email** in the chat to get a special offer!
 
   <div id="chatbot-container">
@@ -98,9 +101,9 @@ Type "hi", "ai", "ads", "price", or "sales" to try it out.\
       { keywords: ['hi', 'hello'], reply: 'Hi there! Need help with content, ads or AI? 😊' },
       { keywords: ['ai', 'chatbot'], reply: 'Automate replies 24/7 using smart chatbots!' },
       { keywords: ['ads', 'meta'], reply: 'Meta Ads help you attract your dream clients.' },
-      { keywords: ['price', 'cost'], reply: 'Packages start at £1,000/month. Ask for more!' },
+      { keywords: ['price', 'cost'], reply: 'Every project is custom — even if you choose a package. Let’s talk about what fits your goals and budget.' },
       { keywords: ['content'], reply: 'I create scroll-stopping content tailored to your brand.' },
-      { keywords: ['sales'], reply: 'I help optimize funnels to boost conversions.' }
+      { keywords: ['sales'], reply: 'I help optimize sales funnels to boost conversions.' }
     ];
 
     function appendMessage(text, sender = 'bot') {
@@ -138,25 +141,26 @@ Type "hi", "ai", "ads", "price", or "sales" to try it out.\
       }, 800);
     }
   </script>
+### 💡 Want your own lead funnel like this?
 
-  ### 💡 Want your own lead funnel like this?
+I can set one up for your brand, fully customized and connected to your MailerLite. 
+### Click here to book a setup session 👉 <a href="#bookings" style="display: inline-block; padding: 12px 24px; background-color: #801336; color: #f7e7ce; text-decoration: none; border-radius: 8px; font-weight: bold;">Setup</a>
 
-I can set one up for your brand — fully branded and connected to your MailerLite.  
-👉 [**Click here to book a setup session**](#contact)
+
 
 ## Packages {#packages}
 
 ### 🟦 Essentials – Social Media Management
 
-Platforms: Instagram, Facebook, TikTok
+- Platforms: Instagram, Facebook, TikTok
 
-Branded visuals + captions
+- Branded visuals + captions
 
-Content calendar + scheduling
+- Content calendar + scheduling
 
 ### Optional add-ons:
 
-AI Chatbot
+- AI Chatbot
 
 ### 🟪 Growth – Everything in Essentials
 
@@ -167,6 +171,7 @@ AI Chatbot
 - Content upgrade: Reels or short-form videos
 
 ### Optional add-ons:
+
 - Meta Ads Management
 
 ### 🟥 Elite – Everything in Growth
@@ -187,15 +192,21 @@ AI Chatbot
 
 🎯 Ideal for brands who want to scale fast
 
-### ⚙️ Bespoke – Everything in Growth
+### ⚙️ Bespoke – Everything in Elite
 
-✅ Done-for-you funnel setup
+
+✅ Done-for-you funnel setup 
+
 - Includes integration + customization of my chatbot and app demo on your website
+
 -  Lead capture + offer automation using MailerLite
 
 ✅ Custom automations
+
 -  Email marketing sequences
+
 -  Performance tracking
+
 -  Smart content delivery (automated posts + tailored messaging)
 
 ✅ Support
@@ -204,7 +215,9 @@ AI Chatbot
 
 🚀 Perfect for brands or SMMMs who want a ready-to-launch system with no tech headaches.
 
-🧠 Ad spend is separate from your monthly package and goes directly to Meta (Facebook/Instagram). I help you plan ad budgets that match your revenue goals and ROI targets.
+🧠 Ad spend is separate from your monthly package and goes directly to Meta (Facebook/Instagram). 
+
+I help you plan ad budgets that match your revenue goals and ROI targets.
 
 ### Want a custom quote? Let’s tailor a plan to meet your goals.
 
@@ -238,7 +251,8 @@ You can also book a free discovery call to chat more in-depth.
 
 </div>
 
-### 💬 Let's Talk!
+### 💬 <span id="bookings">Let's Talk!</span>
+
 
 Schedule a no-pressure call to explore how I can support your brand or business goals.
 
