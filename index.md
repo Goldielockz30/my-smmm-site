@@ -139,6 +139,11 @@ Type "hi", "ai", "ads", "price", or "sales" to try it out.\
     }
   </script>
 
+  ### 💡 Want your own lead funnel like this?
+
+I can set one up for your brand — fully branded and connected to your MailerLite.  
+👉 [**Click here to book a setup session**](#contact)
+
 ## Packages {#packages}
 
 ### 🟦 Essentials – Social Media Management
@@ -149,7 +154,8 @@ Branded visuals + captions
 
 Content calendar + scheduling
 
-Optional add-ons:
+### Optional add-ons:
+
 AI Chatbot
 
 ### 🟪 Growth – Everything in Essentials
@@ -200,7 +206,7 @@ AI Chatbot
 
 🧠 Ad spend is separate from your monthly package and goes directly to Meta (Facebook/Instagram). I help you plan ad budgets that match your revenue goals and ROI targets.
 
-Want a custom quote? Let’s tailor a plan to meet your goals.
+### Want a custom quote? Let’s tailor a plan to meet your goals.
 
 ## Connect With Me {#contact}
 
