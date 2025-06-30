@@ -46,6 +46,16 @@ Everything in this app is designed to support how we really work: fast, smart, a
 Type "hi", "hello" "ai", "ads", "cost" "content", "meta", "chatbot", "price", or "sales" to try it out.\
 **Bonus** Enter your **email** in the ChatBot to get a special offer!
 
+
+<div id="chatbot-container">
+    <h3>💬 Ask MizzMediaBot</h3>
+    <div id="chatlog"></div>
+    <div id="input-area">
+      <input id="userInput" type="text" placeholder="Ask me anything..." onkeydown="if(event.key==='Enter') sendMessage()" />
+      <button id="sendBtn" onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  
   <script>
   const chatlog = document.getElementById('chatlog');
   const userInput = document.getElementById('userInput');
