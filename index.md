@@ -270,8 +270,7 @@ You can also book a free discovery call to chat more in-depth.
 
 </div>
 
-### 💬 <span id="bookings">Let's Talk!</span>
-
+<h2 id="bookings">💬 Let's Talk!</h2>
 
 Schedule a no-pressure call to explore how I can support your brand or business goals.
 
