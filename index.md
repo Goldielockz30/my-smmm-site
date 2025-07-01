@@ -127,7 +127,8 @@ Type "hi", "hello" "ai", "ads", "cost" "content", "meta", "chatbot", "price", or
 ### 💡 Want your own lead funnel like this?
 
 I can set one up for your brand, fully customized and connected to your MailerLite. 
-### Click here to book a setup session 👉 <a href="#bookings" style="display: inline-block; padding: 12px 24px; background-color: #801336; color: #f7e7ce; text-decoration: none; border-radius: 8px; font-weight: bold;">Setup</a>
+### Click here to book a setup session 👇 
+<a href="#bookings" style="display: inline-block; padding: 12px 24px; background-color: #801336; color: #f7e7ce; text-decoration: none; border-radius: 8px; font-weight: bold;">ChatBot Setup</a>
 
 
 ## What I Offer {#offers}
@@ -271,10 +272,7 @@ You can also book a free discovery call to chat more in-depth.
 </div>
 
 <h2 id="bookings">💬 Let's Talk!</h2>
-<!--
- <div id="bookings" style="margin-top: 100px;">
-  <h2>💬 Let's Talk!</h2>
-</div> -->
+
 
 Schedule a no-pressure call to explore how I can support your brand or business goals.
 
