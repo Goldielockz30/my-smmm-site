@@ -350,3 +350,6 @@ body {
   padding-top: 0 !important;
 }
 
+#bookings {
+  scroll-margin-top: 100px;
+}
