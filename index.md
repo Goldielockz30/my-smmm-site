@@ -270,9 +270,11 @@ You can also book a free discovery call to chat more in-depth.
 
 </div>
 
-<div id="bookings" style="margin-top: 100px;">
+<h2 id="bookings">💬 Let's Talk!</h2>
+<!--
+ <div id="bookings" style="margin-top: 100px;">
   <h2>💬 Let's Talk!</h2>
-</div>
+</div> -->
 
 Schedule a no-pressure call to explore how I can support your brand or business goals.
 
@@ -297,6 +299,22 @@ Schedule a no-pressure call to explore how I can support your brand or business 
 
       if (target) {
         target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      const targetEl = document.querySelector(targetId);
+      if (targetEl) {
+        e.preventDefault();
+        targetEl.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
       }
     });
   });
