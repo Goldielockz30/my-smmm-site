@@ -212,7 +212,7 @@ Live dashboards with real-time insights on growth, engagement, and conversions.
 
 🎯 Ideal for brands who want to scale fast
 
-### ⚙️ Bespoke – Everything in Elite
+### 🟨 Platinum – Everything in Elite
 
 
 ✅ Done-for-you funnel setup 
