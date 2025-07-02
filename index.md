@@ -178,6 +178,8 @@ Live dashboards with real-time insights on growth, engagement, and conversions.
 
 - Content calendar + scheduling
 
+- Standard support via email or shared workspace
+
 ### Optional add-ons:
 
 - AI Chatbot
@@ -208,7 +210,7 @@ Live dashboards with real-time insights on growth, engagement, and conversions.
 
 ### Optional add-ons:
 
--  Dedicated account manager for hands-on, high-touch support
+-  Custom Automations
 
 🎯 Ideal for brands who want to scale fast
 
